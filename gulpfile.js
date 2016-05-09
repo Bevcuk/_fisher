@@ -40,12 +40,12 @@ gulp.task('styles', function () {
 		cascade: false
 	}))
 	.pipe(minifycss())
-	.pipe(gulp.dest('app'));
+	.pipe(gulp.dest('app/css'));
 });
 
 gulp.task('watch', function() {
 	gulp.watch('sass/*.sass', ['styles']);
-	gulp.watch('app/*.css', notifyLiveReload);
+	gulp.watch('app/css/*.css', notifyLiveReload);
 	gulp.watch('app/*.html', notifyLiveReload);
 });
 
