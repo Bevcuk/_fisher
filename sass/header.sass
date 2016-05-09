@@ -1,0 +1,337 @@
+@import "bourbon"
+@import "_var.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+.ulmnu
+	list-style: none
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+
+.main-mnu
+	position: relative
+	height: 42px
+	font-size: em(16px)
+	background-image: url(img/woood.jpg)
+	box-shadow: inset 0 -1px 14px rgba(0, 0, 0, 1)
+	.container
+		.col-md-10	
+			margin: 0
+			padding: 0
+	ul
+		float: left
+		margin: 0
+		padding: 0
+		li
+			line-height: 38px
+			padding: 0 30px 0 0
+			a
+				display: block
+				text-decoration: none
+				text-shadow: 1px 1px 3px black
+				color: $main-text-menu
+			&:active, &:hover
+				box-sizing: border-box
+				height: 42px
+				border-bottom: solid 4px $main-text-menu
+				a
+					color: $main-text-menu
+	.active
+		height: 42px
+		box-sizing: border-box
+		-moz-box-sizing: border-box
+		-webkit-box-sizing: border-box
+		font-weight: bold
+		border-bottom: solid 4px #97C795
+		a
+			color: #97C795
+	@extend .ulmnu
+.hidden
+	display: none
+
+header
+	background-color: $header-color
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+	.pre-topline
+		height: 30px
+		position: relative
+		background-color: $pre-header-color
+		box-shadow: 0 -1px 4px rgba(0, 0, 0, 1)
+		overflow: hidden
+		.contacts
+			position: relative
+			display: block
+			color: white
+			align-content: center
+			p
+				font-size: em(13px)
+				float: right
+			.phone
+				margin: 5px 5px 6px 15px
+				padding-left: 23px
+				background-position: left center
+				background-repeat: no-repeat
+				background-size: 20px
+				float: right
+				font-size: em(13px)
+
+			.callback
+				margin: 5px 15px 6px
+				padding-left: 27px
+				background-position: left center
+				background-repeat: no-repeat
+				background-size: 18px
+				font-size: em(13px)
+				float: right
+				a
+					color: #D0CBCB
+					&:hover
+						text-decoration: none
+						color: white
+	.top-line
+		min-height: 130px
+		position: relative
+
+		.logo
+			opacity: .85
+			img
+				width: 275px
+				margin-top: 25px
+	
+		.enter
+			margin-top: 58px
+			margin-left: 20px
+			line-height: 2.5
+			padding-left: 45px
+			background-position: left center
+			background-repeat: no-repeat
+			background-size: 34px
+			font-size: em(15px)
+			float: left
+			a
+				color: white
+				text-decoration: none
+			&:hover
+				text-decoration: underline
+				cursor: pointer
+		.basket
+			display: block
+			position: relative
+			margin-top: 58px
+			margin-left: 65px
+			float: left
+			width: 39px
+			height: 39px
+			.counter
+				display: inline-block
+				position: absolute
+				height: 20px 
+				width: 20px
+				top: 10px
+				left: -28px
+				border-radius: 10px
+				-moz-border-radius: 10px
+ 				-webkit-border-radius: 10px
+				background-color: $red-acs
+				font-size: 13px
+				font-weight: bold
+				color: white
+				text-align: center
+			img
+				height: 39px
+		//ТО є пошук				
+		.search
+			position: relative
+			margin-top: 75px
+			width: 370px
+			font-size: em(12px)		
+		.form-wrapper 
+			width: 340px
+		    padding: 0px
+		    margin: 6px auto 0px auto
+		    background: $red-acs
+		    background: rgba(0,0,0,.2)
+		    border-radius: 6px
+		    box-shadow: 0 0 3px rgba(0,0,0,0.3)
+		/* Стиль поля вводу тексту */
+		.form-wrapper input 
+		    width: 340px
+		    height: 27px
+		    padding: 6px 10px
+		    border: 6px
+		    float: left  
+		    background: #FFFFFF
+		    border-radius: 3px 0 0 3px    
+		.form-wrapper input:focus 
+		    outline: 0
+		    background: #fff
+		    box-shadow: 0 0 0.5px rgba(0,0,0,.5) inset
+		.form-wrapper input::-webkit-input-placeholder 
+		   color: #999
+		   font-weight: normal
+		.form-wrapper input:-moz-placeholder 
+		    color: #999
+		    font-weight: normal
+		.form-wrapper input:-ms-input-placeholder 
+		    color: #999
+		    font-weight: normal
+		/*То є кнопка відправки форми*/
+		.form-wrapper button 
+		    overflow: visible
+		    position: relative
+		    float: right
+		    border: 0
+		    padding: 0
+		    cursor: pointer
+		    height: 27px
+		    width: 30px
+		    font: 14px 'RobotoBold'
+		    color: #fff
+		    text-transform: uppercase
+		    background: $red-acs
+		    border-radius: 0 3px 3px 0     
+		    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3)
+		.form-wrapper button:hover   
+		    background: #e54040
+		.form-wrapper button:active,
+		.form-wrapper button:focus  
+		    background: #c42f2f
+		    outline: 0  
+		.form-wrapper button:before  /* стрілка вліво */
+		    content: ''
+		    position: absolute
+		    border-width: 8px 8px 8px 0
+		    border-style: solid solid solid none
+		    border-color: transparent $red-acs transparent
+		    top: 7px
+		    left: -6px
+		.form-wrapper button:hover:before
+		    border-right-color: #e54040
+		.form-wrapper button:focus:before,
+		.form-wrapper button:active:before
+		    border-right-color: #c42f2f
+		.form-wrapper button::-moz-focus-inner  /* ТО для  Mozilla Firefox */
+		    border: 0
+		    padding: 0				
+		//ТО Є кінець пошуку   
+		//Mobile menu
+
+		.toggle-mnu  
+		  display: block
+		  width: 28px
+		  height: 58px
+		  margin-top: 38px
+		  position: absolute
+		  //right: -60px
+		  span:after, span:before 
+		    content: ""
+		    position: absolute
+		    left: 0
+		    top: 12px
+
+		  span:after
+		    top: 24px
+
+		  span 
+		    position: relative
+		    display: block
+
+		  span, span:after, span:before
+		    width: 100%
+		    height: 2px
+		    background-color: #fff
+		    transition: all 0.3s
+		    backface-visibility: hidden
+		    border-radius: 2px
+
+
+		  &.on span 
+		    background-color: transparent
+
+		  &.on span:before 
+		    transform: rotate(45deg) translate(-1px, 0px)
+
+		  &.on span:after 
+		    transform: rotate(-45deg) translate(6px, -7px)
+#sidebar 
+	background: #151718
+	opacity: 0.9
+	width: 200px
+	height: 100%
+	display: block
+	position: absolute
+	left: -200px
+	top: 0
+	transition: left 0.3s linear 
+	ul 	
+		li 
+			list-style: none
+			margin-left: -31px
+			margin-bottom: 5px
+			a 
+				border-bottom: 1px solid 
+				display: block
+				width: 180px
+				padding: 10px
+				text-decoration: none
+				color: #fff	
+			.exit
+				color: $red-acs			  			
+#sidebar.visible 
+	left: 0
+	transition: left 0.3s linear
+	z-index: 99	
+.searchmob
+	width: 100%
+	height: 100%
+	display: block
+	position: absolute
+	background: #151718	
+	opacity: 0.9
+	left: -100%
+	transition: left 0.3s linear
+	top: -100%
+	span
+		color: #fff
+		display: block
+		margin-left: 70%
+		margin-top: 40%
+		font-size: 25px
+	.description
+		#search
+			width: 300px
+			height: 50px
+			background: #2b303b
+			border: none
+			font-size: 10pt
+			float: left;
+			color: #262626
+			padding-left: 45px
+			-webkit-border-radius: 5px
+			-moz-border-radius: 5px
+			border-radius: 5px
+			color: #fff
+			margin-top: 2%
+			margin-left: 28%
+
+.searchmob.visible
+	left: 0	
+	top: 0
+	z-index: 99
+	transition: left 0.3s linear
+	

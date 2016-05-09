@@ -1,0 +1,371 @@
+@import "bourbon"
+@import "_var.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+.baner-section
+	position: relative
+	height: 460px
+	background-size: cover
+	background-position: center
+	&:before
+		@extend .before
+		background-color: #59836A
+		opacity: .15
+	.wpr-baner
+		position: relative
+		height: 320px
+		margin: 70px 0
+		border-radius: 5px
+		background-color: rgba(200, 209, 200, 0.5)
+		.arrow
+			position: absolute
+			top: 128px
+			width: 64px
+			height: 64px
+			padding: 0
+			margin: 0
+			background: transparent
+			border: transparent
+			&:hover
+				cursor: pointer
+			&:active,
+			&:focus
+				outline: none 
+		.l-arrow
+			@extend .arrow
+			left: 60px
+			background-image: url(img/icons/left-arrow.png)
+		.r-arrow
+			@extend .arrow
+			right: 60px
+			background-image: url(img/icons/right-arrow.png)
+		.baner
+			position: relative
+			list-style: none 
+			padding: 0
+			margin: 0
+			display: block
+			height: 320px
+			overflow: hidden
+			ul
+				width: 10000px
+				height: 100%
+				list-style-type: none
+				padding: 0
+				margin: 0
+				li
+					//до цього бабахнути медіазапит
+					width: 702px //!!!
+					height: 100%
+					float: left					
+			.item
+				display: inline-block
+				margin: 0
+				width: 100%
+				img
+					position: absolute
+					float: left
+					top: 50%
+					transform: translate(0, -50%)
+					width: 40%
+					max-width: 260px
+				.info-details
+					position: absolute
+					float: left
+					margin: 20px 0
+					margin-left: 40% 
+					width: 55%
+					text-align: center
+					color: #2A2A2A
+					h1
+						margin-bottom: 5px
+						font-size: em(36px)
+						font-weight: normal
+						text-shadow: 1px 1px 4px #454545
+						span
+							padding: 0 13px
+							font-weight: bold
+							color: #990000
+					h2
+						font-size: em(19px)
+						font-weight: normal
+						margin: 5px 0
+					h3
+						font-size: em(17px)
+						font-weight: normal
+						margin: 30px 0
+						span
+							font-weight: bold
+					a
+						display: inline-block
+						padding: 5px 15px
+						border-radius: 5px
+						text-decoration: none
+						background-color: $green-button-color
+						color: white
+						&:hover
+							background-color: rgba(23, 68, 26, 0.9)
+.title-d
+	display: block
+	padding: 8px 5px 30px
+	text-align: center
+	font-size: em(23px)
+	color: $header-color
+
+.title-l
+	display: block
+	padding: 8px 5px 30px
+	text-align: center
+	font-size: em(23px)
+	color: white
+
+.d-block
+	position: relative
+	padding: 20px 0 30px
+	background-color: $bg-line-color
+
+
+.l-block
+	position: relative
+	padding: 20px 0 30px
+	background-color: white
+
+.simple-a-brown
+	color: $braun-a
+	display: block
+
+.simple-a-white
+	color: white
+	display: block
+
+.categories
+	@extend .l-block
+	.category-title
+		@extend .title-d		
+
+	.subcategory-section
+		max-height: 450px
+		.subcategory-item
+			//should be more flexible
+			padding: 0 27px
+			a
+				@extend .simple-a-brown
+			.subc-a
+				display: inline-block
+				img
+					background-image: url(img/woood.jpg)
+					width: 180px
+			.subc-name
+				font-size: em(20px)
+				padding: 7px 0 3px
+				color: $header-color
+			.subc-s-item
+				font-size: em(14)
+				padding: 2px 0
+				&:hover
+					text-decoration: underline
+
+.kinds
+	@extend .d-block
+	.kind-title
+		@extend .title-l		
+	.kind-section
+		.subkind-item
+			float: left
+			text-align: center 
+			margin: 6px
+			width: 105px
+			&:hover
+				text-decoration: underline
+			.subk-a
+				display: block
+				background-image: url(img/woood.jpg)
+				width: 95px
+				img
+					width: 85px
+					margin: 5px
+			.subk-name
+				color: white
+				font-size: em(14px)
+				padding: 5px
+				
+
+.info-row
+	position: relative
+	.price
+		float: left
+	.brand
+		float: right
+		img
+			height: 25px
+
+.capital-stock
+	@extend .l-block
+	min-height: 300px
+	.stock-title
+		@extend .title-d
+	.stock-item
+		.stock-item-wrap
+			padding: 0 30px
+			.stock-a
+				img
+					width: 200px
+			.stock-name
+				display: block
+				font-size: em(16px)
+				padding: 10px 0
+				color: $braun-a
+			&:hover
+				a
+					text-decoration: none
+					color: $active-dark
+.new
+	position: relative
+	padding: 20px 0 0
+	background-color: $bg-line-color
+	.new-title
+		@extend .title-l
+	.new-item
+		padding-bottom: 30px
+		.new-item-wrap
+			padding: 0 30px
+			.new-a
+				img
+					width: 200px
+			.new-name
+				display: block
+				font-size: em(16px)
+				padding: 10px 0
+				color: $braun-a
+			&:hover
+				a
+					text-decoration: none
+					color: $active-light
+
+.popular
+	@extend .l-block
+	margin-bottom: 30px
+	.popular-title
+		@extend .title-d
+	.popular-item
+		.popular-item-wrap
+			padding: 0 30px
+			.popular-a
+				img
+					width: 200px
+			.popular-name
+				display: block
+				font-size: em(16px)
+				padding: 10px 0
+				color: $braun-a
+			&:hover
+				a
+					text-decoration: none
+					color: $active-dark
+footer
+	position: relative
+	min-height: 350px
+	background-size: cover
+	background-position: bottom
+	border-top: solid 8px $header-color
+	&:before
+		@extend .before
+		background-color: #302428
+		opacity: .55
+	.unit
+		position: absolute
+		bottom: 40px
+		font-size: em(14px)
+		ul
+			list-style: none
+			opacity: .75
+			padding: 0
+			li
+				line-height: 2
+				a
+					color: white
+	.social-networks
+		position: relative
+		opacity: .65
+		h2
+			margin-top: 35px 
+			font-size: em(20px)
+			font-weight: normal
+			color: white
+		a
+			display: block
+			float: left
+			margin: 0 23px
+			img
+				width: 34px
+	
+.footer-contacts
+	position: relative
+	display: block
+	opacity: 0.65
+	margin-top: 110px
+	color: white
+	p
+		display: block
+		margin: 10px 12px 12px 8px
+		float: right
+		font-size: em(16px)
+
+	.phone
+		float: right
+		padding-right: 12px
+		padding-left: 32px
+		margin-top: 2px
+		margin-bottom: 4px
+		background-position: left center
+		background-repeat: no-repeat
+		background-size: 24px
+		clear: both
+
+	.callback
+		float: right
+		display: block
+		margin: 2px 12px 8px 8px
+		font-size: em(14px)
+		text-decoration: none
+		color: #D0CBCB
+		&:hover
+			text-decoration: underline
+body			
+	.mm-menu.mm-offcanvas
+		z-index: 5					
+	
+//ALWAYS END
+@import "_media.sass"
