@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Рибалка</title>
+	<title>Каталог</title>
 	<meta name="description" content="">
 
 	<!-- Bootstrap v3.3.4 Grid Styles -->
@@ -24,7 +24,7 @@
 		<!-- Load CSS Compilled without JS -->
 		<noscript>
 			<link rel="stylesheet" href="css/_header.min.css">
-			<link rel="stylesheet" href="css/_main.min.css">
+			<link rel="stylesheet" href="css/_catalogue.min.css">
 			<link rel="stylesheet" href="css/_footer.min.css">
 		</noscript>
 
@@ -39,433 +39,98 @@
 	</head>
 
 	<body>
-		<div id="sidebar"> 
-			<ul>
-				<li><a href="#">Головна</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Бренди</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Акції</a></li>
-				<li><a href="#">Контакти</a></li>
-				<li><a class="exit" href="#">Х-Вихід</a></li>
-			</ul>
-		</div>
-		<div class="searchmob">
-			<div class="description">
-				<span class="closes">X</span>
-				<input type="search" id="search" placeholder="Search..." />	
-			</div>	  
-		</div>
-		<header>
-			
-			<div class="pre-topline">
-				<div class="col-md-push-7 col-md-5">
-					<div class="contacts">
-						<!-- <a href="/" class="callback">Замовити зворотній дзвінок</a> -->
-						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
-						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
-						<div class="callback" style="background-image: url(img/callback.png);"><a href="/">Замовити дзвінок</a></div>
-					</div>
+	
+	<header>
+		
+		<div class="pre-topline">
+			<div class="col-md-push-7 col-md-5">
+				<div class="contacts">
+					<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
+					<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
+					<div class="callback" style="background-image: url(img/callback.png);"><a href="/">Замовити дзвінок</a></div>
 				</div>
 			</div>
+		</div>
 
-			<div class="top-line">
+		<div class="top-line">
 
-				<div class="container">
+			<div class="container">
 
-					<div class="row">
+				<div class="row">
 
-						<div class=" col-sm-1 hidden-lg hidden-md col-xs-1 ">
-							<div class="mobile-mnu">
-								<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
-							</div>	
+					<div class=" col-sm-1 hidden-lg hidden-md col-xs-1 ">
+						<div class="mobile-mnu">
+							<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
 						</div>	
-						<div class=" mobile-search col-sm-3 hidden-lg hidden-md col-xs-2">
-							<a class="m-search" href="/" ><span></span><img  src="img/mobile-search.png" alt="basket" width="35"  height="35"/></a>
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-3 ">
-							<a href="/" class="logo"><img src="img/logo.png" alt="Рибалка"></a>
-						</div>
-						<div class="col-md-5 hidden-sm hidden-xs ">
-							<form class="form-wrapper cf">
-								<div class="search">
-									<input type="text" placeholder="Пошук товарів">
-									<button type="submit"><a href="/" class="icon-find">
-										<img src="img/serch.png" alt=""></a>
-									</button>
-								</div>
-							</form>
-						</div>
-						<div class="col-md-3 col-sm-4 col-xs-5">
-							<div class="enter" style="background-image: url(img/icons/enter.png);">
-								<a href="/">Увійти</a>
-							</div>
-							<a href="/" class="basket">
-								<div class="counter">4</div>
-								<img src="img/basket2.png" alt="basket" /></a>
-						</div>
+					</div>	
+					<div class=" mobile-search col-sm-3 hidden-lg hidden-md col-xs-2">
+						<a class="m-search" href="/" ><span></span><img  src="img/mobile-search.png" alt="basket" width="35"  height="35"/></a>
 					</div>
-				</div>
-			</div>
-		</header>
-
-		<div class="main-mnu hidden-sm hidden-xs">
-			<div class="container">
-				<div class="col-md-10">
-					<ul>
-						<li class="active"><a href="">Головна</a></li>
-						<li><a href="">Каталог</a></li>
-						<li><a href="">Бренди</a></li>
-						<li><a href="">Оплата</a></li>
-						<li><a href="">Акції</a></li>
-						<li><a href="">Контакти</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="baner-section" style="background-image: url(img/img-5.jpg); ">
-			<div class="col-md-10 col-md-push-1 hidden-xs col-sm-10 wpr-baner">
-				<div class="col-md-8 col-md-push-2 col-sm-11 baner">
-					<ul>
-						<li>
-							<div class="item">
-								<img src="img/goods/loo.png" alt="">
-								<div class="info-details">
-									<h1>Знижка <span>- 25%</span></h1>
-									<h2>на всі котушки фірми <b>Mikado</b></h2>
-									<h3>Пропозиція діє до <span>30.05</span></h3>
-									<a href="/">Переглянути</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<img src="img/goods/loo.png" alt="">
-								<div class="info-details">
-									<h1>Знижка <span>- 26%</span></h1>
-									<h2>на всі котушки фірми <b>Mikado</b></h2>
-									<h3>Пропозиція діє до <span>30.05</span></h3>
-									<a href="/">Переглянути</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<img src="img/goods/loo.png" alt="">
-								<div class="info-details">
-									<h1>Знижка <span>- 27%</span></h1>
-									<h2>на всі котушки фірми <b>Mikado</b></h2>
-									<h3>Пропозиція діє до <span>30.05</span></h3>
-									<a href="/">Переглянути</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="slider-nav">
-					<button data-dir="prev" class="l-arrow"></button>
-					<button data-dir="next" class="r-arrow"></button>
-				</div>
-			</div>
-		</div>
-		<div class="categories">
-			<div class="container">
-				<div class="row">
-					<div class="category-title">Відбір по категорії</div>
-					<div class="subcategory-section col-md-3 col-sm-4 col-lg-2 col-xs-5 ">
-						<div class="subcategory-item">
-							<a href="/" class="subc-a"><img src="img/categories/fish-udo4g5.png" alt="category"></a>
-							<a href="/" class="subc-name">Риболовні снасті</a>
-							<a href="/" class="subc-s-item">Вудилища</a>
-							<a href="/" class="subc-s-item">Котушки</a>
-							<a href="/" class="subc-s-item">Садки</a>
-							<a href="/" class="subc-s-item">Сигналізатори клюву</a>
-							<a href="/" class="subc-s-item">Спецінструменти</a>
-						</div>		
+					<div class="col-md-4 col-sm-4 col-xs-3 ">
+						<a href="/" class="logo"><img src="img/logo.png" alt="Рибалка"></a>
 					</div>
-					<div class="subcategory-section col-md-3 col-sm-4 col-lg-2 col-xs-5">
-						<div class="subcategory-item">
-							<a href="/" class="subc-a"><img src="img/categories/fish-montajvz.png" alt="category"></a>
-							<a href="/" class="subc-name">Оснащення</a>
-							<a href="/" class="subc-s-item">Крючки</a>
-							<a href="/" class="subc-s-item">Грузила</a>
-							<a href="/" class="subc-s-item">Поплавки</a>
-							<a href="/" class="subc-s-item">Джиг-головки</a>
-							<a href="/" class="subc-s-item">Карабіни і застібки</a>
-							<a href="/" class="subc-s-item">Повідки для хижаків</a>
-						</div>		
+					<div class="col-md-5 hidden-sm hidden-xs ">
+						<form class="form-wrapper cf">
+							<div class="search">
+								<input type="text" placeholder="Пошук товарів">
+								<button type="submit"><a href="/" class="icon-find">
+									<img src="img/serch.png" alt=""></a>
+								</button>
+							</div>
+						</form>
 					</div>
-					<div class="subcategory-section col-md-3 col-sm-4 col-lg-2 col-xs-4 ">
-						<div class="subcategory-item">
-							<a href="/" class="subc-a"><img src="img/categories/fish-primanww.png" alt="category"></a>
-							<a href="/" class="subc-name">Приманки і прикормки</a>
-							<a href="/" class="subc-s-item">Мормишки</a>
-							<a href="/" class="subc-s-item">Балансири</a>
-							<a href="/" class="subc-s-item">Воблери</a>
-							<a href="/" class="subc-s-item">Силікон</a>
-							<a href="/" class="subc-s-item">Прикормки</a>
-							<a href="/" class="subc-s-item">Сухі добавки</a>
-							<a href="/" class="subc-s-item">Спреї</a>
-						</div>		
-					</div>
-					<div class="subcategory-section col-md-3 col-sm-4 col-lg-2 col-xs-5">
-						<div class="subcategory-item">
-							<a href="/" class="subc-a"><img src="img/categories/fish-boat-komve.png" alt="category"></a>
-							<a href="/" class="subc-name">Аксесуари риболовні</a>
-							<a href="/" class="subc-s-item">Збереження і транспортування</a>
-							<a href="/" class="subc-s-item">Ехолоти</a>
-							<a href="/" class="subc-s-item">Карпові кораблики</a>
-							<a href="/" class="subc-s-item">Полотенця і фартухи</a>
-							<a href="/" class="subc-s-item">Кобри, ракети і рогатки</a>
-							<a href="/" class="subc-s-item">Надувні човни</a>
-						</div>		
+					<div class="col-md-3 col-sm-4 col-xs-5">
+						<div class="enter" style="background-image: url(img/icons/enter.png);">
+							<a href="/">Увійти</a>
+						</div>
+						<a href="/" class="basket">
+							<div class="counter">4</div>
+							<img src="img/basket2.png" alt="basket" /></a>
 					</div>
 				</div>
 			</div>
 		</div>
+	</header>
 
+	
 
-		<div class="kinds">
-			<div class="container">
-				<div class="row">
-					<div class="kind-title">Відбір за призначенням</div>
-					<div class="kind-section col-md-12 col-lg-10  col-lg-offset-1 col-sm-12  ">
-						<figure class="subkind-item">
-							<a href="/" class="subk-a"><img src="img/kinds/kind-6.png" alt="kind"></a>
-							<figcaption><a href="/" class="subk-name">Карпова ловля</a></figcaption>
-						</figure>
-						<figure class="subkind-item">
-							<a href="/" class="subk-a"><img src="img/kinds/kind-1.png" alt="kind"></a>
-							<figcaption><a href="/" class="subk-name">Спінінгова ловля</a></figcaption>
-						</figure>
-
-						<figure class="subkind-item">
-							<a href="/" class="subk-a"><img src="img/kinds/kind-3.png" alt="kind"></a>
-							<figcaption><a href="/" class="subk-name">Поплавочна ловля</a></figcaption>
-						</figure>
-						<figure class="subkind-item">
-							<a href="/" class="subk-a"><img src="img/kinds/kind-4.png" alt="kind"></a>
-							<figcaption><a href="/" class="subk-name">Кастингова ловля</a></figcaption>
-						</figure>
-						<figure class="subkind-item">
-							<a href="/" class="subk-a"><img src="img/kinds/kind-2.png" alt="kind"></a>
-							<figcaption><a href="/" class="subk-name">Фідерна ловля</a></figcaption>
-						</figure>
-
-						<figure class="subkind-item">
-							<a href="/" class="subk-a"><img src="img/kinds/kind-5.png" alt="kind"></a>
-							<figcaption><a href="/" class="subk-name">Нахлистова ловля</a></figcaption>
-						</figure>
-						<figure class="subkind-item">
-							<a href="/" class="subk-a"><img src="img/kinds/kind-7.png" alt="kind"></a>
-							<figcaption><a href="/" class="subk-name">Морська ловля</a></figcaption>
-						</figure>
-						<figure class="subkind-item">
-							<a href="/" class="subk-a"><img src="img/kinds/kind-8.png" alt="kind"></a>
-							<figcaption><a href="/" class="subk-name">Зимня ловля</a></figcaption>
-						</figure>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="capital-stock">
-			<div class="container">
-				<div class="row">
-					<div class="stock-title">Акції</div>
-
-					<div class="stock-item col-md-3 col-sm-4 col-lg-20 ">
-						<div class="stock-item-wrap">
-							<a href="/" class="stock-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="stock-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="stock-item col-md-3 col-sm-4 col-lg-20 ">
-						<div class="stock-item-wrap">
-							<a href="/" class="stock-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="stock-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="stock-item col-md-3 col-sm-4 col-lg-20">
-						<div class="stock-item-wrap">
-							<a href="/" class="stock-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="stock-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="stock-item col-md-3 col-sm-4 col-lg-20 ">
-						<div class="stock-item-wrap">
-							<a href="/" class="stock-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="stock-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-		</div>
-
-
-		<div class="new">
-			<div class="container">
-				<div class="row">
-					<div class="new-title">Новинки</div>
-					<div class="new-item col-md-3 col-sm-4 col-lg-3">
-						<div class="new-item-wrap">
-							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="new-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="new-item col-md-3 col-sm-4 col-lg-3">
-						<div class="new-item-wrap">
-							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="new-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="new-item col-md-3 col-sm-4 col-lg-3">
-						<div class="new-item-wrap">
-							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="new-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="new-item col-md-3 col-sm-4 col-lg-3">
-						<div class="new-item-wrap">
-							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="new-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="new-item col-md-3 col-sm-4 col-lg-3">
-						<div class="new-item-wrap">
-							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="new-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="new-item col-md-3 col-sm-4 col-lg-3">
-						<div class="new-item-wrap">
-							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="new-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="new-item col-md-3 col-sm-4 hidden-sm col-lg-3">
-						<div class="new-item-wrap">
-							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="new-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="new-item col-md-3 hidden-sm col-lg-3">
-						<div class="new-item-wrap">
-							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="new-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-
-		<div class="popular">
-			<div class="container">
-				<div class="row">
-					<div class="popular-title">Популярні товари</div>
-					<div class="popular-item col-md-3 col-sm-4">
-						<div class="popular-item-wrap">
-							<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="popular-item col-md-3 col-sm-4">
-						<div class="popular-item-wrap">
-							<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="popular-item col-md-3 col-sm-4">
-						<div class="popular-item-wrap">
-							<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-					<div class="popular-item col-md-3 hidden-sm">
-						<div class="popular-item-wrap">
-							<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
-							<div class="info-row">
-								<div class="price">254.00 грн.</div>
-								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
-							</div>
-						</div>
-					</div>
-
-				</div>
+	<div class="main-mnu hidden-sm hidden-xs">
+		<div class="container">
+			<div class="col-md-10">
+				<ul>
+					<li><a href="/">Головна</a></li>
+					<li class="active"><a href="/">Каталог</a></li>
+					<li><a href="/">Бренди</a></li>
+					<li><a href="/">Оплата</a></li>
+					<li><a href="/">Акції</a></li>
+					<li><a href="/">Контакти</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
-
-
+	<div class="main-nav">
+		<div class="container">
+				<nav>
+					<a href="/" class="subc-s-item">Вудилища</a>
+					<a href="/" class="subc-s-item">Котушки</a>
+					<a href="/" class="subc-s-item">Садки</a>
+					<a href="/" class="subc-s-item">Сигналізатори клюву</a>
+					<a href="/" class="subc-s-item">Спецінструменти</a>
+					<a href="/" class="subc-s-item">Крючки</a>
+					<a href="/" class="subc-s-item">Грузила</a>
+					<a href="/" class="subc-s-item">Поплавки</a>
+					<a href="/" class="subc-s-item">Джиг-головки</a>
+					<a href="/" class="subc-s-item">Карабіни і застібки</a>
+					<a href="/" class="subc-s-item">Мормишки</a>
+					<a href="/" class="subc-s-item">Балансири</a>
+					<a href="/" class="subc-s-item">Воблери</a>
+					<a href="/" class="subc-s-item">Силікон</a>
+					<a href="/" class="subc-s-item">Прикормки</a>
+					<a href="/" class="subc-s-item">Сухі добавки</a>
+					<a href="/" class="subc-s-item">Спреї</a>
+				</nav>
+		</div>
+	</div>
 
 	<footer style="background-image: url(img/boat_dark.jpg);">
 		<div class="container">
@@ -525,7 +190,7 @@
 
 	//User Styles
 	var ms=document.createElement("link");ms.rel="stylesheet";
-	ms.href="css/_main.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+	ms.href="css/_catalogue.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
 
 	//Footer + Media
 	var ms=document.createElement("link");ms.rel="stylesheet";
@@ -546,19 +211,6 @@
 </script>
 
 <script type="text/javascript" src="js/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/slider.js"></script>
-
-<script>
-(function() {
-	var container = $('div.baner').css('overflow', 'hidden').children('ul');
-	var slider = new Slider( container, $('.slider-nav') );
-
-	slider.nav.find('button').on('click', function() {
-		slider.setCurrent( $(this).data('dir') );
-		slider.transition();
-	});
-})();
-</script>
 <script>
 	jQuery(document).ready(function($) {
 		$('.toggle-mnu,.exit').click(function() {
