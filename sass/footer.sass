@@ -1,0 +1,87 @@
+@import "bourbon"
+@import "_var.sass"
+
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+footer
+	clear: both
+	position: relative
+	max-height: 350px
+	background-size: cover
+	background-position: bottom
+	border-top: solid 8px $header-color
+	&:before
+		@extend .before
+		background-color: #302428
+		opacity: .55
+	.unit
+		position: absolute
+		bottom: 40px
+		font-size: em(14px)
+		ul
+			list-style: none
+			opacity: .75
+			padding: 0
+			li
+				line-height: 2
+				a
+					color: white
+	.social-networks
+		position: relative
+		opacity: .65
+		h2
+			margin-top: 35px 
+			font-size: em(20px)
+			font-weight: normal
+			color: white
+		a
+			display: block
+			float: left
+			margin: 0 23px
+			img
+				width: 34px
+	
+.footer-contacts
+	position: relative
+	display: block
+	opacity: 0.65
+	margin-top: 110px
+	color: white
+	p
+		display: block
+		margin: 10px 12px 12px 8px
+		float: right
+		font-size: em(16px)
+
+	.phone
+		float: right
+		padding-right: 12px
+		padding-left: 32px
+		margin-top: 2px
+		margin-bottom: 4px
+		background-position: left center
+		background-repeat: no-repeat
+		background-size: 24px
+		clear: both
+
+	.callback
+		float: right
+		display: block
+		margin: 2px 12px 8px 8px
+		font-size: em(14px)
+		text-decoration: none
+		color: #D0CBCB
+		&:hover
+			text-decoration: underline
+body			
+	.mm-menu.mm-offcanvas
+		z-index: 5					
+	
+//ALWAYS END
+@import "_media.sass"

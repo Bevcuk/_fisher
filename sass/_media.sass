@@ -102,7 +102,12 @@ header
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
 	/**/
-		
+header 
+	.top-line 
+		.enter
+			align: right
+		.basket
+			align: right
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -184,9 +189,14 @@ header
 			.enter
 				margin-top: 58px 
 				margin-left: 10px
+				float: right
 			.basket
 				margin-top: 58px
-				margin-left: 40px		
+				margin-left: 40px
+				float: right
+			.form-wrapper
+				.search
+					margin-left: 0%				
 			.mobile-search
 				margin-top: 35px
 				padding-left: 20px
@@ -202,7 +212,7 @@ header
 				padding: 0 15px					
 	.kinds 
 		.kind-section 
-			margin-left: 5px
+			//margin-left: 5px
 			.subkind-item 							
 				margin: 6px
 				
@@ -214,20 +224,28 @@ header
 			.logo 
 				img
 					width: 275px
+			.enter
+				float: right		
 			.basket
 				margin-left: 50px
+				float: right
+			.form-wrapper
+				.search
+					margin-left: 50%	
 	.categories
 		.subcategory-section
 			margin-left: 0
 			margin-bottom: 0
 			margin-left: 6%
 			.subcategory-item
-				padding: 0 0px
+				padding: 0 0px			
 	.kinds 
 		.kind-section 
-			margin-left: 9%
 			.subkind-item 							
-				margin: 6px	
+				margin: 5px
+		.col-lg-10 
+			margin-left: 12%
+			padding-left: 0%			
 	.capital-stock
 		.stock-item
 			padding-left: 30px
