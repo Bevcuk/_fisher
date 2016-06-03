@@ -204,25 +204,33 @@ body textarea:required:valid
 	.kind-title
 		@extend .title-l		
 	.kind-section
-		.subkind-item
-			float: left
-			text-align: center 
-			margin: 6px
-			//width: 105px
-			&:hover
-				text-decoration: underline
-			.subk-a
-				display: block
-				background-image: url(../img/woood.jpg)
-				width: 95px
-				img
-					width: 85px
-					margin: 5px
-			.subk-name
-				color: white
-				font-size: em(14px)
-				padding: 5px
-				
+		.kind 
+			width: 1050px
+			margin: 0 auto
+			.subkind-item
+				padding: 0
+				float: left
+				//text-align: center 
+				margin: 18px
+				//width: 105px
+				a 
+					margin: 0 auto
+				figcaption	
+					text-align: center
+				&:hover
+					text-decoration: underline
+				.subk-a
+					display: block
+					background-image: url(../img/woood.jpg)
+					width: 95px
+					img
+						width: 85px
+						margin: 5px
+				.subk-name
+					color: white
+					font-size: em(14px)
+					//padding: 5px
+					
 
 .info-row
 	position: relative
