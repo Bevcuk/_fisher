@@ -26,8 +26,6 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
-body 
-	overflow-x: hidden
 .before
 	content: ''
 	width: 100%
@@ -35,8 +33,6 @@ body
 	position: absolute
 	left: 0
 	top: 0
-.clr
-	clear: both
 
 .baner-section
 	position: relative
@@ -183,7 +179,9 @@ body
 		max-height: 450px
 		.subcategory-item
 			//should be more flexible
-			padding: 0 27px
+			//padding: 0 27px
+			width: 180px
+			margin: 0 auto
 			a
 				@extend .simple-a-brown
 			.subc-a
@@ -206,25 +204,33 @@ body
 	.kind-title
 		@extend .title-l		
 	.kind-section
-		.subkind-item
-			float: left
-			text-align: center 
-			margin: 6px
-			width: 105px
-			&:hover
-				text-decoration: underline
-			.subk-a
-				display: block
-				background-image: url(../img/woood.jpg)
-				width: 95px
-				img
-					width: 85px
-					margin: 5px
-			.subk-name
-				color: white
-				font-size: em(14px)
-				padding: 5px
-				
+		.kind 
+			width: 1050px
+			margin: 0 auto
+			.subkind-item
+				padding: 0
+				float: left
+				//text-align: center 
+				margin: 18px
+				//width: 105px
+				a 
+					margin: 0 auto
+				figcaption	
+					text-align: center
+				&:hover
+					text-decoration: underline
+				.subk-a
+					display: block
+					background-image: url(../img/woood.jpg)
+					width: 95px
+					img
+						width: 85px
+						margin: 5px
+				.subk-name
+					color: white
+					font-size: em(14px)
+					//padding: 5px
+					
 
 .info-row
 	position: relative
@@ -242,7 +248,10 @@ body
 		@extend .title-d
 	.stock-item
 		.stock-item-wrap
-			padding: 0 30px
+			//padding: 0 30px
+			width: 200px
+			margin: 0 auto
+			padding: 0
 			.stock-a
 				img
 					width: 200px
@@ -264,7 +273,9 @@ body
 	.new-item
 		padding-bottom: 30px
 		.new-item-wrap
-			padding: 0 30px
+			//padding: 0 30px
+			width: 200px
+			margin: 0 auto
 			.new-a
 				img
 					width: 200px
@@ -285,7 +296,9 @@ body
 		@extend .title-d
 	.popular-item
 		.popular-item-wrap
-			padding: 0 30px
+			//padding: 0 30px
+			margin: 0 auto
+			width: 200px
 			.popular-a
 				img
 					width: 200px
@@ -298,6 +311,3 @@ body
 				a
 					text-decoration: none
 					color: $active-dark
-body			
-	.mm-menu.mm-offcanvas
-		z-index: 5					

@@ -4,18 +4,6 @@
 @media only screen and (max-width : 1200px)
 	/**/
 header	
-.new 
-	.new-item 
-		.new-item-wrap	
-			padding: 0 5px
-.capital-stock 
-	.stock-item 
-		.stock-item-wrap
-			padding: 0 5px									
-.popular 
-	.popular-item 
-		.popular-item-wrap
-			padding: 0 5px	
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -31,11 +19,12 @@ header
 				img
 					width: 150px !important
 			.enter
-				margin-left: 5% !important
+				//margin-left: 5% !important
 				background-size: 30px auto
 			.basket
 				margin-top: 35px
 				margin-left: 10px !important
+				float: right !important
 				img
 					width: 30px
 					height: 34px
@@ -52,8 +41,8 @@ header
 		visibility: hidden
 	.categories	
 		.subcategory-section
-			margin-left: 5% !important
-			margin-right: 5% !important
+			//margin-left: 5% !important
+			//margin-right: 5% !important
 
 	.animated
 		/*CSS transitions*/
@@ -102,22 +91,30 @@ header
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
 	/**/
-		
+header 
+	.top-line 
+		.enter
+			align: right
+		.basket
+			align: right
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
 	header 
 		.top-line 
 			.logo 
+				width: 200px
+				margin: 0 auto
 				img
-					width: 200px
-					margin-left: -20px	
+					width: 200px	
 			.enter
 				margin-top: 35px 
-				margin-left: 40px
+				//margin-left: 40px
+				float: right
 			.basket
 				margin-top: 35px
-				margin-left: 40px		
+				margin-left: 50px
+				float: right		
 			.mobile-search
 				margin-top: 35px
 				padding-left: 20px
@@ -135,7 +132,6 @@ header
 							img
 								width: 30%
 								max-width: 260px
-								margin-left: 15%
 							.info-details
 								width: 69%
 								height: 40%
@@ -155,23 +151,22 @@ header
 				left: 20px							
 	.categories
 		.subcategory-section
-			margin-left: 10%
-			margin-bottom: 3%
+			//margin-left: 10%
+			//margin-bottom: 3%
 			.subcategory-item
 	.kinds 
 		.kind-section 
-			margin-left: 9%
-			.subkind-item 							
-				margin: 20px
+			.kind 
+				width: 600px
+				.subkind-item 	
+					margin: 27px						
 	.capital-stock
 		.stock-item
-			margin-left: 12%
-			margin-bottom: 3%
+			//margin-left: 12%
+			//margin-bottom: 3%
 	.social-networks
 		margin-bottom: 2%
-	footer	
-		.unit
-			 bottom: 20px
+
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 993px)
 	/**/
@@ -186,7 +181,11 @@ header
 				margin-left: 10px
 			.basket
 				margin-top: 58px
-				margin-left: 45px		
+				margin-left: 50px
+				float: right
+			.form-wrapper
+				.search
+					margin-left: 0%				
 			.mobile-search
 				margin-top: 35px
 				padding-left: 20px
@@ -199,13 +198,15 @@ header
 			margin-left: 0
 			margin-bottom: 0
 			.subcategory-item
-				padding: 0 15px					
+			//	padding: 0 15px	
+			//margin: 0 auto	
+				margin: 1%			
 	.kinds 
 		.kind-section 
-			margin-left: 5px
-			.subkind-item 							
-				margin: 6px
-				
+			.kind 
+				width: 920px
+				.subkind-item 							
+					margin: 10px				
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
@@ -214,23 +215,39 @@ header
 			.logo 
 				img
 					width: 275px
+			.enter
+				float: right		
 			.basket
-				margin-left: 60px
+				margin-left: 85px
+				float: right
+			.form-wrapper
+				margin: 0 auto
+				.search	
 	.categories
 		.subcategory-section
+			margin-left: 0
 			margin-bottom: 0
-			margin-left: 6%
+			//margin-right: 6%
 			.subcategory-item
-				padding: 0 0px
+				//margin-right: 30px
+				//align: center !important 			
 	.kinds 
 		.kind-section 
-			margin: 0 8%
-			.subkind-item 							
-				margin: 6px	
+			.kind 
+				width: 1112px		
+				.subkind-item 
+					margin: 22px
+					a 
+						margin: 0 auto
+					figcaption	
+						text-align: center
+		.col-lg-10 
+			//margin-left: 12%
+			//padding-left: 0%			
 	.capital-stock
 		.stock-item
-			padding: 0 24px
+			//padding-left: 30px
 	.new 
 		.new-item		
-			margin-left: 3.7%
-			
+			//margin-left: 3.7%
+	
