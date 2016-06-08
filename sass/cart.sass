@@ -3,19 +3,22 @@
 .content
 	padding: 0
 	.breadcrumb
+		padding-left: 10px
 		font-size: 12px
-		ul 
-			text-align: left
-			padding: 0
-			list-style: outside none none
-			li 
-				display: inline-block
-			li:before
-				color: #ccc
-				content: ">"
+		text-align: left
+		list-style: none
+		overflow: hidden
+		color: #7F4C35
+		li 
+			display: inline-block
+			&:before
 				display: inline-block
 				padding: 0 5px
-				font-size: 150%	
+				content: "/"
+				color: #ccc
+				font-size: 14px
+			a
+				color: $broun-hyper
 	.panel-description
 		background-color: #24492E
 		.container
