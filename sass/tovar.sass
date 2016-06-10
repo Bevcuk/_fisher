@@ -1,0 +1,190 @@
+@import "_var.sass"
+.breadcrumb
+		font-size: 12px
+
+		ul 
+			text-align: left
+			padding: 0
+			list-style: outside none none
+			li 
+				display: inline-block
+			li:before
+				color: #ccc
+				content: ">"
+				display: inline-block
+				padding: 0 5px
+				font-size: 150%	
+.content 
+	//background-color: $lines-color
+	.container-fluid
+		.row 
+			margin-top: 0px
+			margin-bottom: 30px
+			.booton
+				padding-left: 60px 
+		.product-name-element
+			margin: 0
+		.product-main-photo
+			img 
+				width: 350px
+		.pi_price_wrp
+			background-color: #e6d8a2
+			display: inline-block
+			font-size: 37px
+			height: 54px
+			padding: 0 20px
+			margin-top: 10px
+			&:before, &:after
+				content: ""
+				/* style */
+				background-color: #fff
+				border-radius: 10px
+				content: ""
+				display: block
+				height: 14px
+				left: 56px
+				margin-top: -87px
+				position: absolute
+				top: 51%
+				width: 14px
+				z-index: 1
+				//left: auto
+			&:before
+				border-right: medium none
+				//left: auto
+				right: 88px
+				top: 198px
+		.add2cart_wrp 
+			background-color: $pre-header-color
+			display: inline-block
+			height: 60px
+			position: relative
+			vertical-align: middle
+			text-transform: none
+			margin-top: 20px
+			&:before
+				border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #355440
+				border-style: solid
+				border-width: 16px 0 16px 5px
+				content: ""
+				display: block
+				left: 100%
+				position: absolute
+				top: 0
+				border-width: 33px 0 27px 10px
+			.add2cart_handler
+				border: none
+				height: 60px
+				background-color: $pre-header-color
+				padding: 0 20px
+				font-size: 27px
+				color: #fff
+		.pb_stock
+			margin-top: 20px
+			font-size: 25px	
+		.pi_shippay_buttons_wrp
+			margin-top: 10px
+			.guarantees 
+				padding-top: 10px
+	.main_row_cell
+		.top_prod_title
+			background-color: #c71606
+			color: #c71606
+			font-size: 20px
+			height: 1px
+			line-height: 1px
+			margin: 10px 0 28px
+			text-align: center
+			text-transform: uppercase	
+			span 
+				background-color: #fff
+				margin: 0
+				padding: 0 10px
+				position: relative
+				top: -12px
+				vertical-align: middle	
+			.tp_five 
+				background-color: #f3ebc4
+				border-radius: 50%
+				display: inline-block
+				height: 30px
+				line-height: 31px
+				margin: 0
+				padding: 0
+				top: -2px
+				vertical-align: middle
+				width: 30px
+		.box 
+			.product_brief_topprod 
+				height: 110px
+				border-bottom: 1px solid rgba(0,0,0,.1)
+				a 
+					padding-top: 5px
+				.product_brief_topprod_right 
+					float: right
+					.pb_price 
+						font-size: 16px
+						font-weight: bold
+					.buy 
+						button
+							background: none repeat scroll 0 0 $header-color
+							border-style: none
+							color: #fff
+							cursor: pointer
+							display: inline-block
+							font-size: 12px
+							font-weight: bold
+							line-height: 1.42857
+							margin-bottom: 0
+							padding: 8px 15px
+							text-align: center
+							text-transform: uppercase
+							vertical-align: middle
+							transition: all .2s ease 0s
+							text-decoration: none	
+.container-fluid-description 
+	width: 100%
+	background-color: $lines-color
+	.section-title 
+		color: #474747
+		//font-size: 18px
+	.pull-right 
+		h4 
+			margin-bottom: 5px
+			margin: 0 0 15px 0
+			color: #474747
+		p 
+			margin: 0
+.recommendations
+	height: 400px
+	.nav-tabs
+		text-align: center
+		border-bottom: 1px solid #ddd
+		background-color: $lines-color
+		height: 30px
+		margin: 0
+		padding: 0
+		a 
+			text-decoration: none
+			color: #000 
+			border: 1px solid #ddd
+			border-bottom: none
+			padding: 6px 15px 9px
+			background: #fff
+	.tab-pane
+		margin-top: 50px
+		.panel-recommendations-item
+			.recommendations-item
+				width: 250px 
+				margin: 0 auto	
+				span 
+					display: block
+					text-align: center
+				.image-recommendations
+					width: 200px  
+					margin: 0 auto
+
+
+				
+		
+			

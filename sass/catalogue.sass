@@ -1,0 +1,108 @@
+@import "bourbon"
+@import "_var.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+.clear
+	clear: both
+
+.wpr
+	position: relative
+	background-color: $green-bg-color
+	.col-md-3
+		padding: 0
+	.col-md-9
+		padding: 0
+
+	.main-nav
+		margin-top: 35px 
+		margin-right: 40px
+		nav
+			a
+				position: relative
+				display: block
+				margin: 8px 0
+				border-radius: 3px
+				padding: 3px 3px 3px 25px
+				min-width: 195px
+				line-height: 2
+				font-size: em(15px)
+				color: $main-text-menu
+				background-image: url(../img/woood.jpg)
+				&:hover
+					opacity: .9
+					text-decoration: none
+	.overview-wrp
+		padding: 25px 0
+		.one-cat
+			margin: 10px 0
+			.title
+				position: relative
+				overflow: hidden
+				margin-bottom: 20px
+				font-size: em(20px)
+				font-weight: bold
+				text-align: center 
+				color: white
+				&:before,
+				&:after
+					content: ''
+					display: inline-block
+					vertical-align: middle
+					box-sizing: border-box
+					width: 100%
+					height: 2px
+					background: rgba(23,68,26, 0.7)
+					border-style: solid
+					border-color: rgba(117, 148, 116, 1)
+					border-width: 0 25px
+				&:before
+					margin-left: -100%
+				&:after
+					margin-right: -100%
+			.item
+				width: 190px
+				margin: 0 auto 20px
+				text-align: center
+				.circle
+					width: 190px
+					height: 190px
+					border-radius: 95px
+					background-color: #364D3C
+					box-shadow: 0px 0px 1px 1px #363636
+					margin-bottom: 10px
+				.sub-name
+					color: #FFF
+					&:hover
+						text-decoration: none
+						color: $active-light	
