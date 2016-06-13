@@ -166,6 +166,21 @@ header
 			//margin-bottom: 3%
 	.social-networks
 		margin-bottom: 2%
+	//tovar-block	
+	.content 
+		.container-fluid
+			.booton 
+				padding-left: 0 !important
+				.pi_price_wrp 
+					&:before, &:after
+						left: -7px !important
+	.container-fluid-description 
+		.pull-right 
+			margin-bottom: 20px
+	.recommendations 
+		.tab-pane 
+			.panel-recommendations-item
+				margin-bottom: 40px					
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 993px)
@@ -206,7 +221,31 @@ header
 			.kind 
 				width: 920px
 				.subkind-item 							
-					margin: 10px										
+					margin: 10px	
+	.content 
+		.container-fluid
+			.booton 
+				.pi_price_wrp 
+					font-size: 25px	
+					height: 45px
+					padding: 2px 20px
+					&:before, &:after
+						height: 10px
+						margin-top: -76px
+						width: 10px
+					&:before
+						top: 181px
+				.add2cart_wrp 
+					height: 51px
+					.add2cart_handler
+						font-size: 25px
+						height: 50px	
+				.pb_stock 
+					font-size: 22px
+				.pi_shippay_buttons_wrp
+					font-size: 15px	
+						
+
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
@@ -250,8 +289,29 @@ header
 	.new 
 		.new-item		
 			//margin-left: 3.7%
-.content 
-	.container-fluid
-		.product-main-photo
-			img 
-				width: 400px	
+	.content 
+		.container-fluid
+			.product-main-photo
+				img 
+					width: 400px	
+			.booton 
+				.pi_price_wrp 
+					font-size: 37px	
+					height: 54px
+					padding: 0 20px
+					&:before, &:after
+						height: 14px
+						margin-top: -87px
+						width: 14px
+					&:before
+						top: 198px
+				.add2cart_wrp 
+					height: 60px
+					.add2cart_handler
+						font-size: 27px
+						height: 60px	
+				.pb_stock 
+					font-size: 25px
+				.pi_shippay_buttons_wrp
+					font-size: 16px	
+						
