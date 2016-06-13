@@ -1,4 +1,19 @@
 $(document).ready(function() {
+	//fitler in small resolutions
+	$(".filter-btn").click(function() {
+		$(this).toggleClass("on");
+		$(".filter").slideToggle();
+	});
+
+	$('.toggle-mnu,.exit').click(function() {
+		$('#sidebar').toggleClass('visible');
+	});
+
+	$('.mobile-search,.closes').click(function() {
+		$('.searchmob').toggleClass('visible');
+	});
+
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");

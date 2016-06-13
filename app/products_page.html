@@ -34,7 +34,23 @@
 	</head>
 
 	<body>
-	
+		<div id="sidebar"> 
+			<ul>
+				<li><a href="#">Головна</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Бренди</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">Акції</a></li>
+				<li><a href="#">Контакти</a></li>
+				<li><a class="exit" href="#">Х-Вихід</a></li>
+			</ul>
+		</div>
+		<div class="searchmob">
+			<div class="description">
+				<span class="closes">X</span>
+				<input type="search" id="search" placeholder="Search..." />	
+			</div>	  
+		</div>
 	<header>
 		
 		<div class="pre-topline">
@@ -110,13 +126,15 @@
 	<div class="wpr">
 
 		<div class="container">
-			<ul class="breadcrumb">
-				<li><a href="#">Головна</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li class="active">Вудилища</li>
-			</ul>
-
-			<div class="col-md-3">
+			<div class="row">
+				<ul class="breadcrumb">
+					<li><a href="#">Головна</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li class="active">Вудилища</li>
+				</ul>
+				<div class="filter-btn hidden-lg hidden-md">Фільтр</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
 				<div class="filter">
 					<div class="part">
 						<div class="title">Вудилища</div>
@@ -131,17 +149,17 @@
 					</div>
 					<form class="advance_search">
 						<div class="title">Фільтр товарів</div>
-						<div class="price">
+						<div class="price col-md-12 col-sm-3">
 							<div class="sect-title">Ціна</div>
 							<div class="value">
 								від
-								<input type="number" value="0"> до <input type="number" value="1290">
+								<input type="number" value="0"><br/> до &nbsp;<input type="number" value="1290">
 							</div>
 						</div>
-						<div class="companies">
+						<div class="companies col-md-12 col-sm-4">
 							<div class="sect-title">Виробник</div>
 							<div class="comp-wrapper">
-								<input type="checkbox">Ali<br />
+								<input type="checkbox">AliAliAliAli<br />
 								<input type="checkbox">Ali<br />
 								<input type="checkbox">Ali<br />
 								<input type="checkbox">Ali<br />
@@ -159,7 +177,7 @@
 								<input type="checkbox">Ali<br />
 							</div>
 						</div>
-						<div class="metric">
+						<div class="metric col-md-12 col-sm-2">
 							<div class="sect-title">Довжина</div>
 							<div class="length-wrapper">
 								<input type="checkbox">1<br />
@@ -168,12 +186,15 @@
 								<input type="checkbox">4<br />
 							</div>
 						</div>
-						<input type="submit" value="Застосувати">
+						<div class="col-md-12">
+							<input type="submit" value="Застосувати">
+						</div>
 					</form>
+					<div class="clear"></div>
 				</div>
 			</div>
 
-			<div class="col-md-9">
+			<div class="col-md-9 col-sm-12">
 				<div class="overview-wrp">
 					<div class="col-sm-4 col-md-4 col-lg-3">
 						<div class="item">
@@ -396,29 +417,14 @@
 <!-- Load Scripts -->
 <script>var scr = {"scripts":[
 	{"src" : "libs/modernizr/modernizr.js", "async" : false},
-	{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
 	{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
 	{"src" : "libs/animate/animate-css.js", "async" : false},
 	{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
 	{"src" : "js/common.js", "async" : false},
-	{"src" : "libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js", "async" : false},
 	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 </script>
 
-<script type="text/javascript" src="js/jquery-latest.min.js"></script>
-<script>
-	jQuery(document).ready(function($) {
-		$('.toggle-mnu,.exit').click(function() {
-			$('#sidebar').toggleClass('visible');
-		});
-	});
-</script>
-<script>
-	jQuery(document).ready(function($) {
-		$('.mobile-search,.closes').click(function() {
-			$('.searchmob').toggleClass('visible');
-		});
-	});
-</script>    
+<script type="text/javascript" src="libs/jquery/jquery-latest.min.js"></script>
+
 </body>
 </html>
