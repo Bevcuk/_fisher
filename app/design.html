@@ -509,8 +509,7 @@
 <script>
 $(document).ready(function(){
     $('#btn').click(function(){
-     
-var list = document.getElementById("order").getElementsByTagName('li');
+     var list = document.getElementById("order").getElementsByTagName('li');
   for(i=1; i<list.length-1; i++)
         {
             if($(list[i]).hasClass("current")) {$(list[i]).removeClass("current"); $(list[i]).css("background-color","#f0f0f0");
@@ -520,6 +519,20 @@ var list = document.getElementById("order").getElementsByTagName('li');
 });
 
 });
+</script>
+<script>
+$(document).ready(function(){
+    $('#btn2').click(function(){
+     var list = document.getElementById("order").getElementsByTagName('li');
+  for(i=2; i<list.length-1; i++)
+        {
+            if($(list[i]).hasClass("current")) {$(list[i]).removeClass("current"); $(list[i]).css("background-color","#f0f0f0");
+            if(i<list.length-1) {$(list[i]).prev().addClass("current");$(list[i]).prev().css("background-color","#E0E0E0");  } else {$(list[0]).addClass("current"); $(list[0]).css("background-color","#E0E0E0");  }
+            break;}
+        }
+});
+
+});	
 </script>
 <script>
 function On(N) { 
@@ -542,7 +555,26 @@ break;
 o[0].className='on' 
 }*/} 
 } 
-	
+function Back(N) { 
+var c=document.getElementById('order') 
+var o=document.getElementById('info'+N) 
+o=o.getElementsByTagName('form') 
+var ok=false 
+for (var i=1; i<o.length; i++) {if (o[i].className =="on" & o[i].id=="end"){return;} } 
+
+for (var i=1; i<o.length; i++) { 
+if (o[i].className=='on') { 
+o[i].className='off' 
+if (o[i-1]) { 
+o[i-1].className='on' 
+ok=true; 
+} 
+break; 
+} 
+/*if (!ok) { 
+o[0].className='on' 
+}*/} 
+} 	
 </script>
 </body>
 </html>
