@@ -230,7 +230,7 @@
 										</div>
 										<div class="col-sm-10 col-xs-9 col-xxs-6">
 											<div class="row">
-												<div class="col-sm-5 col-xs-6 col-xxs-12 tovar-description">
+												<div class="col-sm-5 col-xs-3 col-xxs-12 tovar-description">
 													<p>
 														<strong>Rfneirf</strong>	
 													</p>
@@ -243,20 +243,20 @@
 
 													</p>
 												</div>
-												<div class="availability col-sm-3 col-xs-6 col-xxs-12">
+												<div class="availability col-sm-3 col-xs-2 col-xxs-12">
 													<p class="text-success">
 														&#10004
 													</p>
 												</div>
-												<div class="col-sm-2 col-xs-6 col-xxs-12 count">
+												<div class="col-sm-2 col-xs-2 col-xxs-12 count">
 												<strong> 1 шт</strong>	
 												</div>	
-												<div class="col-sm-2 col-xs-12 col-xxs-12 price">
+												<div class="col-sm-2 col-xs-2 col-xxs-12 price">
 													<strong>800 грн</strong>
 												</div>
 											</div>
 										</div>
-										<div class="line col-md-12 "></div>
+										<div class="line col-md-12 col-lg-12 col-xs-12 col-sm-12  "></div>
 									</div>
 										<div class="table-row" >
 										<div class="col-sm-2 col-xs-3 col-xxs-6">
@@ -294,11 +294,11 @@
 												</div>
 											</div>
 										</div>
-										<div class="line col-md-12 "></div>
+										<div class="line col-md-12 col-lg-12 col-xs-12 col-sm-12 "></div>
 									</div>
 										
-										<div class="result-descriptions col-lg-12 col-md-12">
-											<div class="contacts col-lg-4 col-md-4">
+										<div class="result-descriptions col-lg-12 col-md-12 col-xs-12 col-xxs-12">
+											<div class="contacts col-lg-4 col-md-4 col-xs-4 col-xxs-4">
 												<p>
 													<a href="/shipping_na/" class="link pull-right">змінити:</a> <strong>Данні замовника:</strong>
 												</p>
@@ -307,7 +307,7 @@
 													<br>39897&nbsp;Chernivzi<br>
 												</p>
 											</div>	
-											<div class="deliveri-payment col-lg-4 col-md-4">
+											<div class="deliveri-payment col-lg-4 col-md-4 col-xs-4 col-xxs-4">
 												<p>
 													<a href="/method_na/" class="link pull-right">змінити:</a>
 													<strong>Спосіб доставки:</strong>
@@ -319,7 +319,7 @@
 												</p>
 												<span>Оплата при отриманні</span>
 											</div>
-											<div class="result-order col-lg-4 col-md-4">
+											<div class="result-order col-lg-4 col-md-4 col-xs-4 col-xxs-4">
 												<p>
 													<span>Вартість товару:</span><span class="pull-right">599&nbsp;грн</span>
 												</p>
@@ -331,14 +331,17 @@
 										</div>
 										</div>
 										</form>
+										<form name='txt' class='off' id='end'>
+										<h1 align="center">Файно дякуємо!!!!!!!</h1>
+										</form>
 										</div>		
 								</div>
 							</div>
 							<div class="panel-btn">
 								<div class="row">
-									<div class="col-xs-6 col-xxs-12 col-lg-12 col-md-12">
-										<a href="/korzina/" class="btn-back">Назад</a>
-										<a href="/korzina/" class="btn-next" id="btn" onclick='On(1); return false;'>Далі</a>
+									<div class="col-xs-12 col-xxs-12 col-lg-12 col-md-12">
+										<a href="#" class="btn-back">Назад</a>
+										<a href="#" class="btn-next" id="btn" onclick='On(1); return false;'>Далі</a>
 									</div>
 								</div>
 							</div>
@@ -508,7 +511,7 @@ $(document).ready(function(){
     $('#btn').click(function(){
      
 var list = document.getElementById("order").getElementsByTagName('li');
-  for(i=1; i<list.length; i++)
+  for(i=1; i<list.length-1; i++)
         {
             if($(list[i]).hasClass("current")) {$(list[i]).removeClass("current"); $(list[i]).css("background-color","#f0f0f0");
             if(i<list.length-1) {$(list[i]).next().addClass("current");$(list[i]).next().css("background-color","#E0E0E0");  } else {$(list[0]).addClass("current"); $(list[0]).css("background-color","#E0E0E0");  }
@@ -519,25 +522,28 @@ var list = document.getElementById("order").getElementsByTagName('li');
 });
 </script>
 <script>
-function On(N) {	
-	var c=document.getElementById('order')
-	var o=document.getElementById('info'+N)
-	o=o.getElementsByTagName('form')
-	var ok=false
-	for (var i=0; i<o.length; i++) {
-		if (o[i].className=='on')  {
-			o[i].className='off'
-			if (o[i+1]) {
-				o[i+1].className='on'
-				ok=true
-			}
-			break
-		}
-	}
-	if (!ok) {
-		o[0].className='on'
-	}
-}
+function On(N) { 
+var c=document.getElementById('order') 
+var o=document.getElementById('info'+N) 
+o=o.getElementsByTagName('form') 
+var ok=false 
+for (var i=0; i<o.length; i++) {if (o[i].className =="on" & o[i].id=="end"){return;} } 
+
+for (var i=0; i<o.length; i++) { 
+if (o[i].className=='on') { 
+o[i].className='off' 
+if (o[i+1]) { 
+o[i+1].className='on' 
+ok=true; 
+} 
+break; 
+} 
+/*if (!ok) { 
+o[0].className='on' 
+}*/} 
+
+
+} 
 function Off(N) {	
 	var o=document.getElementById('info'+N)
 	o=o.getElementsByTagName('form')
