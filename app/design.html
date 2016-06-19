@@ -340,7 +340,7 @@
 							<div class="panel-btn">
 								<div class="row">
 									<div class="col-xs-12 col-xxs-12 col-lg-12 col-md-12">
-										<a href="#" class="btn-back">Назад</a>
+										<a href="#" class="btn-back" id="btn2" onclick='Back(1); return false;'>Назад</a>
 										<a href="#" class="btn-next" id="btn" onclick='On(1); return false;'>Далі</a>
 									</div>
 								</div>
@@ -541,27 +541,8 @@ break;
 /*if (!ok) { 
 o[0].className='on' 
 }*/} 
-
-
 } 
-function Off(N) {	
-	var o=document.getElementById('info'+N)
-	o=o.getElementsByTagName('form')
-	var ok=false
-	for (var i=0; i<o.length; i++) {
-		if (o[i].className=='off') {
-			o[i].className='on'
-			if (o[i+1]) {
-				o[i+1].className='off'
-				ok=true
-			}
-			break
-		}
-	}
-	if (!ok) {
-		o[0].className='off'
-	}
-}	
+	
 </script>
 </body>
 </html>
