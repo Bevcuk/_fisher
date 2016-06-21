@@ -186,11 +186,12 @@ body textarea:required:valid
 				display: inline-block
 				img
 					background-image: url(../img/woood.jpg)
-					width: 180px
+					width: 170px
 			.subc-name
 				font-size: em(20px)
 				padding: 7px 0 3px
 				color: $header-color
+
 			.subc-s-item
 				font-size: em(14)
 				padding: 2px 0
@@ -251,18 +252,25 @@ body textarea:required:valid
 			margin: 0 auto
 			padding: 0
 			.stock-a
+				display: block
 				img
 					width: 200px
 			.stock-name
+				position: relative
 				display: block
-				font-size: em(16px)
-				padding: 10px 0
+				margin: 5px auto 3px
 				color: $braun-a
+				height: 48px
 				overflow: hidden
-				text-overflow: -o-ellipsis-lastline
-				display: -webkit-box
-				-webkit-line-clamp: 2
-				-webkit-box-orient: vertical
+				&:after
+					position: absolute
+					text-align: right
+					content: ""
+					bottom: 0
+					right: 0
+					width: 70%
+					height: 18px
+					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
 			&:hover
 				a
 					text-decoration: none
@@ -283,15 +291,21 @@ body textarea:required:valid
 				img
 					width: 200px
 			.new-name
+				position: relative
 				display: block
-				font-size: em(16px)
-				padding: 10px 0
+				margin: 5px auto 3px
+				height: 48px
 				color: $braun-a
 				overflow: hidden
-				text-overflow: -o-ellipsis-lastline
-				display: -webkit-box
-				-webkit-line-clamp: 2
-				-webkit-box-orient: vertical
+				&:after
+					position: absolute
+					text-align: right
+					content: ""
+					bottom: 0
+					right: 0
+					width: 70%
+					height: 18px
+					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(139,162,141) 95%)
 			&:hover
 				a
 					text-decoration: none
@@ -312,14 +326,21 @@ body textarea:required:valid
 					width: 200px
 			.popular-name
 				display: block
-				font-size: em(16px)
-				padding: 10px 0
+				position: relative
+				margin: 5px auto 3px
+				height: 48px
+
 				color: $braun-a
 				overflow: hidden
-				text-overflow: -o-ellipsis-lastline
-				display: -webkit-box
-				-webkit-line-clamp: 2
-				-webkit-box-orient: vertical
+				&:after
+					position: absolute
+					text-align: right
+					content: ""
+					bottom: 0
+					right: 0
+					width: 70%
+					height: 18px
+					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
 			&:hover
 				a
 					text-decoration: none
