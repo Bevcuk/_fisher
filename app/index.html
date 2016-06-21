@@ -70,9 +70,7 @@
 			<ul>
 				<li><a href="#">Головна</a></li>
 				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Бренди</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Акції</a></li>
+				<li><a href="#">Сервіс</a></li>
 				<li><a href="#">Контакти</a></li>
 				<li><a class="exit" href="#">Х-Вихід</a></li>
 			</ul>
@@ -149,24 +147,24 @@
 				<div class="col-md-12">
 					<ul>
 						<li class="active"><a href="">Головна</a></li>
-						<li><a href="">Каталог</a></li>
-						<li><a href="">Бренди</a></li>
-						<li><a href="">Оплата</a></li>
-						<li><a href="">Акції</a></li>
-						<li><a href="">Контакти</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Сервіс</a></li>
+						<li><a href="#">Контакти</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
 		<div class="baner-section" style="background-image: url(img/img-5.jpg); ">
-			<div class="col-md-10 col-md-push-1 hidden-xs col-sm-10 wpr-baner">
-				<div class="col-md-8 col-md-push-2 baner">
+			<div class="col-md-10 col-md-push-1 col-sm-10 col-sm-push-1 hidden-xs wpr-baner">
+				<div class="col-md-8 col-md-push-2 col-sm-8 col-sm-push-2 baner">
 					<ul>
-						<li>
+						<li class="resp-w-item">
 							<div class="item">
-								<img src="img/goods/loo.png" alt="">
-								<div class="info-details">
+								<div class="img-wp col-md-5 col-sm-5">
+									<img src="img/goods/loo.png" alt="">
+								</div>
+								<div class="info-details col-md-7 col-sm-7">
 									<h1>Знижка <span>- 25%</span></h1>
 									<h2>на всі котушки фірми <b>Mikado</b></h2>
 									<h3>Пропозиція діє до <span>30.05</span></h3>
@@ -174,10 +172,12 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="resp-w-item">
 							<div class="item">
-								<img src="img/goods/loo.png" alt="">
-								<div class="info-details">
+								<div class="img-wp col-md-5 col-sm-5">
+									<img src="img/goods/loo.png" alt="">
+								</div>
+								<div class="info-details col-md-7 col-sm-7">
 									<h1>Знижка <span>- 26%</span></h1>
 									<h2>на всі котушки фірми <b>Mikado</b></h2>
 									<h3>Пропозиція діє до <span>30.05</span></h3>
@@ -185,10 +185,12 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="resp-w-item">
 							<div class="item">
-								<img src="img/goods/loo.png" alt="">
-								<div class="info-details">
+								<div class="img-wp col-md-5 col-sm-5">
+									<img src="img/goods/loo.png" alt="">
+								</div>
+								<div class="info-details col-md-7 col-sm-7">
 									<h1>Знижка <span>- 27%</span></h1>
 									<h2>на всі котушки фірми <b>Mikado</b></h2>
 									<h3>Пропозиція діє до <span>30.05</span></h3>
@@ -196,6 +198,7 @@
 								</div>
 							</div>
 						</li>
+												
 					</ul>
 				</div>
 				<div class="slider-nav">
@@ -588,25 +591,34 @@
 <script type="text/javascript" src="js/slider.js"></script>
 
 <script>
-(function() {
-	var container = $('div.baner').css('overflow', 'hidden').children('ul');
-	var slider = new Slider( container, $('.slider-nav') );
+	(function() {
+		var container = $('div.baner').children('ul');
+		var slider = new Slider( container, $('.slider-nav') );
 
-	slider.nav.find('button').on('click', function() {
-		slider.setCurrent( $(this).data('dir') );
-		slider.transition();
-	});
-})();
+		slider.nav.find('button').on('click', function() {
+			slider.setCurrent( $(this).data('dir') );
+			slider.transition();
+		});
+
+		//define slider behavior after resizing the window
+		$(window).resize(function() {
+			var cur_item_width = $(".baner").width();
+			$(".resp-w-item").css('width', cur_item_width);
+			slider.resize_transition();
+		})
+	})();
 </script>
+
 <script>
-	jQuery(document).ready(function($) {
+
+	$(document).ready(function($) {
 		$('.toggle-mnu,.exit').click(function() {
 			$('#sidebar').toggleClass('visible');
 		});
 	});
 </script>
 <script>
-	jQuery(document).ready(function($) {
+	$(document).ready(function($) {
 		$('.mobile-search,.closes').click(function() {
 			$('.searchmob').toggleClass('visible');
 		});

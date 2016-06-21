@@ -51,7 +51,8 @@ body textarea:required:valid
 		background-color: rgba(200, 209, 200, 0.5)
 		.arrow
 			position: absolute
-			top: 128px
+			top: 50%
+			transform: translate(0, -50%)
 			width: 64px
 			height: 64px
 			padding: 0
@@ -73,12 +74,12 @@ body textarea:required:valid
 			background-image: url(../img/icons/right-arrow.png)
 		.baner
 			position: relative
-			list-style: none 
-			padding: 0
-			margin: 0
 			display: block
-			height: 320px
+			margin: 0
+			padding: 0
+			height: 100%
 			overflow: hidden
+			list-style: none 
 			ul
 				width: 10000px
 				height: 100%
@@ -93,22 +94,19 @@ body textarea:required:valid
 			.item
 				display: inline-block
 				margin: 0
+				height: 100%
 				width: 100%
-				img
-					position: absolute
-					float: left
+				.img-wp
 					top: 50%
+					// /min-width: 230px
 					transform: translate(0, -50%)
-					width: 40%
-					max-width: 260px
+					img
+						width: 100%
 				.info-details
-					position: absolute
-					float: left
-					margin: 20px 0
-					margin-left: 40% 
-					width: 55%
-					text-align: center
+					text-align: center 
 					color: #2A2A2A
+					top: 40%
+					transform: translate(0, -40%)
 					h1
 						margin-bottom: 5px
 						font-size: em(36px)

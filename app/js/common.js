@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	//little trick for slider
+	cur_item_width = $(".baner").width();
+	$(".resp-w-item").css('width', cur_item_width);
+
 	//fitler in small resolutions
 	$(".filter-btn").click(function() {
 		$(this).toggleClass("on");
@@ -17,11 +21,6 @@ $(document).ready(function() {
 		$(".forward-call").fadeOut(300);
 	});
 
-/*	$("body").click(function(e) {
-		if (!$(e.target).closest(".forward-modal").length){
-			$("forward-call").fadeOut(300);
-		}
-	});*/
 
 	//menu clicking
 	$('.toggle-mnu,.exit').click(function() {
@@ -75,5 +74,4 @@ $(document).ready(function() {
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-
 });
