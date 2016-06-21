@@ -11,6 +11,7 @@
 	<title>Товари категорії</title>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 
 
 		<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
@@ -34,6 +35,38 @@
 	</head>
 
 	<body>
+		<div class="forward-call">
+			<div class="container">
+					<div class="forward-modal" >
+						<div class="close">&times;</div>
+						<form class="forward-form" method="post">
+							<h2>Зворотній зв’язок</h2>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="input_phone">
+										Ваш телефон * 
+									</label>
+									<input id="input_phone" type="text" class="form-control" placeholder="0668570522" value>
+								</div>
+								<div class="form-group">
+									<label for="input_email">
+										 E-mail *
+									</label>
+									<input id="input_email" type="email" class="form-control" placeholder="yulya.lukanyuk@gmail.com" value>
+								</div>
+								<div class="form-group">
+									Коментар
+									<textarea id="input_comment" class="form-control-high" rows="4" name="comment"></textarea>
+								</div>
+								<div class="form-group-b">
+									<button type="submit" class="btn">Надіслати заявку</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div id="sidebar"> 
 			<ul>
 				<li><a href="#">Головна</a></li>
@@ -59,7 +92,7 @@
 					<div class="contacts">
 						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
 						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
-						<div class="callback" style="background-image: url(img/callback.png);"><a href="/">Замовити дзвінок</a></div>
+						<div class="callback" style="background-image: url(img/callback.png);">Замовити дзвінок</div>
 					</div>
 				</div>
 			</div>
@@ -153,11 +186,11 @@
 							<div class="sect-title">Ціна</div>
 							<div class="value">
 								від
-								<input type="number" value="0"><br/> до &nbsp;<input type="number" value="1290">
+								<input type="number" value="0" min="0"><br/> до &nbsp;<input type="number" value="1290" min="0" max="99999">
 							</div>
 						</div>
 						<div class="companies col-md-12 col-sm-4">
-							<div class="sect-title">Виробник</div>
+							<div class="sect-title">Бренд</div>
 							<div class="comp-wrapper">
 								<input type="checkbox">AliAliAliAli<br />
 								<input type="checkbox">Ali<br />
@@ -215,7 +248,7 @@
 							<a href="/" class="stock-a">
 								<img src="img/goods/18460347.jpg" alt="item">
 							</a>
-							<a href="/" class="stock-name">Леска Prologic XLNT HP Camo</a>
+							<a href="/" class="stock-name">Леска Prologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP Camo</a>
 							<div class="info-row">
 								<div class="price">254.00 грн.</div>
 								<div class="brand">
@@ -372,7 +405,7 @@
 
 				</div>
 
-				<div class="footer-contacts col-md-4 col-sm-4">
+				<div class="footer-contacts col-md-4 col-sm-5">
 						<p class="">м.Чернівці, вул. Калинівська 141 б</p>
 						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 502 181</div>
 						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 112 121</div>
@@ -425,6 +458,15 @@
 </script>
 
 <script type="text/javascript" src="libs/jquery/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script>
+	(function($){
+        $(window).on("load",function(){
+            $(".comp-wrapper").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 
 </body>
 </html>

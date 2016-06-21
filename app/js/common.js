@@ -5,6 +5,25 @@ $(document).ready(function() {
 		$(".filter").slideToggle();
 	});
 
+	//forward call
+	$(".callback").click(function(e) {
+		e.preventDefault();
+		$(".forward-call").fadeIn(300, function() {
+			$(this).focus();
+		});
+	});
+
+	$(".close").click(function() {
+		$(".forward-call").fadeOut(300);
+	});
+
+/*	$("body").click(function(e) {
+		if (!$(e.target).closest(".forward-modal").length){
+			$("forward-call").fadeOut(300);
+		}
+	});*/
+
+	//menu clicking
 	$('.toggle-mnu,.exit').click(function() {
 		$('#sidebar').toggleClass('visible');
 	});
