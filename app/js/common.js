@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 	//fitler in small resolutions
 	$(".filter-btn").click(function() {
-		$(this).toggleClass("on");
+		$(this).toggleClass("off");
 		$(".filter").slideToggle();
 	});
 
@@ -24,10 +24,12 @@ $(document).ready(function() {
 
 	//menu clicking
 	$('.toggle-mnu,.exit').click(function() {
+		$(this).toggleClass("on");
 		$('#sidebar').toggleClass('visible');
 	});
 
-	$('.mobile-search,.closes').click(function() {
+	//search in small resolutions
+	$('.mobile-search, .closes').click(function() {
 		$('.searchmob').toggleClass('visible');
 	});
 

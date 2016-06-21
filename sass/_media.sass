@@ -22,7 +22,6 @@
 				img
 					width: 150px !important
 			.enter
-				//margin-left: 5% !important
 				background-size: 30px auto
 			.basket
 				margin-top: 35px
@@ -41,11 +40,7 @@
 					width: 30px
 					height: 30px
 	.baner-section
-		visibility: hidden
-	.categories	
-		.subcategory-section
-			//margin-left: 5% !important
-			//margin-right: 5% !important
+		display: none
 
 	.animated
 		/*CSS transitions*/
@@ -213,6 +208,9 @@ header
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 993px)
 	/**/
+	#sidebar
+		display: none !important
+
 	header 
 		.top-line 
 			.logo 
@@ -240,8 +238,6 @@ header
 			margin-left: 0
 			margin-bottom: 0
 			.subcategory-item
-			//	padding: 0 15px	
-			//margin: 0 auto	
 				margin: 1%			
 	.kinds 
 		.kind-section 
@@ -270,10 +266,7 @@ header
 		.subcategory-section
 			margin-left: 0
 			margin-bottom: 0
-			//margin-right: 6%
-			.subcategory-item
-				//margin-right: 30px
-				//align: center !important 			
+		
 	.kinds 
 		.kind-section 
 			.kind 
@@ -283,16 +276,7 @@ header
 					a 
 						margin: 0 auto
 					figcaption	
-						text-align: center
-		.col-lg-10 
-			//margin-left: 12%
-			//padding-left: 0%			
-	.capital-stock
-		.stock-item
-			//padding-left: 30px
-	.new 
-		.new-item		
-			//margin-left: 3.7%
+						text-align: center		
 
 	//MEDIA FOR PRODUCTS PAGE
 	.wpr
