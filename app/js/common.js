@@ -24,13 +24,12 @@ $(document).ready(function() {
 
 	//menu clicking
 	$('.toggle-mnu,.exit').click(function() {
-		$(this).toggleClass("on");
-		$('#sidebar').toggleClass('visible');
+		$('.sidebar').toggleClass('visible-sb');
 	});
 
 	//search in small resolutions
-	$('.mobile-search, .closes').click(function() {
-		$('.searchmob').toggleClass('visible');
+	$('.m-search, .closes').click(function() {
+		$('.searchmob').toggleClass('visible-smob');
 	});
 
 
