@@ -342,7 +342,7 @@
 								<div class="row">
 									<div class="col-xs-12 col-xxs-12 col-lg-12 col-md-12">
 										<a href="#" class="btn-back" id="btn2" onclick='Back(1); return false;'>Назад</a>
-										<a href="#" class="btn-next" id="btn" onclick='On(1); return false; Visible();' >Далі</a>
+										<a href="#" class="btn-next" id="btn" onclick='On(1); return false;Enable(1);' >Далі</a>
 									</div>
 								</div>
 							</div>
@@ -561,7 +561,7 @@ var c=document.getElementById('order')
 var o=document.getElementById('info'+N) 
 o=o.getElementsByTagName('form') 
 var ok=false 
-for (var i=1; i<o.length; i++) {if (o[i].className =="on" & o[i].id=="end"){return;}  } 
+for (var i=1; i<o.length; i++) {if (o[i].className =="on" & o[i].id=="end"){return;} }
 
 for (var i=1; i<o.length; i++) { 
 if (o[i].className=='on') { 
