@@ -26,7 +26,7 @@ body
 .main-mnu
 	position: relative
 	height: 42px
-	font-size: em(16px)
+	font-size: 16px
 	background-image: url(../img/woood.jpg)
 	box-shadow: inset 0 -1px 14px rgba(0, 0, 0, 1)
 	.container
@@ -116,7 +116,6 @@ header
 			img
 				width: 275px
 				margin-top: 25px
-	
 		.enter
 			margin-top: 58px
 			line-height: 2.5
@@ -158,81 +157,6 @@ header
 				text-align: center
 			img
 				height: 39px
-		//ТО є пошук				
-		.search
-			position: relative
-			margin-top: 75px
-			width: 370px
-			font-size: em(12px)		
-		.form-wrapper 
-			width: 340px
-		    padding: 0px
-		    float: center
-		    background: $red-acs
-		    background: rgba(0,0,0,.2)
-		    border-radius: 6px
-		    box-shadow: 0 0 3px rgba(0,0,0,0.3)
-		/* Стиль поля вводу тексту */
-		.form-wrapper input 
-		    width: 340px
-		    height: 27px
-		    padding: 6px 10px
-		    border: 6px
-		    float: left  
-		    background: #FFFFFF
-		    border-radius: 3px 0 0 3px    
-		.form-wrapper input:focus 
-		    outline: 0
-		    background: #fff
-		    box-shadow: 0 0 0.5px rgba(0,0,0,.5) inset
-		.form-wrapper input::-webkit-input-placeholder 
-		   color: #999
-		   font-weight: normal
-		.form-wrapper input:-moz-placeholder 
-		    color: #999
-		    font-weight: normal
-		.form-wrapper input:-ms-input-placeholder 
-		    color: #999
-		    font-weight: normal
-		/*То є кнопка відправки форми*/
-		.form-wrapper button 
-		    overflow: visible
-		    position: relative
-		    float: right
-		    border: 0
-		    padding: 0
-		    cursor: pointer
-		    height: 27px
-		    width: 30px
-		    font: 14px 'RobotoBold'
-		    color: #fff
-		    text-transform: uppercase
-		    background: $red-acs
-		    border-radius: 0 3px 3px 0     
-		    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3)
-		.form-wrapper button:hover   
-		    background: #e54040
-		.form-wrapper button:active,
-		.form-wrapper button:focus  
-		    background: #c42f2f
-		    outline: 0  
-		.form-wrapper button:before  /* стрілка вліво */
-		    content: ''
-		    position: absolute
-		    border-width: 8px 8px 8px 0
-		    border-style: solid solid solid none
-		    border-color: transparent $red-acs transparent
-		    top: 7px
-		    left: -6px
-		.form-wrapper button:hover:before
-		    border-right-color: #e54040
-		.form-wrapper button:focus:before,
-		.form-wrapper button:active:before
-		    border-right-color: #c42f2f
-		.form-wrapper button::-moz-focus-inner  /* ТО для  Mozilla Firefox */
-		    border: 0
-		    padding: 0				
-		//ТО Є кінець пошуку   
 		
 		//Mobile menu
 		.toggle-mnu
@@ -262,7 +186,68 @@ header
 				transition: all 0.3s
 				backface-visibility: hidden
 				border-radius: 2px
-
+//ТО є пошук				
+.form-wrapper 
+	width: 340px
+	padding: 0px
+	float: center
+	background: $red-acs
+	background: rgba(0,0,0,.2)
+	border-radius: 6px
+	box-shadow: 0 0 3px rgba(0,0,0,0.3)
+	.search
+		position: relative
+		margin-top: 75px
+		width: 370px
+		font-size: 12px	
+		/* Стиль поля вводу тексту */
+		input 
+			width: 340px
+			height: 27px
+			padding: 6px 10px
+			float: left  
+			background: #FFFFFF
+			border-radius: 3px 0 0 3px
+			border-color: transparent  
+			&:focus 
+				outline: none
+				background: #fff
+				box-shadow: 0 0 0.5px rgba(0,0,0,.5)
+		/*То є кнопка відправки форми*/
+		button 
+			overflow: visible
+			position: relative
+			float: right
+			border: 0
+			padding: 0
+			cursor: pointer
+			height: 27px
+			width: 30px
+			font: 14px 'RobotoBold'
+			color: #fff
+			text-transform: uppercase
+			background: $red-acs
+			border-radius: 0 3px 3px 0
+			text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3)
+			&:hover
+				background: #e54040
+			&:focus  
+				background: #c42f2f
+				outline: 0  
+			&:before  /* стрілка вліво */
+				content: ''
+				position: absolute
+				border-width: 8px 8px 8px 0
+				border-style: solid solid solid none
+				border-color: transparent $red-acs transparent
+				top: 7px
+				left: -6px
+			&:hover:before
+				border-right-color: #e54040
+			&:focus:before,
+			&:active:before
+				border-right-color: #c42f2f			
+			//ТО Є кінець пошуку
 .forward-call
 	position: absolute
 	display: none
@@ -347,28 +332,28 @@ header
 						background-color: $red-acs
 
 .sidebar 
-	position: absolute
+	position: fixed
 	display: block
 	width: 200px
 	height: 100%
 	left: -200px
 	top: 0
-	opacity: 0.9
 	z-index: 200
-	background: #151718
-	transition: left 0.3s linear 
+	background-color: rgba(6,6,6, 0.9)
 	ul
+		padding: 0 12px
 		li
 			list-style: none
-			margin-left: -31px
-			margin-bottom: 5px
 			a
-				border-bottom: 1px solid 
 				display: block
-				width: 180px
-				padding: 10px
-				text-decoration: none
+				padding: 8px 12px
+				font-size: 16px
 				color: #fff	
+				text-decoration: none
+				border-bottom: 1px solid 
+				&:hover
+					padding-left: 15px
+					font-weight: bold
 			.exit
 				color: $red-acs
 .visible-sb
@@ -383,37 +368,50 @@ header
 		cursor: pointer
 
 .searchmob
-	position: absolute
+	position: fixed
 	display: block
 	height: 100%
 	width: 100%
-	opacity: 0.9
 	top: -100%
 	left: -100%
-	background: #151718	
-	transition: left 0.3s linear
-	span
-		color: #fff
-		display: block
-		margin-left: 70%
-		margin-top: 40%
-		font-size: 25px
-		cursor: pointer
-	#search
-		width: 300px
-		height: 50px
-		background: #2b303b
-		border: none
-		font-size: 10pt
-		float: left;
-		color: #262626
-		padding-left: 45px
-		-webkit-border-radius: 5px
-		-moz-border-radius: 5px
-		border-radius: 5px
-		color: #fff
-		margin-top: 2%
-		margin-left: 28%
+	background-color: rgba(0,0,0, 0.92)
+	.search-wpr
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		.form-wrapper
+			.search
+				margin: 0
+				position: relative
+				font-size: 16px
+				width: 378px
+				/* Стиль поля вводу тексту */
+				input 
+					height: 38px
+					padding: 12px 10px     
+				/*То є кнопка відправки форми*/
+				button
+					height: 38px
+					width: 38px
+					&:before
+						top: 12px
+		.closes
+			position: absolute
+			display: block
+			cursor: pointer
+			top: 6px
+			right: -48px
+			width: 26px
+			height: 26px
+			color: #FFF
+			font-size: 22px
+			line-height: 28px
+			text-align: center
+			border-radius: 13px
+			background-color: rgba(120,120,120, .8)
+			&:hover
+				background-color: rgba(120,120,120, .7)
 .visible-smob
 	left: 0
 	top: 0
