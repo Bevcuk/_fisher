@@ -64,6 +64,8 @@
 			vertical-align: middle
 			text-transform: none
 			margin-top: 20px
+			&:hover
+				opacity: 0.9
 			.add2cart_handler
 				border: none
 				height: 60px
@@ -76,6 +78,10 @@
 			font-size: 25px
 		.pi_shippay_buttons_wrp
 			margin-top: 10px
+			display: block
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
 			.guarantees 
 				padding-top: 10px
 	.main_row_cell
@@ -126,7 +132,8 @@
 						text-overflow: ellipsis	
 					.buy 
 						button
-							background: none repeat scroll 0 0 $header-color
+							background-color: #355440//не чіпай
+							opacity: 1
 							border-style: none
 							color: #fff
 							cursor: pointer
@@ -176,6 +183,7 @@
 				.vertical-middle
 					display: block
 					text-align: center
+					margin-top: 10px
 				.image-recommendations
 					width: 200px  
 					margin: 0 auto

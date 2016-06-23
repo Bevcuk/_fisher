@@ -126,7 +126,7 @@
 									<div class="row">
 									<div id='info1'>
 									<form name='txt' class='on'>
-										<div class=" login-panel-half col-md-8 col-sm-8 col-lg-8 col-lg-push-2  col-md-push-2 col-sm-push-2 col-xs-push-2">
+										<div class=" login-panel-half col-xs-8 col-md-8 col-sm-8 col-lg-8 col-lg-push-2  col-md-push-2 col-sm-push-2 col-xs-push-2">
 											<div class="auth">
 												<div class="cont">
 													<div class="form-group">
@@ -153,7 +153,7 @@
 										</div>
 										</form>
 										<form name='txt' class='off'>
-											<div class="login-panel-half-two login-panel-half  col-md-8 col-sm-8 col-lg-8 col-lg-push-2 col-md-push-2 col-sm-push-2 col-xs-push-2">
+											<div class="login-panel-half-two login-panel-half col-xs-8  col-md-8 col-sm-8 col-lg-8 col-lg-push-2 col-md-push-2 col-sm-push-2 col-xs-push-2">
 											<div class="auth">
 												<div class="cont">
 													<div class="form-group">
@@ -199,7 +199,7 @@
 										</div>
 									</form>
 											<form name='txt' class='off'>
-										<div class="result col-md-12 col-sm-12 col-lg-12">
+										<div class="result col-md-12 col-sm-12 col-lg-12 col-xs-12">
 										<h2>Результат</h2>
 										<div class="table-head">
 											<div class="row">
@@ -243,15 +243,15 @@
 
 													</p>
 												</div>
-												<div class="availability col-sm-3 col-xs-2 col-xxs-12">
+												<div class="availability col-sm-3 col-xs-3 col-xxs-12">
 													<p class="text-success">
 														&#10004
 													</p>
 												</div>
-												<div class="col-sm-2 col-xs-2 col-xxs-12 count">
+												<div class="col-sm-2 col-xs-3 col-xxs-12 count">
 												<strong> 1 шт</strong>	
 												</div>	
-												<div class="col-sm-2 col-xs-2 col-xxs-12 price">
+												<div class="col-sm-2 col-xs-3 col-xxs-12 price">
 													<strong>800 грн</strong>
 												</div>
 											</div>
@@ -268,7 +268,7 @@
 										</div>
 										<div class="col-sm-10 col-xs-9 col-xxs-6">
 											<div class="row">
-												<div class="col-sm-5 col-xs-6 col-xxs-12 tovar-description">
+												<div class="col-sm-5 col-xs-3 col-xxs-12 tovar-description">
 													<p>
 														<strong>Rfneirf</strong>	
 													</p>
@@ -281,15 +281,15 @@
 
 													</p>
 												</div>
-												<div class="availability col-sm-3 col-xs-6 col-xxs-12">
+												<div class="availability col-sm-3 col-xs-3 col-xxs-12">
 													<p class="text-success">
 														&#10004
 													</p>
 												</div>
-												<div class="col-sm-2 col-xs-6 col-xxs-12 count">
+												<div class="col-sm-2 col-xs-3 col-xxs-12 count">
 												<strong> 1 шт</strong>	
 												</div>	
-												<div class="col-sm-2 col-xs-12 col-xxs-12 price">
+												<div class="col-sm-2 col-xs-3 col-xxs-12 price">
 													<strong>800 грн</strong>
 												</div>
 											</div>
@@ -333,6 +333,7 @@
 										</form>
 										<form name='txt' class='off' id='end'>
 										<h1 align="center">Файно дякуємо!!!!!!!</h1>
+										<h4 align="center"><a href="catalogue.html ">Повернутися до покупок :)</a></h4>
 										</form>
 										</div>		
 								</div>
@@ -341,7 +342,7 @@
 								<div class="row">
 									<div class="col-xs-12 col-xxs-12 col-lg-12 col-md-12">
 										<a href="#" class="btn-back" id="btn2" onclick='Back(1); return false;'>Назад</a>
-										<a href="#" class="btn-next" id="btn" onclick='On(1); return false;'>Далі</a>
+										<a href="#" class="btn-next" id="btn" onclick='On(1); return false; Visible();' >Далі</a>
 									</div>
 								</div>
 							</div>
@@ -560,7 +561,7 @@ var c=document.getElementById('order')
 var o=document.getElementById('info'+N) 
 o=o.getElementsByTagName('form') 
 var ok=false 
-for (var i=1; i<o.length; i++) {if (o[i].className =="on" & o[i].id=="end"){return;} } 
+for (var i=1; i<o.length; i++) {if (o[i].className =="on" & o[i].id=="end"){return;}  } 
 
 for (var i=1; i<o.length; i++) { 
 if (o[i].className=='on') { 
@@ -571,10 +572,12 @@ ok=true;
 } 
 break; 
 } 
+
 /*if (!ok) { 
 o[0].className='on' 
 }*/} 
 } 	
+
 </script>
 </body>
 </html>

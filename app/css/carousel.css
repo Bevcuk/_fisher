@@ -8,7 +8,8 @@
 
 .carousel img {
   width: 190px;
-  height: 180px;
+  height: 190px;
+  margin: 0 auto;
   /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
 
   display: block;
@@ -46,7 +47,7 @@
 
 .gallery ul {
   height: 190px;
-  width: 9999px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;

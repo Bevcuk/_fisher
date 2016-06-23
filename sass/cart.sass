@@ -3,7 +3,7 @@
 .content
 	padding: 0
 	.breadcrumb
-		font-size: em(12px)
+		font-size: 12px
 		ul 
 			text-align: left
 			padding: 0
@@ -27,7 +27,6 @@
 			.cart-logo
 				margin-top: -65px
 			.description-text
-				margin-left: -50px	
 				margin-top: -20px
 				color: #fff		
 	.order-type
@@ -38,6 +37,9 @@
 				border-color: #F0F0F0
 				.panel-cart
 					.panel-body
+						h3 
+							small 
+								opacity: 0.3
 						.table-head	
 							.row
 								background-color: #F0F0F0
@@ -53,18 +55,19 @@
 							.product-image
 							img
 								width: 100%
-								height: 100%
+								height: 100%	
 							.availability
 								text-align: center
-								font-size: em(35px)
+								font-size: 35px
 								color: #68CA85	
 							.count 
 								input
-									font-size: em(14px)
-									line-height: 25px
+									font-size: 14px
+									line-height: 22px
 									margin-top: 50px
 									text-align: center
 									width: 100%	
+									outline: none
 							.price
 								margin-top: 50px
 								text-align: center	
@@ -77,8 +80,11 @@
 									border: solid
 									border-radius: 6px
 									border-color: #F0F0F0
+									width: 95px
+									&:hover
+										border-color: #CACACA	
 								.button2
-									margin-left: 30px
+									margin-left: 30px		
 						.delivery
 							strong
 							.pad
@@ -99,6 +105,8 @@
 								margin-top: 20px
 								text-align: center
 								display: block
+								&:hover
+									opacity: 0.9 
 							.to_checkout
 								background-color: #C70D1D
 			.tovar-left
@@ -108,16 +116,42 @@
 					padding: 5px 5px 5px 15px	
 				.panel-body
 					padding-left: 15px
-					font-size: em(14px)
+					font-size: 14px
 				i 
-					font-size: em(40px)
+					font-size: 40px
 					float: right
 					margin-top: -35px	
 						
-.garusel-slider
-	.text
-		text-align: center	
-		margin-top: 20px	
+.recommendations
+	height: 400px
+	margin-top: 40px
+	.nav-tabs
+		text-align: center
+		border-bottom: 2px solid #F0F0F0
+		height: 30px
+		margin: 0
+		padding: 0
+		a 
+			text-decoration: none
+			color: #000 
+			border: 2px solid #F0F0F0
+			border-bottom: none
+			padding: 6px 15px 6px
+			background: #fff
+	.tab-pane
+		padding-top: 50px
+		.panel-recommendations-item
+				.vertical-middle
+					display: block
+					text-align: center
+					margin-top: 10px
+				.image-recommendations
+					width: 200px  
+					margin: 0 auto
+					text-overflow: -o-ellipsis-lastline
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
 
 	
 
