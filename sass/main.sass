@@ -51,7 +51,8 @@ body textarea:required:valid
 		background-color: rgba(200, 209, 200, 0.5)
 		.arrow
 			position: absolute
-			top: 128px
+			top: 50%
+			transform: translate(0, -50%)
 			width: 64px
 			height: 64px
 			padding: 0
@@ -73,12 +74,12 @@ body textarea:required:valid
 			background-image: url(../img/icons/right-arrow.png)
 		.baner
 			position: relative
-			list-style: none 
-			padding: 0
-			margin: 0
 			display: block
-			height: 320px
+			margin: 0
+			padding: 0
+			height: 100%
 			overflow: hidden
+			list-style: none 
 			ul
 				width: 10000px
 				height: 100%
@@ -93,22 +94,19 @@ body textarea:required:valid
 			.item
 				display: inline-block
 				margin: 0
+				height: 100%
 				width: 100%
-				img
-					position: absolute
-					float: left
+				.img-wp
 					top: 50%
+					// /min-width: 230px
 					transform: translate(0, -50%)
-					width: 40%
-					max-width: 260px
+					img
+						width: 100%
 				.info-details
-					position: absolute
-					float: left
-					margin: 20px 0
-					margin-left: 40% 
-					width: 55%
-					text-align: center
+					text-align: center 
 					color: #2A2A2A
+					top: 40%
+					transform: translate(0, -40%)
 					h1
 						margin-bottom: 5px
 						font-size: em(36px)
@@ -188,11 +186,12 @@ body textarea:required:valid
 				display: inline-block
 				img
 					background-image: url(../img/woood.jpg)
-					width: 180px
+					width: 170px
 			.subc-name
 				font-size: em(20px)
 				padding: 7px 0 3px
 				color: $header-color
+
 			.subc-s-item
 				font-size: em(14)
 				padding: 2px 0
@@ -253,13 +252,25 @@ body textarea:required:valid
 			margin: 0 auto
 			padding: 0
 			.stock-a
+				display: block
 				img
 					width: 200px
 			.stock-name
+				position: relative
 				display: block
-				font-size: em(16px)
-				padding: 10px 0
+				margin: 5px auto 3px
 				color: $braun-a
+				height: 48px
+				overflow: hidden
+				&:after
+					position: absolute
+					text-align: right
+					content: ""
+					bottom: 0
+					right: 0
+					width: 70%
+					height: 18px
+					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
 			&:hover
 				a
 					text-decoration: none
@@ -280,10 +291,21 @@ body textarea:required:valid
 				img
 					width: 200px
 			.new-name
+				position: relative
 				display: block
-				font-size: em(16px)
-				padding: 10px 0
+				margin: 5px auto 3px
+				height: 48px
 				color: $braun-a
+				overflow: hidden
+				&:after
+					position: absolute
+					text-align: right
+					content: ""
+					bottom: 0
+					right: 0
+					width: 70%
+					height: 18px
+					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(139,162,141) 95%)
 			&:hover
 				a
 					text-decoration: none
@@ -304,9 +326,21 @@ body textarea:required:valid
 					width: 200px
 			.popular-name
 				display: block
-				font-size: em(16px)
-				padding: 10px 0
+				position: relative
+				margin: 5px auto 3px
+				height: 48px
+
 				color: $braun-a
+				overflow: hidden
+				&:after
+					position: absolute
+					text-align: right
+					content: ""
+					bottom: 0
+					right: 0
+					width: 70%
+					height: 18px
+					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
 			&:hover
 				a
 					text-decoration: none

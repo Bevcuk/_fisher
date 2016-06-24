@@ -3,19 +3,7 @@
 .content
 	padding: 0
 	.breadcrumb
-		font-size: 12px
-		ul 
-			text-align: left
-			padding: 0
-			list-style: outside none none
-			li 
-				display: inline-block
-			li:before
-				color: #ccc
-				content: ">"
-				display: inline-block
-				padding: 0 5px
-				font-size: 150%	
+		padding-left: 30px
 	.panel-description
 		background-color: #24492E
 		padding: 10px 0px
@@ -79,7 +67,7 @@
 									border-width: 2px !important
 									box-shadow: none !important
 									border: solid
-									border-radius: 6px
+									border-radius: 3px
 									border-color: #F0F0F0
 									width: 95px
 									&:hover
@@ -97,9 +85,8 @@
 							a
 								color: #fff
 								text-decoration: none
-								border: solid	
 								border-width: 2px	
-								border-radius: 6px
+								border-radius: 3px
 								padding: 5px 5px 
 								border-color: #F0F0F0
 								background-color: #24492E
@@ -122,41 +109,55 @@
 					font-size: 40px
 					float: right
 					margin-top: -35px	
-						
+
 .recommendations
-	height: 400px
 	margin-top: 40px
 	.nav-tabs
-		text-align: center
-		border-bottom: 2px solid #F0F0F0
-		height: 30px
 		margin: 0
 		padding: 0
-		a 
-			text-decoration: none
-			color: #000 
+		text-align: center
+		border-bottom: 2px solid #F0F0F0
+		span
+			height: 28px 
+			padding: 5px 15px 7px
 			border: 2px solid #F0F0F0
-			border-bottom: none
-			padding: 6px 15px 6px
+			border-bottom: 2px solid #FFF
 			background: #fff
 	.tab-pane
-		padding-top: 50px
-		.panel-recommendations-item
-				.vertical-middle
+		margin: 40px 0 30px
+		.popular-item
+			.popular-item-wrap
+				margin: 0 auto
+				width: 200px
+				.popular-a
+					img
+						width: 200px
+				.popular-name
 					display: block
-					text-align: center
-					margin-top: 10px
-				.image-recommendations
-					width: 200px  
-					margin: 0 auto
-					text-overflow: -o-ellipsis-lastline
-					display: -webkit-box
-					-webkit-line-clamp: 2
-					-webkit-box-orient: vertical
+					position: relative
+					margin: 5px auto 3px
+					height: 48px
 
-	
-
-
-									
-
-														
+					color: $braun-a
+					overflow: hidden
+					&:after
+						position: absolute
+						text-align: right
+						content: ""
+						bottom: 0
+						right: 0
+						width: 70%
+						height: 18px
+						background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
+				&:hover
+					a
+						text-decoration: none
+						color: $active-dark
+				.info-row
+					position: relative
+					.price
+						float: left
+					.brand
+						float: right
+						img
+							height: 25px

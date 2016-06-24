@@ -14,188 +14,205 @@
 				display: inline-block
 				padding: 0 5px
 				font-size: 150%	
-.content 
-	//background-color: $lines-color
-	.container-fluid
-		.row 
-			margin-top: 0px
-			margin-bottom: 30px
-			.booton
-				padding-left: 60px 
-		.product-name-element
-			margin: 0
-		.product-main-photo
-			img 
-				width: 350px
-				max-width: 100%
-				max-height: 100%
-		.pi_price_wrp
-			background-color: #e6d8a2
-			display: inline-block
-			font-size: 37px
-			height: 54px
-			padding: 0 20px
-			margin-top: 10px
-			&:before, &:after
-				content: ""
-				/* style */
-				background-color: #fff
-				border-radius: 10px
-				content: ""
-				display: block
-				height: 14px
-				left: 56px
-				margin-top: -87px
-				position: absolute
-				top: 51%
-				width: 14px
-				z-index: 1
-				//left: auto
-			&:before
-				border-right: medium none
-				//left: auto
-				right: 88px
-				top: 198px
-		.add2cart_wrp 
-			background-color: $pre-header-color
-			display: inline-block
-			height: 60px
-			position: relative
-			vertical-align: middle
-			text-transform: none
-			margin-top: 20px
-			&:hover
-				opacity: 0.9
-			.add2cart_handler
-				border: none
-				height: 60px
-				background-color: $pre-header-color
-				padding: 0 20px
-				font-size: 27px
-				color: #fff
-		.pb_stock
-			margin-top: 20px
-			font-size: 25px
-		.pi_shippay_buttons_wrp
-			margin-top: 10px
+
+.main-sect
+	padding: 20px 0	
+.product-name-element
+	margin: 0 10px 10px
+.container
+	.info-sect
+		padding-left: 50px
+	.product-main-photo
+		margin-left: 20px
+		img 
+			width: 100%
+			height: 100%
+	.pi_price_wrp
+		display: inline-block
+		position: relative
+		margin-top: 10px
+		padding: 0 20px
+		height: 54px
+		font-size: 34px
+		border-radius: 2px
+		background-color: #e6d8a2
+		&:before, &:after
+			position: absolute
 			display: block
-			white-space: nowrap
-			overflow: hidden
-			text-overflow: ellipsis
-			.guarantees 
-				padding-top: 10px
-	.main_row_cell
-		.top_prod_title
-			background-color: #c71606
-			color: #c71606
-			font-size: 20px
-			height: 1px
-			line-height: 1px
-			margin: 10px 0 28px
-			text-align: center
-			text-transform: uppercase	
-			span 
-				background-color: #fff
-				margin: 0
-				padding: 0 10px
-				position: relative
-				top: -12px
-				vertical-align: middle	
-			.tp_five 
-				background-color: #f3ebc4
-				border-radius: 50%
-				display: inline-block
-				height: 30px
-				line-height: 31px
-				margin: 0
-				padding: 0
-				top: -2px
-				vertical-align: middle
-				width: 30px
-		.box 
-			.product_brief_topprod 
-				height: 110px
-				border-bottom: 1px solid rgba(0,0,0,.1)
-				.brief_topprod_image
-					img 
-						max-width: 100%
-						max-height: 100%
-						min-width: 100px
-				.product_brief_topprod_right 
-					float: right
-					.pb_price 
-						font-size: em(16px)
-						font-weight: bold
-					.pb_product_name 
+			content: ""
+			height: 14px
+			width: 14px
+			left: -5px
+			top: 10px
+			z-index: 1
+			border-radius: 7px
+			background-color: #fff
+		&:before
+			top: 32px
+
+	.add2cart_handler
+		display: block
+		margin-top: 20px
+		padding: 6px 35px
+		font-size: 18px
+		border-radius: 3px
+		text-decoration: none
+		border-color: transparent
+		background-color: rgba(23, 68, 26, 0.8)
+		color: white
+		&:hover
+			background-color: rgba(23, 68, 26, 0.9)
+	.pb_stock
+		margin-top: 20px
+		font-size: 25px
+	.pi_shippay_buttons_wrp
+		display: block
+		.ship_row
+			position: relative
+			padding-top: 10px
+			img
+				position: absolute
+			a
+				padding-left: 32px
+.main_row_cell
+	.top_prod_title
+		background-color: #c71606
+		color: #c71606
+		font-size: 20px
+		height: 1px
+		line-height: 1px
+		margin: 14px 0
+		text-align: center
+		text-transform: uppercase	
+		span 
+			background-color: #fff
+			margin: 0
+			padding: 0 10px
+			position: relative
+			top: -12px
+			vertical-align: middle	
+		.tp_five 
+			background-color: #f3ebc4
+			border-radius: 50%
+			display: inline-block
+			height: 30px
+			line-height: 31px
+			margin: 0
+			padding: 0
+			top: -2px
+			vertical-align: middle
+			width: 30px
+	.box 
+		.product_brief_topprod 
+			padding: 10px 0
+			height: 120px
+			border-bottom: 1px solid rgba(0,0,0,.1)
+			.brief_topprod_image
+				img 
+					max-width: 100%
+					max-height: 100%
+					min-width: 100px
+			.product_brief_topprod_right
+				float: right
+				.pb_price 
+					font-size: em(16px)
+					font-weight: bold
+				.pb_product_name 
+					position: relative
+					display: block
+					margin: 5px auto 3px
+					height: 24px
+					width: 100%
+					color: #222
+					overflow: hidden
+					&:after
+						position: absolute
+						text-align: right
+						content: ""
+						bottom: 0
+						right: 0
+						width: 70%
+						height: 20px
+						background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
+					&:hover
+						text-decoration: none
+						color: $active-light
+
+				.buy 
+					button
 						display: block
-						white-space: nowrap
-						overflow: hidden
-						text-overflow: ellipsis	
-					.buy 
-						button
-							background-color: #355440//не чіпай
-							opacity: 1
-							border-style: none
-							color: #fff
-							cursor: pointer
-							display: inline-block
-							font-size: em(12px)
-							font-weight: bold
-							line-height: 1.42857
-							margin-bottom: 0
-							padding: 8px 15px
-							text-align: center
-							text-transform: uppercase
-							vertical-align: middle
-							transition: all .2s ease 0s
-							text-decoration: none	
+						margin-top: 3px
+						padding: 2px 15px
+						font-size: 14px
+						border-radius: 3px
+						text-decoration: none
+						border-color: transparent
+						background-color: rgba(23, 68, 26, 0.8)
+						color: white
+						&:hover
+							background-color: rgba(23, 68, 26, 0.9)
 .container-fluid-description 
 	width: 100%
 	background-color: $lines-color
+	padding-bottom: 15px
 	.section-title 
-		color: #474747
-		//font-size: 18px
+		color: #444444
+		font-size: 17px
 	.pull-right 
 		h4 
 			margin-bottom: 5px
-			margin: 0 0 15px 0
-			color: #474747
+			margin: 0 0 5px 0
+			color: #444444
 		p 
 			margin: 0
 .recommendations
-	height: 400px
 	.nav-tabs
-		text-align: center
-		border-bottom: 1px solid #ddd
-		background-color: $lines-color
-		height: 30px
 		margin: 0
 		padding: 0
-		a 
-			text-decoration: none
-			color: #000 
-			border: 1px solid #ddd
-			border-bottom: none
-			padding: 6px 15px 9px
+		text-align: center
+		background-color: $lines-color
+		span
+			height: 28px 
+			padding: 5px 15px 7px
 			background: #fff
 	.tab-pane
-		margin-top: 50px
-		.panel-recommendations-item
-				.vertical-middle
+		margin: 40px 0 30px
+		.popular-item
+			.popular-item-wrap
+				margin: 0 auto
+				width: 200px
+				.popular-a
+					img
+						width: 200px
+				.popular-name
 					display: block
-					text-align: center
-					margin-top: 10px
-				.image-recommendations
-					width: 200px  
-					margin: 0 auto
-					text-overflow: -o-ellipsis-lastline
-					display: -webkit-box
-					-webkit-line-clamp: 2
-					-webkit-box-orient: vertical
+					position: relative
+					margin: 5px auto 3px
+					height: 48px
+
+					color: $braun-a
+					overflow: hidden
+					&:after
+						position: absolute
+						text-align: right
+						content: ""
+						bottom: 0
+						right: 0
+						width: 70%
+						height: 18px
+						background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
+				&:hover
+					a
+						text-decoration: none
+						color: $active-dark
+				.info-row
+					position: relative
+					.price
+						float: left
+					.brand
+						float: right
+						img
+							height: 25px
 .table-condensed
 	tr 
 		height: 28px
-
-				
-		
-			

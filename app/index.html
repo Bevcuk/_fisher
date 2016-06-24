@@ -10,9 +10,7 @@
 
 	<title>Рибалка</title>
 	<meta name="description" content="">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Bootstrap v3.3.4 Grid Styles -->
-	
+	<link rel="stylesheet" href="css/bootstrap.css">	
 		<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
 		<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
 
@@ -34,64 +32,100 @@
 	</head>
 
 	<body>
-		<div id="sidebar"> 
+		<div class="forward-call">
+			<div class="container">
+					<div class="forward-modal" >
+						<div class="close">&times;</div>
+						<form class="forward-form" method="post">
+							<h2>Зворотній зв’язок</h2>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="input_phone">
+										Ваш телефон * 
+									</label>
+									<input id="input_phone" type="text" class="form-control" placeholder="0668570522" value>
+								</div>
+								<div class="form-group">
+									<label for="input_email">
+										 E-mail *
+									</label>
+									<input id="input_email" type="email" class="form-control" placeholder="yulya.lukanyuk@gmail.com" value>
+								</div>
+								<div class="form-group">
+									Коментар
+									<textarea id="input_comment" class="form-control-high" rows="4" name="comment"></textarea>
+								</div>
+								<div class="form-group-b">
+									<button type="submit" class="btn">Надіслати заявку</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar"> 
 			<ul>
 				<li><a href="#">Головна</a></li>
 				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Бренди</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Акції</a></li>
+				<li><a href="#">Сервіс</a></li>
 				<li><a href="#">Контакти</a></li>
 				<li><a class="exit" href="#">Х-Вихід</a></li>
 			</ul>
 		</div>
+		
 		<div class="searchmob">
-			<div class="description">
-				<span class="closes">X</span>
-				<input type="search" id="search" placeholder="Search..." />	
-			</div>	  
+			<div class="search-wpr">
+				<form class="form-wrapper">
+					<div class="search">
+						<input type="text" placeholder="Пошук товарів">
+						<button type="submit"><a href="/" class="icon-find">
+							<img src="img/serch.png" alt=""></a>
+						</button>
+						<div class="closes">&times;</div>
+					</div>
+				</form>
+			</div>
 		</div>
+
+
 		<header>
 			
 			<div class="pre-topline">
-			<div class="container">
-				<div class="col-md-push-6 col-md-6">
-					<div class="contacts">
-						<!-- <a href="/" class="callback">Замовити зворотній дзвінок</a> -->
-						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
-						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
-						<div class="callback" style="background-image: url(img/callback.png);"><a href="/">Замовити дзвінок</a></div>
+				<div class="container">
+					<div class="col-md-push-6 col-md-6">
+						<div class="contacts">
+							<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
+							<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
+							<div class="callback" style="background-image: url(img/callback.png);">Замовити дзвінок</div>
+						</div>
 					</div>
 				</div>
 			</div>
-				
-			</div>
 
 			<div class="top-line">
-
 				<div class="container">
-
 					<div class="row">
-
-						<div class=" col-sm-1 hidden-lg hidden-md col-xs-1 ">
+						<div class="col-sm-1 hidden-lg hidden-md col-xs-1">
 							<div class="mobile-mnu">
-								<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
-							</div>	
-						</div>	
-						<div class=" mobile-search col-sm-2 hidden-lg hidden-md col-xs-2">
-							<a class="m-search" href="/" ><span></span><img  src="img/mobile-search.png" alt="basket" width="35"  height="35"/></a>
+								<div class="toggle-mnu hidden-lg"><span></span></div>
+							</div>
 						</div>
-						<div class="col-md-4 col-lg-3 col-sm-5 col-xs-3 ">
-								<div class="logo">
-							<a href="/"><img src="img/logo.png" alt="Рибалка"></a>		
-								</div>
-							
 
+						<div class="mobile-search col-sm-2 hidden-lg hidden-md col-xs-2">
+							<img src="img/mobile-search.png" alt="search" class="m-search" width="35" height="35"/>
+						</div>
+						
+						<div class="col-md-4 col-lg-3 col-sm-5 col-xs-3">
+							<div class="logo">
+								<a href="/"><img src="img/logo.png" alt="Рибалка"></a>		
+								</div>
 						</div>
 						<div class="col-md-5 col-lg-6 col-sm-4 hidden-sm hidden-xs ">
 							<form class="form-wrapper">
 								<div class="search">
 									<input type="text" placeholder="Пошук товарів">
+									<!-- !!!! -->
 									<button type="submit"><a href="/" class="icon-find">
 										<img src="img/serch.png" alt=""></a>
 									</button>
@@ -112,29 +146,30 @@
 			</div>
 		</header>
 
-		<div class="main-mnu hidden-sm hidden-xs">
+		<div class="main-mnu hidden-sm">
 			<div class="container">
-				<div class="col-md-10">
+				<div class="col-md-12">
 					<ul>
 						<li class="active"><a href="">Головна</a></li>
-						<li><a href="">Каталог</a></li>
-						<li><a href="">Бренди</a></li>
-						<li><a href="">Оплата</a></li>
-						<li><a href="">Акції</a></li>
-						<li><a href="">Контакти</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Акції</a></li>
+						<li><a href="#">Сервіс</a></li>
+						<li><a href="#">Контакти</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
 		<div class="baner-section" style="background-image: url(img/img-5.jpg); ">
-			<div class="col-md-10 col-md-push-1 hidden-xs col-sm-10 wpr-baner">
-				<div class="col-md-8 col-md-push-2 col-sm-11 baner">
+			<div class="col-md-10 col-md-push-1 col-sm-10 col-sm-push-1 hidden-xs wpr-baner">
+				<div class="col-md-8 col-md-push-2 col-sm-8 col-sm-push-2 baner">
 					<ul>
-						<li>
+						<li class="resp-w-item">
 							<div class="item">
-								<img src="img/goods/loo.png" alt="">
-								<div class="info-details">
+								<div class="img-wp col-md-5 col-sm-5">
+									<img src="img/goods/loo.png" alt="">
+								</div>
+								<div class="info-details col-md-7 col-sm-7">
 									<h1>Знижка <span>- 25%</span></h1>
 									<h2>на всі котушки фірми <b>Mikado</b></h2>
 									<h3>Пропозиція діє до <span>30.05</span></h3>
@@ -142,10 +177,12 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="resp-w-item">
 							<div class="item">
-								<img src="img/goods/loo.png" alt="">
-								<div class="info-details">
+								<div class="img-wp col-md-5 col-sm-5">
+									<img src="img/goods/loo.png" alt="">
+								</div>
+								<div class="info-details col-md-7 col-sm-7">
 									<h1>Знижка <span>- 26%</span></h1>
 									<h2>на всі котушки фірми <b>Mikado</b></h2>
 									<h3>Пропозиція діє до <span>30.05</span></h3>
@@ -153,10 +190,12 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li class="resp-w-item">
 							<div class="item">
-								<img src="img/goods/loo.png" alt="">
-								<div class="info-details">
+								<div class="img-wp col-md-5 col-sm-5">
+									<img src="img/goods/loo.png" alt="">
+								</div>
+								<div class="info-details col-md-7 col-sm-7">
 									<h1>Знижка <span>- 27%</span></h1>
 									<h2>на всі котушки фірми <b>Mikado</b></h2>
 									<h3>Пропозиція діє до <span>30.05</span></h3>
@@ -164,6 +203,7 @@
 								</div>
 							</div>
 						</li>
+												
 					</ul>
 				</div>
 				<div class="slider-nav">
@@ -176,7 +216,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="category-title">Відбір по категорії</div>
-					<div class="subcategory-section col-md-3 col-sm-3 col-lg-3 col-xs-5  ">
+					<div class="subcategory-section col-md-3 col-sm-3 col-lg-3 col-xs-5">
 						<div class="subcategory-item ">
 							<a href="/" class="subc-a"><img src="img/categories/fish-udo4g5.png" alt="category"></a>
 							<a href="/" class="subc-name">Риболовні снасті</a>
@@ -200,7 +240,7 @@
 							<a href="/" class="subc-s-item">Повідки для хижаків</a>
 						</div>		
 					</div>
-					<div class="subcategory-section col-md-3 col-sm-3 col-lg-3 col-xs-4 ">
+					<div class="subcategory-section col-md-3 col-sm-3 col-lg-3 col-xs-4">
 						<div class="subcategory-item">
 							<a href="/" class="subc-a"><img src="img/categories/fish-primanww.png" alt="category"></a>
 							<a href="/" class="subc-name">Приманки і прикормки</a>
@@ -213,7 +253,7 @@
 							<a href="/" class="subc-s-item">Спреї</a>
 						</div>		
 					</div>
-					<div class="subcategory-section col-md-3 col-sm-3 col-lg-3 col-xs-5 ">
+					<div class="subcategory-section col-md-3 col-sm-3 col-lg-3 col-xs-5">
 						<div class="subcategory-item">
 							<a href="/" class="subc-a"><img src="img/categories/fish-boat-komve.png" alt="category"></a>
 							<a href="/" class="subc-name">Аксесуари риболовні</a>
@@ -233,11 +273,11 @@
 		<div class="kinds">
 			<div class="container">
 				<div class="row">
-					<div class="kind-title col-md-12 col-lg-12  col-sm-12  ">Відбір за призначенням</div>
+					<div class="kind-title col-md-12 col-lg-12 col-sm-12">Відбір за призначенням</div>
 					
-						<div class="kind-section col-lg-12 col-md-12 ">
+						<div class="kind-section col-lg-12 col-md-12">
 							<div class="kind">
-							<figure class="subkind-item  ">
+							<figure class="subkind-item">
 								<a href="/" class="subk-a"><img src="img/kinds/kind-6.png" alt="kind"></a>
 								<figcaption><a href="/" class="subk-name">Карпова <br> ловля</a></figcaption>
 							</figure>
@@ -290,7 +330,7 @@
 					<div class="stock-item col-md-3 col-sm-4 col-lg-3 ">
 						<div class="stock-item-wrap">
 							<a href="/" class="stock-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="stock-name">Леска Prologic XLNT HP Camo</a>
+							<a href="/" class="stock-name">Леска Prologic XLNT HP Camo Леска Prologic XLNT HP Camo Леска Prologic XLNT HP Camo</a>
 							<div class="info-row">
 								<div class="price">254.00 грн.</div>
 								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
@@ -344,7 +384,7 @@
 					<div class="new-item col-md-3 col-sm-4 col-lg-3">
 						<div class="new-item-wrap">
 							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="new-name">Леска Prologic XLNT HP Camo</a>
+							<a href="/" class="new-name">Леска Prologic XLNT HP Camo Леска Prologic XLNT HP Camo</a>
 							<div class="info-row">
 								<div class="price">254.00 грн.</div>
 								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
@@ -434,7 +474,7 @@
 					<div class="popular-item col-md-3 col-sm-4 col-lg-3">
 						<div class="popular-item-wrap">
 							<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
-							<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
+							<a href="/" class="popular-name">Леска Prologic XLNT HP CamoЛеска Prologic XLNT HP CamoЛеска Prologic XLNT HP CamoЛеска Prologic XLNT HP CamoЛеска Prologic XLNT HP Camo</a>
 							<div class="info-row">
 								<div class="price">254.00 грн.</div>
 								<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
@@ -475,9 +515,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-
 
 	<footer style="background-image: url(img/boat_dark.jpg);">
 		<div class="container">
@@ -491,24 +528,20 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="unit col-md-3 col-sm-3">
+				<div class="unit col-md-3 col-sm-4">
 					<ul>
 						<li><a href="">Гарантійні зобов’язання</a></li>
+						<li><a href="">Каталог товарів</a></li>
 						<li><a href="">Про компанію</a></li>
 						<li><a href="">Контакти</a></li>
-						<li><a href="">Співпраця</a></li>
-						<li><a href="">Каталог товарів</a></li>
-						<li><a href="">Каталог брендів</a></li>
 					</ul>		
-
 				</div>
-
-				<div class="footer-contacts col-md-5 col-sm-5">
-						<p class="">м.Чернівці, вул. Калинівська 141 б</p>
-						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 502 181</div>
-						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 112 121</div>
-						<div class="phone "style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
-						<div class="phone "style="background-image: url(img/mobile.png);">(066) 857 05 54</div>
+				<div class="footer-contacts col-md-4 col-sm-6">
+						<p>м.Чернівці, вул. Калинівська 141 б</p>
+						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
+						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 112 121</div>
+						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
+						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 54</div>
 				</div>
 			</div>
 
@@ -548,42 +581,34 @@
 <!-- Load Scripts -->
 <script>var scr = {"scripts":[
 	{"src" : "libs/modernizr/modernizr.js", "async" : false},
-	{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
 	{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
 	{"src" : "libs/animate/animate-css.js", "async" : false},
 	{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
 	{"src" : "js/common.js", "async" : false},
-	{"src" : "libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js", "async" : false},
 	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 </script>
 
-<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="libs/jquery/jquery-latest.min.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>
 
 <script>
-(function() {
-	var container = $('div.baner').css('overflow', 'hidden').children('ul');
-	var slider = new Slider( container, $('.slider-nav') );
+	(function() {
+		var container = $('div.baner').children('ul');
+		var slider = new Slider( container, $('.slider-nav') );
 
-	slider.nav.find('button').on('click', function() {
-		slider.setCurrent( $(this).data('dir') );
-		slider.transition();
-	});
-})();
-</script>
-<script>
-	jQuery(document).ready(function($) {
-		$('.toggle-mnu,.exit').click(function() {
-			$('#sidebar').toggleClass('visible');
+		slider.nav.find('button').on('click', function() {
+			slider.setCurrent( $(this).data('dir') );
+			slider.transition();
 		});
-	});
+
+		//define slider behavior after resizing the window
+		$(window).resize(function() {
+			var cur_item_width = $(".baner").width();
+			$(".resp-w-item").css('width', cur_item_width);
+			slider.resize_transition();
+		})
+	})();
 </script>
-<script>
-	jQuery(document).ready(function($) {
-		$('.mobile-search,.closes').click(function() {
-			$('.searchmob').toggleClass('visible');
-		});
-	});
-</script>    
+ 
 </body>
 </html>
