@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ua"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<title>Рибалка</title>
+	<style>
+		.line {
+
+			border-bottom: 1px solid #F0F0F0; /* Линия снизу текста */
+			padding: 5px; /* Поля вокруг текста */
+		}
+	</style>
+	<meta name="description" content="">
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+
+
+	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+
+	<!-- Load CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="_header.min.css">	
+		<link rel="stylesheet" href="_tovar.min.css">
+		<link rel="stylesheet" href="_footer.min.css">
+	</noscript>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+</head>
+
+<body>
+	<div class="forward-call">
+			<div class="container">
+					<div class="forward-modal" >
+						<div class="close">&times;</div>
+						<form class="forward-form" method="post">
+							<h2>Зворотній зв’язок</h2>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="input_phone">
+										Ваш телефон * 
+									</label>
+									<input id="input_phone" type="text" class="form-control" placeholder="0668570522" value>
+								</div>
+								<div class="form-group">
+									<label for="input_email">
+										 E-mail *
+									</label>
+									<input id="input_email" type="email" class="form-control" placeholder="yulya.lukanyuk@gmail.com" value>
+								</div>
+								<div class="form-group">
+									Коментар
+									<textarea id="input_comment" class="form-control-high" rows="4" name="comment"></textarea>
+								</div>
+								<div class="form-group-b">
+									<button type="submit" class="btn">Надіслати заявку</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar"> 
+			<ul>
+				<li><a href="#">Головна</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Сервіс</a></li>
+				<li><a href="#">Контакти</a></li>
+				<li><a class="exit" href="#">Х-Вихід</a></li>
+			</ul>
+		</div>
+		
+		<div class="searchmob">
+			<div class="search-wpr">
+				<form class="form-wrapper">
+					<div class="search">
+						<input type="text" placeholder="Пошук товарів">
+						<button type="submit"><a href="/" class="icon-find">
+							<img src="img/serch.png" alt=""></a>
+						</button>
+						<div class="closes">&times;</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	
+	<header>
+		
+		<div class="pre-topline">
+			<div class="container">
+				<div class="col-md-push-6 col-md-6">
+					<div class="contacts">
+						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
+						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
+						<div class="callback" style="background-image: url(img/callback.png);">Замовити дзвінок</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="top-line">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class=" col-sm-1 hidden-lg hidden-md col-xs-1">
+						<div class="mobile-mnu">
+							<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+						</div>	
+					</div>	
+					<div class=" mobile-search col-sm-3 hidden-lg hidden-md col-xs-2">
+						<img src="img/mobile-search.png" alt="search" class="m-search" width="35" height="35"/>
+					</div>
+					<div class="col-md-4 col-lg-3 col-sm-4 col-xs-3 ">
+						<a href="/" class="logo"><img src="img/logo.png" alt="Рибалка"></a>
+					</div>
+					<div class="col-md-5 col-lg-6 col-sm-4 hidden-sm hidden-xs">
+						<form class="form-wrapper cf">
+							<div class="search">
+								<input type="text" placeholder="Пошук товарів">
+								<button type="submit"><a href="/" class="icon-find">
+									<img src="img/serch.png" alt=""></a>
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-3 col-lg-3 col-sm-4 col-xs-5">
+						<a href="/" class="basket">
+							<div class="counter">4</div>
+							<img src="img/basket2.png" alt="basket" />
+						</a>
+						<div class="enter" style="background-image: url(img/icons/enter.png);">
+							<a href="/">Увійти</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+	<div class="main-mnu hidden-sm hidden-xs">
+		<div class="container">
+			<div class="col-md-12">
+				<ul>
+					<li class="active"><a href="">Головна</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Акції</a></li>
+					<li><a href="#">Сервіс</a></li>
+					<li><a href="#">Контакти</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+		<div class="container">
+			<div class="row">
+				<ul class="breadcrumb">
+					<li><a href="#">Головна</a></li>
+					<li><a href="#">Спінінги</a></li>
+					<li class="active">Favorite</li>
+				</ul>
+			</div>
+				<div class="row">
+					<div class="col-xxs-12 col-xs-12 col-md-12">
+						<h1 class="product-name-element">
+								Спиннинг Favorite Cobalt CBL-1002EXH 3.0m
+						</h1>
+					</div>
+				</div>
+				<div class="row main-sect">
+					<div class="col-xxs-12 col-xs-7 col-md-4 col-lg-4">
+						<div class="product-main-photo">
+							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+						</div>
+					</div>
+					<div class="info-sect col-xxs-12 col-xs-5 col-md-4 col-lg-4">
+						<div class="product_image_options">
+							<a href=""><img src="img/vrnt113961_525.jpg" alt=""></a>
+						</div>
+						<div class="pi_price_wrp" >
+							<span class="price_num">1250.00 грн</span>
+						</div>
+
+						<input value="Купити" name="add2cart" type="submit" title="додати в корзину" class="add2cart_handler" rel="">
+
+						<div class="pb_stock">
+							Наявність: <span style="color: #709C42;">✔</span>
+						</div>
+						<div class="pi_shippay_buttons_wrp">
+							<div class="ship_row">
+								<img src="img/deliveri.png" alt="" width="25" height="25">
+								<a href="">Умови доставки та оплати</a>
+							</div>
+							<div class="ship_row">
+								<img src="img/fa-shield.png" alt="" width="25" height="25">
+								<a>Гарантійні зобов'язання</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class=" col-md-4 col-lg-4 hidden-xs hidden-sm">
+					<div class="main_row_cell ">
+					<div class="top_prod_title">
+						<span>Рекомендуємо
+							<span class="tp_five">3</span>
+						</span>
+					</div>
+						<div class="box">
+							<div class="product_brief_topprod ">
+								<div class="brief_topprod_image">
+									<a href="" class="col-lg-4 col-md-5 "><img src="img/goods/18460347.jpg" alt="" width="200" height="100"></a>
+								</div>
+							<div class="product_brief_topprod_right col-lg-8 col-md-7 hidden-xs">
+								<div class="brief_topprod_image">
+  								<a class="pb_product_name" href="">
+  								Спиннинг Favorite Professional</a>
+  								</div>
+  							<div class="pb_price"> 
+   								 <span class="price_num">1440</span>
+   									 <small>UAH</small>
+  							</div> 
+  							<div class="buy">
+									<button type="button" title="Add to Cart" class="button btn-cart">
+									<span>Купити</span>
+									</button> 
+									 </div>
+							</div>
+							</div>
+								<div class="product_brief_topprod ">
+									<div class="brief_topprod_image">
+										<a href="" class="col-lg-4 col-md-5"><img src="img/goods/18460347.jpg" alt="" width="200" height="100"></a>
+									</div>
+							<div class="product_brief_topprod_right col-lg-8 col-md-7">
+  								<a class="pb_product_name" href="">
+  								Спиннинг Favorite Professional</a>
+  							<div class="pb_price"> 
+   								 <span class="price_num">1440</span>
+   									 <small>UAH</small>
+  							</div> 
+  							<div class="buy">
+									<button type="button" title="Add to Cart" class="button btn-cart">
+									<span>Купити</span>
+									</button> 
+									 </div>
+							</div>
+							</div>
+								<div class="product_brief_topprod ">
+									<div class="brief_topprod_image">
+										<a href="" class="col-lg-4 col-md-5"><img src="img/goods/18460347.jpg" alt="" width="200" height="100"></a>
+									</div>
+							<div class="product_brief_topprod_right col-lg-8 col-md-7">
+  								<a class="pb_product_name" href="">
+  								Спиннинг Favorite Professional</a>
+  							<div class="pb_price"> 
+   								 <span class="price_num">1440</span>
+   									 <small>UAH</small>
+  							</div> 
+  							<div class="buy">
+									<button type="button" title="Add to Cart" class="button btn-cart">
+									<span>Купити</span>
+									</button> 
+									 </div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class="container-fluid-description col-lg-12 col-md-12">
+		<div class="container">
+					<div class="section-title">
+					<h3>Характеристика товару :</h3>	
+					</div>
+					<div id="product-info" class="row push-bottom">
+				<div class="col-xs-12 col-md-6 pull-right">
+		<h4>Удилище карповое Sportex Carp Catapult Carp</h4>
+		<p>Оновлена ​​серія знаменитих сподових вудилищ Catapult Carp від німецької компанії Sportex отримала новий бланк, який дає можливість кидати ще далі, за горизонт і більш витончений дизайн.
+		Високомодульний карбон преміум-класу робить бланк більш потужним і яскравим. Вудилище оснащене кільцями Fuji SIC преміум класу. Перше кільце збільшене - 50мм, для більш далекого закидання.</p>
+</div>
+<div class="col-xs-12 col-md-5">
+	<div class="table-container">
+		<table class="table-condensed">
+			<tbody>
+				<tr>
+						<td style="width:60%">№ товара</td>
+						<td>90919595</td>
+					</tr>
+				<tr>
+						<td style="width:60%">Бренд</td>
+						<td>RAINBOW</td>
+					</tr>
+				<tr>
+						<td style="width:60%">Категорія</td>
+						<td>Риболовні товари</td>
+					</tr>
+				<tr>
+						<td style="width:60%">Підкатегорія</td>
+						<td>Вудочки</td>
+					</tr>
+				<tr>
+						<td style="width:60%">Модель</td>
+						<td>Catapult 2016 </td>
+					</tr>
+				<tr>
+						<td style="width:60%">Тип вудочки</td>
+						<td>карпова</td>
+					</tr>
+				<tr>
+						<td style="width:60%">Довжина, м</td>
+						<td>3,95</td>
+					</tr>
+				<tr>
+						<td style="width:60%">Вага</td>
+						<td>3</td>
+					</tr>
+				<tr>
+						<td style="width:60%">Секції</td>
+						<td>2</td>
+					</tr>
+				<tr>
+						<td style="width:60%">Кільця</td>
+						<td>чашка B</td>
+					</tr>
+				</tbody>
+		</table>
+	</div>
+				</div>
+				</div>
+				</div>
+				</div>
+			<div class="recommendations col-lg-12 col-md-12">
+				<div class="row">
+					<div class="nav-tabs"><span>Клієнти також обрали:</span></div>
+				</div>
+
+				<div class="tab-pane">
+					<div class="row">
+						<div class="popular-item col-md-3 col-sm-4 col-lg-3">
+							<div class="popular-item-wrap">
+								<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+								<a href="/" class="popular-name">Леска Prologic XLNT HP CamoЛеска Prologic XLNT HP CamoЛеска Prologic XLNT HP CamoЛеска Prologic XLNT HP CamoЛеска Prologic XLNT HP Camo</a>
+								<div class="info-row">
+									<div class="price">254.00 грн.</div>
+									<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
+								</div>
+							</div>
+						</div>
+						<div class="popular-item col-md-3 col-sm-4 col-lg-3">
+							<div class="popular-item-wrap">
+								<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+								<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
+								<div class="info-row">
+									<div class="price">254.00 грн.</div>
+									<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
+								</div>
+							</div>
+						</div>
+						<div class="popular-item col-md-3 col-sm-4 col-lg-3">
+							<div class="popular-item-wrap">
+								<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+								<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
+								<div class="info-row">
+									<div class="price">254.00 грн.</div>
+									<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
+								</div>
+							</div>
+						</div>
+						<div class="popular-item col-md-3 hidden-sm col-lg-3">
+							<div class="popular-item-wrap">
+								<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+								<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
+								<div class="info-row">
+									<div class="price">254.00 грн.</div>
+									<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	<footer style="background-image: url(img/boat_dark.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="social-networks ">
+					<h2>Долучайтесь до нас в соц.мережах</h2>
+					<a href=""><img src="img/icons/fb.png" alt="facebook"></a>
+					<a href=""><img src="img/icons/g+.png" alt="google+"></a>
+					<a href=""><img src="img/icons/vk.png" alt="vkontakte"></a>
+					<a href=""><img src="img/icons/twitter.png" alt="twitter"></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="unit col-md-3 col-sm-4">
+					<ul>
+						<li><a href="">Гарантійні зобов’язання</a></li>
+						<li><a href="">Каталог товарів</a></li>
+						<li><a href="">Про компанію</a></li>
+						<li><a href="">Контакти</a></li>
+					</ul>		
+
+				</div>
+
+				<div class="footer-contacts col-md-4 col-sm-6">
+						<p class="">м.Чернівці, вул. Калинівська 141 б</p>
+						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 502 181</div>
+						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 112 121</div>
+						<div class="phone "style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
+						<div class="phone "style="background-image: url(img/mobile.png);">(066) 857 05 54</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+		<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load CSS -->
+
+	<script>
+
+	//Load Libs CSS
+	var ms=document.createElement("link");ms.rel="stylesheet";
+	ms.href="libs/animate/animate.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+	//Header Styles (compress & paste to header after release)
+	var ms=document.createElement("link");ms.rel="stylesheet";
+	ms.href="css/_header.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+	//User Styles
+	var ms=document.createElement("link");ms.rel="stylesheet";
+	ms.href="css/_tovar.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+	//Footer + Media
+	var ms=document.createElement("link");ms.rel="stylesheet";
+	ms.href="css/_footer.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+</script>
+
+<!-- Load Scripts -->
+<script>var scr = {"scripts":[
+	{"src" : "libs/modernizr/modernizr.js", "async" : false},
+	{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+	{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
+	{"src" : "libs/animate/animate-css.js", "async" : false},
+	{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+	{"src" : "js/common.js", "async" : false},
+	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+</script>
+
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+
+</body>
+</html>

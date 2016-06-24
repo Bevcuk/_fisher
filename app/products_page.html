@@ -76,12 +76,21 @@
 				<li><a class="exit" href="#">Х-Вихід</a></li>
 			</ul>
 		</div>
+		
 		<div class="searchmob">
-			<div class="description">
-				<span class="closes">&times;</span>
-				<input type="search" id="search" placeholder="Search..." />	
+			<div class="search-wpr">
+				<form class="form-wrapper">
+					<div class="search">
+						<input type="text" placeholder="Пошук товарів">
+						<button type="submit"><a href="/" class="icon-find">
+							<img src="img/serch.png" alt=""></a>
+						</button>
+						<div class="closes">&times;</div>
+					</div>
+				</form>
 			</div>
 		</div>
+
 	<header>
 		
 		<div class="pre-topline">
@@ -143,8 +152,9 @@
 		<div class="container">
 			<div class="col-md-12">
 				<ul>
-					<li><a href="">Головна</a></li>
+					<li class="active"><a href="">Головна</a></li>
 					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Акції</a></li>
 					<li><a href="#">Сервіс</a></li>
 					<li><a href="#">Контакти</a></li>
 				</ul>
@@ -395,7 +405,6 @@
 						<li><a href="">Каталог товарів</a></li>
 						<li><a href="">Про компанію</a></li>
 						<li><a href="">Контакти</a></li>
-						<!-- <li><a href="">Співпраця</a></li> -->
 					</ul>		
 
 				</div>
@@ -453,8 +462,6 @@
 </script>
 
 <script type="text/javascript" src="libs/jquery/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-
 <script>
 	(function($){
         $(window).on("load",function(){

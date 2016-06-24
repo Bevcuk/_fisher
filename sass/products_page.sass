@@ -26,7 +26,6 @@ input[type=number]::-webkit-outer-spin-button
 input[type=number]
 	-moz-appearance: textfield
 
-
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: #666
@@ -41,7 +40,7 @@ body textarea:required:valid
 	width: 100%
 	height: 100%
 	position: absolute
-	left: 0ov
+	left: 0
 	top: 0
 .clear
 	clear: both
@@ -53,27 +52,6 @@ body textarea:required:valid
 		padding: 0
 	.col-md-9
 		padding: 0
-	.breadcrumb
-		float: left
-		padding-left: 10px
-		font-size: 12px
-		text-align: left
-		list-style: none
-		overflow: hidden
-		color: #7F4C35
-		li
-			display: inline-block
-			&:before
-				display: inline-block
-				padding: 0 5px
-				content: "/"
-				color: #444
-				font-size: 14px
-			&:nth-of-type(1) //or it may be pseudo-class first-of-type
-				&:before
-					content: ""
-			a
-				color: #444
 	.filter-btn
 		width: 100px
 		height: 22px
@@ -96,7 +74,6 @@ body textarea:required:valid
 		background-image: url(../img/woood.jpg)
 		min-width: 250px
 		box-shadow: 0 0 9px 0 rgba(0, 0, 0, .8)
-		//box-shadow: inset 0 -1px 14px rgba(0, 0, 0, 1)
 		.part	
 			.title
 				font-size: em(17px)
@@ -195,7 +172,6 @@ body textarea:required:valid
 					width: 70%
 					height: 18px
 					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
-				
 			.info-row
 				display: block
 				position:relative

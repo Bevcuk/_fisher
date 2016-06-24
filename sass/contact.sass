@@ -1,17 +1,30 @@
 @import "_var.sass"
-
 .content
-	padding: 0		
+	padding: 0
+	.breadcrumb
+		font-size: 12px
+		ul 
+			text-align: center
+			list-style: outside none none
+			li 
+				display: inline-block
+			li:before
+				color: #ccc
+				content: ">"
+				display: inline-block
+				padding: 0 5px
+				font-size: 150%			
 	.panel-search
-		position: relative
 		background-color: #24492E
-		margin-top: 30px 
+		height: 50px
+		position: relative
 		h1 
-			font-size: 18px
-			vertical-align: center
+			font-size: 22px
+			margin-top: 6px
 			color: #fff
 		.container
-						
+			.col-md-10
+				padding: 0
 	.google-map
 		position: relative
 		.col-md-12
@@ -24,9 +37,8 @@
 		background-color: $lines-color
 		height: 300px	
 		h1
-			text-align: left
+			text-align: center
 	.goop
-		//clear: both
 		position: relative
 		height: 20px
 		background-color: red

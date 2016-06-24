@@ -74,14 +74,22 @@
 				<li><a class="exit" href="#">Х-Вихід</a></li>
 			</ul>
 		</div>
+		
 		<div class="searchmob">
-			<div class="description">
-				<span class="closes">&times;</span>
-				<input type="search" id="search" placeholder="Search..." />	
-			</div>	  
+			<div class="search-wpr">
+				<form class="form-wrapper">
+					<div class="search">
+						<input type="text" placeholder="Пошук товарів">
+						<button type="submit"><a href="/" class="icon-find">
+							<img src="img/serch.png" alt=""></a>
+						</button>
+						<div class="closes">&times;</div>
+					</div>
+				</form>
+			</div>
 		</div>
-		<header>
-			
+
+		<header>	
 			<div class="pre-topline">
 			<div class="container">
 				<div class="col-md-push-6 col-md-6">
@@ -149,9 +157,16 @@
 
 			<div class="content col-md-12">
 				
-				<div class="panel-search">
+				<ul class="breadcrumb">
+					<li><a href="#">Корзина</a></li>
+					<li class="active">Оформлення замовлення</li>
+				</ul>
+
+				<div class="panel-search col-md-12">
 					<div class="container">
+						<div class="col-md-10">
 							<h1>Контакти :</h1>
+						</div>
 					</div>
 				</div>
 
@@ -195,10 +210,8 @@
 						<li><a href="">Каталог товарів</a></li>
 						<li><a href="">Про компанію</a></li>
 						<li><a href="">Контакти</a></li>
-					</ul>		
-
+					</ul>
 				</div>
-
 				<div class="footer-contacts col-md-4 col-sm-6">
 						<p class="">м.Чернівці, вул. Калинівська 141 б</p>
 						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 502 181</div>
@@ -210,8 +223,6 @@
 
 		</div>
 	</footer>
-
-
 			<div class="hidden"></div>
 
 	<!--[if lt IE 9]>

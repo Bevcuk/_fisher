@@ -49,9 +49,9 @@ body
 			&:active, &:hover
 				box-sizing: border-box
 				height: 42px
-				border-bottom: solid 4px $main-text-menu
+				border-bottom: solid 4px #C6F6C2
 				a
-					color: $main-text-menu
+					color: #C6F6C2
 	.active
 		height: 42px
 		box-sizing: border-box
@@ -156,8 +156,7 @@ header
 				color: white
 				text-align: center
 			img
-				height: 39px
-		
+				height: 39px		
 		//Mobile menu
 		.toggle-mnu
 			position: absolute
@@ -253,7 +252,7 @@ header
 	display: none
 	height: 100%
 	width: 100%
-	z-index: 10
+	z-index: 50
 	background-color: rgba(6,6,6, 0.9)
 	transition: top 0.3s linear
 	.forward-modal
@@ -417,3 +416,25 @@ header
 	top: 0
 	z-index: 99
 	transition: left 0.3s linear
+
+.breadcrumb
+		float: left
+		padding-left: 10px
+		font-size: 12px
+		text-align: left
+		list-style: none
+		overflow: hidden
+		color: #7F4C35
+		li
+			display: inline-block
+			&:before
+				display: inline-block
+				padding: 0 5px
+				content: "/"
+				color: #444
+				font-size: 14px
+			&:nth-of-type(1) //or it may be pseudo-class first-of-type
+				&:before
+					content: ""
+			a
+				color: #444

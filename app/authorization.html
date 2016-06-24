@@ -75,14 +75,22 @@
 				<li><a class="exit" href="#">Х-Вихід</a></li>
 			</ul>
 		</div>
-		<div class="searchmob">
-			<div class="description">
-				<span class="closes">&times;</span>
-				<input type="search" id="search" placeholder="Search..." />	
-			</div>	  
-		</div>
-	<header>
 		
+		<div class="searchmob">
+			<div class="search-wpr">
+				<form class="form-wrapper">
+					<div class="search">
+						<input type="text" placeholder="Пошук товарів">
+						<button type="submit"><a href="/" class="icon-find">
+							<img src="img/serch.png" alt=""></a>
+						</button>
+						<div class="closes">&times;</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	<header>		
 		<div class="pre-topline">
 			<div class="container">
 				<div class="col-md-push-6 col-md-6">
@@ -145,6 +153,7 @@
 					<li><a href="">Головна</a></li>
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Сервіс</a></li>
+					<li><a href="/">Акції</a></li>
 					<li><a href="#">Контакти</a></li>
 				</ul>
 			</div>
@@ -205,7 +214,6 @@
 					</ul>		
 
 				</div>
-
 				<div class="footer-contacts col-md-4 col-sm-6">
 						<p class="">м.Чернівці, вул. Калинівська 141 б</p>
 						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 502 181</div>
@@ -258,7 +266,6 @@
 	{"src" : "js/common.js", "async" : false},
 	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 </script>
-
-<script type="text/javascript" src="js/jquery-latest.min.js"></script>    
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
 </body>
 </html>
