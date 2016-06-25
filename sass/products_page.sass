@@ -17,6 +17,15 @@
 	color: #666
 	opacity: 1
 
+//beautify input buttons
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+	margin: 0
+	opacity: .5
+
+input[type=number]
+	-moz-appearance: textfield
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: #666
@@ -38,37 +47,33 @@ body textarea:required:valid
 
 .wpr
 	position: relative
-	background-color: $green-bg-color
+	//background-color: $green-bg-color
 	.col-md-3
 		padding: 0
 	.col-md-9
 		padding: 0
-	.breadcrumb
-		padding-left: 10px
-		font-size: 12px
-		text-align: left
-		list-style: none
-		overflow: hidden
-		color: #7F4C35
-		li
-			display: inline-block
-			&:before
-				display: inline-block
-				padding: 0 5px
-				content: "/"
-				color: #ccc
-				font-size: 14px
-			&:nth-of-type(1) //or it may be pseudo-class first-of-type
-				&:before
-					content: ""
-
-			a
-				color: #FFF
+	.filter-btn
+		width: 100px
+		height: 22px
+		background-color: rgba(33,68,46,.8)
+		float: right
+		margin: 11px 0 20px
+		cursor: pointer
+		border-radius: 2px
+		font-size: em(14px)
+		text-align: center
+		color: #FFF
+		&:hover
+			background-color: rgba(33,68,46,1)
 	.filter
+		display: block
+		margin-left: 0 
 		margin-right: 40px
 		padding-bottom: 1px
 		border-radius: 3px
 		background-image: url(../img/woood.jpg)
+		min-width: 250px
+		box-shadow: 0 0 9px 0 rgba(0, 0, 0, .8)
 		.part	
 			.title
 				font-size: em(17px)
@@ -96,9 +101,9 @@ body textarea:required:valid
 			.sect-title
 				color: $broun-hyper
 				font-size: em(14px)
-				padding: 15px 25px 5px 35px
+				padding: 15px 25px 5px 20px
 			.value
-				margin-left: 35px
+				margin-left: 20px
 				font-size: em(13px)
 				input
 					border-color: transparent
@@ -106,29 +111,30 @@ body textarea:required:valid
 					border-radius: 3px
 					width: 70px
 					padding-left: 10px
-					margin: 0 10px
+					margin: 3px 10px
 					font-size: 13px
 					&:focus
 						outline: none
 			.comp-wrapper
-				margin-left: 35px 
+				margin-left: 20px 
 				margin-top: 10px
+				padding: 5px 0 5px 15px 
 				background-color: rgba(66, 66, 66, 0.5)
 				overflow: auto
 				height: 230px
-				width: 225px
-				padding: 5px 15px
+				width: 206px
+				white-space: nowrap
 				input
 					margin-right: 7px
 			.length-wrapper
-				margin-left: 35px
+				margin-left: 20px
 				input
 					margin-left: 15px
 					margin-right: 7px
 			input[type="submit"]
 				position: relative
 				display: block
-				margin: 25px auto 15px
+				margin: 25px auto
 				padding: 0
 				height: 35px
 				width: 180px
@@ -143,7 +149,6 @@ body textarea:required:valid
 		.item
 			width: 190px
 			height: 248px
-
 			margin: 0px auto 50px
 			.stock-a
 				display: block
@@ -151,11 +156,22 @@ body textarea:required:valid
 					width: 190px
 					height: 190px
 			.stock-name
+				position: relative
 				display: block
 				margin: 5px auto 3px
-				//text-overflow: ellipsis
-				//overflow: hidden
-				color: #FFF
+				height: 48px
+				width: 100%
+				color: #222
+				overflow: hidden
+				&:after
+					position: absolute
+					text-align: right
+					content: ""
+					bottom: 0
+					right: 0
+					width: 70%
+					height: 18px
+					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
 			.info-row
 				display: block
 				position:relative
@@ -185,15 +201,15 @@ body textarea:required:valid
 				display: block
 				width: 25px
 				height: 23px
-				background-color: rgba(33,68,46, 0.3)
+				background-color: rgba(23,68,26, .8)
 				border-radius: 3px
 				color: #FFF
 				font-size: em(14px)
 				&:hover
 					text-decoration: none
-					background-color: rgba(33,68,46, 0.7)
+					background-color: rgba(23,68,26, 1)
 		.active
-			background-color: rgba(33,68,46, 0.3)
+			background-color: rgba(23,68,26, .8)
 			border-radius: 3px
 			a
 				font-weight: bold

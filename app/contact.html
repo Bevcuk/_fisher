@@ -33,54 +33,89 @@
 	</head>
 
 	<body>
-		<div id="sidebar"> 
+		<div class="forward-call">
+			<div class="container">
+					<div class="forward-modal" >
+						<div class="close">&times;</div>
+						<form class="forward-form" method="post">
+							<h2>Зворотній зв’язок</h2>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="input_phone">
+										Ваш телефон * 
+									</label>
+									<input id="input_phone" type="text" class="form-control" placeholder="0668570522" value>
+								</div>
+								<div class="form-group">
+									<label for="input_email">
+										 E-mail *
+									</label>
+									<input id="input_email" type="email" class="form-control" placeholder="yulya.lukanyuk@gmail.com" value>
+								</div>
+								<div class="form-group">
+									Коментар
+									<textarea id="input_comment" class="form-control-high" rows="4" name="comment"></textarea>
+								</div>
+								<div class="form-group-b">
+									<button type="submit" class="btn">Надіслати заявку</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar"> 
 			<ul>
 				<li><a href="#">Головна</a></li>
 				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Бренди</a></li>
-				<li><a href="#">Оплата</a></li>
-				<li><a href="#">Акції</a></li>
+				<li><a href="#">Сервіс</a></li>
 				<li><a href="#">Контакти</a></li>
 				<li><a class="exit" href="#">Х-Вихід</a></li>
 			</ul>
 		</div>
+		
 		<div class="searchmob">
-			<div class="description">
-				<span class="closes">X</span>
-				<input type="search" id="search" placeholder="Search..." />	
-			</div>	  
+			<div class="search-wpr">
+				<form class="form-wrapper">
+					<div class="search">
+						<input type="text" placeholder="Пошук товарів">
+						<button type="submit"><a href="/" class="icon-find">
+							<img src="img/serch.png" alt=""></a>
+						</button>
+						<div class="closes">&times;</div>
+					</div>
+				</form>
+			</div>
 		</div>
-		<header>
-			
+
+		<header>	
 			<div class="pre-topline">
-				<div class="col-md-push-7 col-md-5">
+			<div class="container">
+				<div class="col-md-push-6 col-md-6">
 					<div class="contacts">
-						<!-- <a href="/" class="callback">Замовити зворотній дзвінок</a> -->
 						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
 						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
-						<div class="callback" style="background-image: url(img/callback.png);"><a href="/">Замовити дзвінок</a></div>
+						<div class="callback" style="background-image: url(img/callback.png);">Замовити дзвінок</div>
 					</div>
 				</div>
 			</div>
-
+			</div>
 			<div class="top-line">
-
 				<div class="container">
-
 					<div class="row">
-
 						<div class=" col-sm-1 hidden-lg hidden-md col-xs-1 ">
 							<div class="mobile-mnu">
 								<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
 							</div>	
 						</div>	
 						<div class=" mobile-search col-sm-3 hidden-lg hidden-md col-xs-2">
-							<a class="m-search" href="/" ><span></span><img  src="img/mobile-search.png" alt="basket" width="35"  height="35"/></a>
+							<img src="img/mobile-search.png" alt="search" class="m-search" width="35" height="35"/>
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-3 ">
+						<div class="col-md-4 col-lg-3 col-sm-4 col-xs-3">
 							<a href="/" class="logo"><img src="img/logo.png" alt="Рибалка"></a>
 						</div>
-						<div class="col-md-5 hidden-sm hidden-xs ">
+						<div class="col-md-5 col-lg-6 col-sm-4 hidden-sm hidden-xs">
 							<form class="form-wrapper cf">
 								<div class="search">
 									<input type="text" placeholder="Пошук товарів">
@@ -91,106 +126,100 @@
 							</form>
 						</div>
 						<div class="col-md-3 col-sm-4 col-xs-5">
+							<a href="/" class="basket">
+								<div class="counter">4</div>
+								<img src="img/basket2.png" alt="basket" />
+							</a>
 							<div class="enter" style="background-image: url(img/icons/enter.png);">
 								<a href="/">Увійти</a>
 							</div>
-							<a href="/" class="basket">
-								<div class="counter">4</div>
-								<img src="img/basket2.png" alt="basket" /></a>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="main-mnu hidden-sm hidden-xs">
-					<div class="container">
-						<div class="col-md-10">
-							<ul>
-								<li class="active"><a href="">Головна</a></li>
-								<li><a href="">Каталог</a></li>
-								<li><a href="">Бренди</a></li>
-								<li><a href="">Оплата</a></li>
-								<li><a href="">Акції</a></li>
-								<li><a href="">Контакти</a></li>
-							</ul>
 						</div>
 					</div>
 				</div>
 			</header>	
-
-			<div class="content col-md-12">
-
-
-				<div class="breadcrumb">
-					<ul>
-						<a href="">Головна</a>
-						<li>Контакти</li>
-					</ul>
-				</div>
-				<div class="panel-search col-md-12">
+				<div class="main-mnu hidden-sm hidden-xs">
 					<div class="container">
-						<div class="col-md-10">
-							<h1>Контакти :</h1>
+						<div class="col-md-12">
+							<ul>
+								<li><a href="">Головна</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Сервіс</a></li>
+								<li><a href="#">Контакти</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 
+			<div class="content col-md-12 col-sm-12 col-xs-12">
+				<div class="container">
+					<ul class="breadcrumb" display="block">
+						<li><a href="#">Корзина</a></li>
+						<li class="active">Оформлення замовлення</li>
+					</ul>
+				</div>
+				<div class="panel-search col-md-12">
+					<div class="container">
+						<div class="col-md-10 col-sm-10 col-xs-10">
+							<h1>Контакти :</h1>
+						</div>
+					</div>
+				</div>
 				<section class="google-map">
 					<div class="col-md-12">
 						<iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com.ua/maps?f=q&source=s_q&hl=ru&geocode=&q=02121,+%D0%B3.%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5+%D1%88%D0%BE%D1%81%D1%81%D0%B5+201%2F203&aq=&sll=50.402036,30.532691&sspn=0.503308,1.234589&ie=UTF8&hq=&hnear=%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5+%D1%88.,+201%2F203,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4+%D0%9A%D0%B8%D0%B5%D0%B2&t=m&ll=50.403594,30.68181&spn=0.019202,0.049782&z=14&iwloc=A&output=embed">
 						</iframe>
 							
 					</div>
-				</section>
-				
+				</section>				
 				<div class="description col-md-12">
 					<h1>Риболов</h1>
-					<div class="col-md-10">
+					<div class="market-image col-md-4 col-sm-4 col-xs-4">
+						<img src="img/Market.jpg" alt="">
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-8">
 					
 						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						<p>Sunt assumenda animi modi iusto ipsam molestiae recusandae similique, nisi repudiandae sequi quidem!</p> Voluptatum repellat magni recusandae expedita voluptate nemo, iusto minima.</p> 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quia omnis repellendus autem laudantium rem distinctio deserunt ratione, fuga ex odio impedit hic quidem recusandae eius vel placeat illum deleniti.</p>
+						Sunt assumenda animi modi iusto ipsam molestiae recusandae similique, nisi repudiandae sequi quidem! Voluptatum repellat magni recusandae expedita voluptate nemo, iusto minima. 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quia omnis repellendus autem laudantium rem distinctio deserunt ratione, fuga ex odio impedit hic quidem recusandae eius vel placeat illum deleniti.</p>
 					</div>
 				</div>
 				<div class="container">
 				</div>
 			</div>
 
-			<footer style="background-image: url(img/boat_dark.jpg);">
-				<div class="container">
-					<div class="row">
-						<div class="unit col-md-3">
-							<ul>
-								<li><a href="">Гарантійні зобов’язання</a></li>
-								<li><a href="">Про компанію</a></li>
-								<li><a href="">Контакти</a></li>
-								<li><a href="">Співпраця</a></li>
-								<li><a href="">Каталог товарів</a></li>
-								<li><a href="">Каталог брендів</a></li>
-							</ul>		
-
-						</div>
-						<div class="social-networks col-md-5 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-offset-3 col-sm-6">
-							<h2>Долучайтесь до нас в соц.мережах</h2>
-							<a href=""><img src="img/icons/fb.png" alt="facebook"></a>
-							<a href=""><img src="img/icons/g+.png" alt="google+"></a>
-							<a href=""><img src="img/icons/vk.png" alt="vkontakte"></a>
-							<a href=""><img src="img/icons/twitter.png" alt="twitter"></a>
-						</div>
-
-						<div class="footer-contacts col-lg-4 col-md-3">
-							<div class="contacts">
-								<p>м.Чернівці, вул. Калинівська 141 б</p>
-								<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
-								<div class="phone" style="background-image: url(img/phone.png);">(0 800) 112 121</div>
-								<div class="phone"style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
-								<div class="phone"style="background-image: url(img/mobile.png);">(066) 857 05 54</div>
-							</div>
-						</div>
-
-					</div>
+			
+	<footer style="background-image: url(img/boat_dark.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="social-networks ">
+					<h2>Долучайтесь до нас в соц.мережах</h2>
+					<a href=""><img src="img/icons/fb.png" alt="facebook"></a>
+					<a href=""><img src="img/icons/g+.png" alt="google+"></a>
+					<a href=""><img src="img/icons/vk.png" alt="vkontakte"></a>
+					<a href=""><img src="img/icons/twitter.png" alt="twitter"></a>
 				</div>
-			</footer>
+			</div>
+			<div class="row">
+				<div class="unit col-md-3 col-sm-4">
+					<ul>
+						<li><a href="">Гарантійні зобов’язання</a></li>
+						<li><a href="">Каталог товарів</a></li>
+						<li><a href="">Про компанію</a></li>
+						<li><a href="">Контакти</a></li>
+					</ul>
+				</div>
+				<div class="footer-contacts col-md-4 col-sm-6">
+						<p class="">м.Чернівці, вул. Калинівська 141 б</p>
+						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 502 181</div>
+						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 112 121</div>
+						<div class="phone "style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
+						<div class="phone "style="background-image: url(img/mobile.png);">(066) 857 05 54</div>
+				</div>
+			</div>
 
+		</div>
+	</footer>
 			<div class="hidden"></div>
 
 	<!--[if lt IE 9]>
@@ -233,5 +262,6 @@
 </script>
 
 <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+
 </body>
 </html>

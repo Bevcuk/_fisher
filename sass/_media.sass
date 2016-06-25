@@ -2,8 +2,12 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-header	
+	header
+		
+		/* CATALOGUE PAGE */
+		.wpr
+			.container
+				padding: 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -19,7 +23,6 @@ header
 				img
 					width: 150px !important
 			.enter
-				//margin-left: 5% !important
 				background-size: 30px auto
 			.basket
 				margin-top: 35px
@@ -28,21 +31,13 @@ header
 				img
 					width: 30px
 					height: 34px
-			.toggle-mnu 
+			.toggle-mnu
 				span::before
 					top: 9px
 				span::after
-					top: 18px	
-			.mobile-search
-				img
-					width: 30px
-					height: 30px
+					top: 18px
 	.baner-section
-		visibility: hidden
-	.categories	
-		.subcategory-section
-			//margin-left: 5% !important
-			//margin-right: 5% !important
+		display: none
 
 	.animated
 		/*CSS transitions*/
@@ -106,60 +101,41 @@ header
 				width: 200px
 				margin: 0 auto
 				img
-					width: 200px	
+					width: 200px
 			.enter
 				margin-top: 35px 
-				//margin-left: 40px
 				float: right
 			.basket
 				margin-top: 35px
 				margin-left: 50px
-				float: right		
-			.mobile-search
-				margin-top: 35px
-				padding-left: 20px
-	.baner-section 
-		margin-top: 0
-		.wpr-baner			
-			margin-top: 70px
-			position: absolute
-			margin-left: 8.3% 
-			margin-right: 8.3% 
-			.baner  
-				ul 
-					li			
-						.item
-							img
-								width: 30%
-								max-width: 260px
-							.info-details
-								width: 69%
-								height: 40%
-								margin-right: 2%  
-								h1
-									font-size: em(35px)
-								h2
-									font-size: em(16px)
-									margin: 5px 0
-								h3
-									font-size: em(17px)
-								a
-									padding: 5px 15px
-			.r-arrow
-				right: 20px
-			.l-arrow
-				left: 20px							
-	.categories
-		.subcategory-section
-			//margin-left: 10%
-			//margin-bottom: 3%
-			.subcategory-item
-	.kinds 
+				float: right
+	.baner-section
+		height: 320px
+		.wpr-baner
+			margin: 30px 0
+			height: 260px
+			.baner
+				.resp-w-item
+					.item
+						.info-details
+							h1
+								font-size: em(24px)
+							h2
+								font-size: em(14px)
+							h3
+								font-size: em(16px)
+								margin: 20px 0
+							a
+								padding: 3px 15px
+								font-size: em(14px)
+
+	.kinds
+		padding-bottom: 20px 
 		.kind-section 
 			.kind 
 				width: 600px
 				.subkind-item 	
-					margin: 27px						
+					margin: 5px 27px 10px						
 	.capital-stock
 		.stock-item
 			//margin-left: 12%
@@ -179,12 +155,75 @@ header
 			margin-bottom: 20px
 	.recommendations 
 		.tab-pane 
+		//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			.panel-recommendations-item
 				margin-bottom: 40px					
+
+	//MEDIA FOR CATALOGUE PAGE
+	.wpr
+		.container
+			padding: 0
+			.main-nav
+				margin-top: 35px 
+				margin-right: 40px
+				nav
+					.subc-s-item
+						font-size: em(13px)
+			.overview-wrp
+				.one-cat
+					.title
+						font-size: em(18px)
+					.item
+						width: 170px
+						margin: 0 auto 15px
+						.circle
+							width: 170px
+							height: 170px
+							border-radius: 85px
+	
+	//MEDIA FOR PRODUCTS PAGE
+	.wpr
+		.container
+			padding: 0
+			.row
+				margin: 4px 0 2px
+			.filter
+				margin-right: 0px
+				margin-bottom: 30px //
+				padding-bottom: 25px
+				.part	
+					.title
+						font-size: em(17px)
+						color: #FFF
+						padding: 25px 35px 5px 25px
+					ul
+						height: 22px
+						position: relative
+						padding-left: 0
+						li
+							line-height: 1.5
+							float: left
+							margin-left: 25px
+							a
+								display: inline-block
+							
+			.advance_search
+				.comp-wrapper
+					margin: 0 auto 
+					height: 180px
+					width: 230px
+				input[type="submit"]
+					margin: 25px auto
+					width: 150px
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 993px)
 	/**/
+	.sidebar
+		display: none !important
+	.searchmob
+		display: none !important
+
 	header 
 		.top-line 
 			.logo 
@@ -196,31 +235,23 @@ header
 				margin-left: 10px
 			.basket
 				margin-top: 58px
-				margin-left: 50px
+				margin-left: 40px
 				float: right
 			.form-wrapper
 				.search
-					margin-left: 0%				
-			.mobile-search
-				margin-top: 35px
-				padding-left: 20px
+					margin-left: 0%
 	.baner-section 
 		margin-top: 0
-		.wpr-baner			
-			margin-top: 70px
+
 	.categories
 		.subcategory-section
 			margin-left: 0
 			margin-bottom: 0
-			.subcategory-item
-			//	padding: 0 15px	
-			//margin: 0 auto	
-				margin: 1%			
 	.kinds 
 		.kind-section 
 			.kind 
 				width: 920px
-				.subkind-item 							
+				.subkind-item
 					margin: 10px	
 	.content 
 		.container-fluid
@@ -245,7 +276,6 @@ header
 				.pi_shippay_buttons_wrp
 					font-size: 15px	
 						
-
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
@@ -266,10 +296,6 @@ header
 		.subcategory-section
 			margin-left: 0
 			margin-bottom: 0
-			//margin-right: 6%
-			.subcategory-item
-				//margin-right: 30px
-				//align: center !important 			
 	.kinds 
 		.kind-section 
 			.kind 
@@ -280,15 +306,6 @@ header
 						margin: 0 auto
 					figcaption	
 						text-align: center
-		.col-lg-10 
-			//margin-left: 12%
-			//padding-left: 0%			
-	.capital-stock
-		.stock-item
-			//padding-left: 30px
-	.new 
-		.new-item		
-			//margin-left: 3.7%
 	.content 
 		.container-fluid
 			.product-main-photo
@@ -314,4 +331,18 @@ header
 					font-size: 25px
 				.pi_shippay_buttons_wrp
 					font-size: 16px	
-						
+
+	//MEDIA FOR PRODUCTS PAGE
+	.wpr
+		.container
+			padding: 0
+			.row
+				margin: 4px 0 2px
+			.filter
+				display: block !important
+
+@media only screen and (min-width : 1300px)
+	/* CATALOGUE PAGE */
+	.wpr
+		.container
+			padding: 0 15px

@@ -43,38 +43,75 @@
 </head>
 
 <body>
-	<div id="sidebar"> 
-		<ul>
-			<li><a href="#">Головна</a></li>
-			<li><a href="#">Каталог</a></li>
-			<li><a href="#">Бренди</a></li>
-			<li><a href="#">Оплата</a></li>
-			<li><a href="#">Акції</a></li>
-			<li><a href="#">Контакти</a></li>
-			<li><a class="exit" href="#">Х-Вихід</a></li>
-		</ul>
-	</div>
-	<div class="searchmob">
-		<div class="description">
-			<span class="closes">X</span>
-			<input type="search" id="search" placeholder="Search..." />	
-		</div>	  
-	</div>
+	<div class="forward-call">
+			<div class="container">
+					<div class="forward-modal" >
+						<div class="close">&times;</div>
+						<form class="forward-form" method="post">
+							<h2>Зворотній зв’язок</h2>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="input_phone">
+										Ваш телефон * 
+									</label>
+									<input id="input_phone" type="text" class="form-control" placeholder="0668570522" value>
+								</div>
+								<div class="form-group">
+									<label for="input_email">
+										 E-mail *
+									</label>
+									<input id="input_email" type="email" class="form-control" placeholder="yulya.lukanyuk@gmail.com" value>
+								</div>
+								<div class="form-group">
+									Коментар
+									<textarea id="input_comment" class="form-control-high" rows="4" name="comment"></textarea>
+								</div>
+								<div class="form-group-b">
+									<button type="submit" class="btn">Надіслати заявку</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar"> 
+			<ul>
+				<li><a href="#">Головна</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Сервіс</a></li>
+				<li><a href="#">Контакти</a></li>
+				<li><a class="exit" href="#">Х-Вихід</a></li>
+			</ul>
+		</div>
+		
+		<div class="searchmob">
+			<div class="search-wpr">
+				<form class="form-wrapper">
+					<div class="search">
+						<input type="text" placeholder="Пошук товарів">
+						<button type="submit"><a href="/" class="icon-find">
+							<img src="img/serch.png" alt=""></a>
+						</button>
+						<div class="closes">&times;</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	
 	<header>
-
+		
 		<div class="pre-topline">
 			<div class="container">
 				<div class="col-md-push-6 col-md-6">
 					<div class="contacts">
-						<!-- <a href="/" class="callback">Замовити зворотній дзвінок</a> -->
 						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
 						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
-						<div class="callback" style="background-image: url(img/callback.png);"><a href="/">Замовити дзвінок</a></div>
+						<div class="callback" style="background-image: url(img/callback.png);">Замовити дзвінок</div>
 					</div>
 				</div>
 			</div>
-				
-			</div>
+		</div>
 
 		<div class="top-line">
 
@@ -82,181 +119,171 @@
 
 				<div class="row">
 
-						<div class=" col-sm-1 hidden-lg hidden-md col-xs-1 ">
-							<div class="mobile-mnu">
-								<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
-							</div>	
+					<div class=" col-sm-1 hidden-lg hidden-md col-xs-1">
+						<div class="mobile-mnu">
+							<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
 						</div>	
-						<div class=" mobile-search col-sm-3 hidden-lg hidden-md col-xs-2">
-							<a class="m-search" href="/" ><span></span><img  src="img/mobile-search.png" alt="basket" width="35"  height="35"/></a>
-						</div>
-						<div class="col-md-4 col-lg-3 col-sm-4 col-xs-3 ">
-							<a href="/" class="logo"><img src="img/logo.png" alt="Рибалка"></a>
-						</div>
-						<div class="col-md-5 col-lg-6 col-sm-4 hidden-sm hidden-xs ">
-							<form class="form-wrapper">
-								<div class="search">
-									<input type="text" placeholder="Пошук товарів">
-									<button type="submit"><a href="/" class="icon-find">
-										<img src="img/serch.png" alt=""></a>
-									</button>
-								</div>
-							</form>
-						</div>
-						<div class="col-md-3 col-lg-3 col-sm-4 col-xs-5">
-							
-							<a href="/" class="basket">
-								<div class="counter">4</div>
-								<img src="img/basket2.png" alt="basket" /></a>
-								<div class="enter" style="background-image: url(img/icons/enter.png);">
-								<a href="/">Увійти</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="main-mnu hidden-sm hidden-xs">
-				<div class="container">
-					<div class="col-md-10">
-						<ul>
-							<li class="active"><a href="">Головна</a></li>
-							<li><a href="">Каталог</a></li>
-							<li><a href="">Бренди</a></li>
-							<li><a href="">Оплата</a></li>
-							<li><a href="">Акції</a></li>
-							<li><a href="">Контакти</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>	
-			<div class="breadcrumb">
-				<div class="container">
-					<ul>
-						<a href="">Головна</a>
-						<li>Tovar</li>
-					</ul>
-				</div>
-			</div>
-		<div class="content col-md-12">
-			<div class="container-fluid">
-				<div class="container">	
-					<div class="row text-center">
-						<div class="col-xxs-12 col-xs-12 col-md-12">
-							<h1 class="product-name-element">
-								<span id="product-name">
-									Спиннинг Favorite Cobalt CBL-1002EXH 3.0m
-									</span>
-							</h1>
-						</div>
 					</div>	
-					<div class="row">
-						<div class="col-xxs-12 col-xs-7 col-md-4 col-lg-4">
-							<div class="product-main-photo">
-								<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+					<div class=" mobile-search col-sm-3 hidden-lg hidden-md col-xs-2">
+						<img src="img/mobile-search.png" alt="search" class="m-search" width="35" height="35"/>
+					</div>
+					<div class="col-md-4 col-lg-3 col-sm-4 col-xs-3 ">
+						<a href="/" class="logo"><img src="img/logo.png" alt="Рибалка"></a>
+					</div>
+					<div class="col-md-5 col-lg-6 col-sm-4 hidden-sm hidden-xs">
+						<form class="form-wrapper cf">
+							<div class="search">
+								<input type="text" placeholder="Пошук товарів">
+								<button type="submit"><a href="/" class="icon-find">
+									<img src="img/serch.png" alt=""></a>
+								</button>
 							</div>
+						</form>
+					</div>
+					<div class="col-md-3 col-lg-3 col-sm-4 col-xs-5">
+						<a href="/" class="basket">
+							<div class="counter">4</div>
+							<img src="img/basket2.png" alt="basket" />
+						</a>
+						<div class="enter" style="background-image: url(img/icons/enter.png);">
+							<a href="/">Увійти</a>
 						</div>
-						<div class=" booton col-xxs-12 col-xs-5 col-md-4 col-lg-4">
-							<div class="product_image_options">
-								<a href=""><img src="img/vrnt113961_525.jpg" alt=""></a>
-							</div>
-							<div class="pi_price_wrp" >
-								<span class="price_num">1250.00 грн</span>
-							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-							<div class="add2cart_wrp">
-								<input value="Купити" name="add2cart" type="submit" title="додати в корзину" class="add2cart_handler" rel="">
+	
+
+	<div class="main-mnu hidden-sm hidden-xs">
+		<div class="container">
+			<div class="col-md-12">
+				<ul>
+					<li class="active"><a href="">Головна</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Акції</a></li>
+					<li><a href="#">Сервіс</a></li>
+					<li><a href="#">Контакти</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+		<div class="container">
+			<div class="row">
+				<ul class="breadcrumb">
+					<li><a href="#">Головна</a></li>
+					<li><a href="#">Спінінги</a></li>
+					<li class="active">Favorite</li>
+				</ul>
+			</div>
+				<div class="row">
+					<div class="col-xxs-12 col-xs-12 col-md-12">
+						<h1 class="product-name-element">
+								Спиннинг Favorite Cobalt CBL-1002EXH 3.0m
+						</h1>
+					</div>
+				</div>
+				<div class="row main-sect">
+					<div class="col-xxs-12 col-xs-7 col-md-4 col-lg-4">
+						<div class="product-main-photo">
+							<a href="/" class="new-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+						</div>
+					</div>
+					<div class="info-sect col-xxs-12 col-xs-5 col-md-4 col-lg-4">
+						<div class="product_image_options">
+							<a href=""><img src="img/vrnt113961_525.jpg" alt=""></a>
+						</div>
+						<div class="pi_price_wrp" >
+							<span class="price_num">1250.00 грн</span>
+						</div>
+
+						<input value="Купити" name="add2cart" type="submit" title="додати в корзину" class="add2cart_handler" rel="">
+
+						<div class="pb_stock">
+							Наявність: <span style="color: #709C42;">✔</span>
+						</div>
+						<div class="pi_shippay_buttons_wrp">
+							<div class="ship_row">
+								<img src="img/deliveri.png" alt="" width="25" height="25">
+								<a href="">Умови доставки та оплати</a>
 							</div>
-							<div class="pb_stock">
-								Наявність: <span style="color: #709C42;">✔</span>
+							<div class="ship_row">
+								<img src="img/fa-shield.png" alt="" width="25" height="25">
+								<a>Гарантійні зобов'язання</a>
 							</div>
-							<div class="pi_shippay_buttons_wrp">
-								<a href="">
-									<img src="img/deliveri.png" alt="" width="25" height="25">
-									Умови доставки та оплати
-								</a>
-								<br>
-								<div class="guarantees">
-									<a>
-									<img src="img/fa-shield.png" alt="" width="25" height="25">
-									Гарантійні зобовязання
-								</a>
+							
+						</div>
+					</div>
+					<div class=" col-md-4 col-lg-4 hidden-xs hidden-sm">
+					<div class="main_row_cell ">
+					<div class="top_prod_title">
+						<span>Рекомендуємо
+							<span class="tp_five">3</span>
+						</span>
+					</div>
+						<div class="box">
+							<div class="product_brief_topprod ">
+								<div class="brief_topprod_image">
+									<a href="" class="col-lg-4 col-md-5 "><img src="img/goods/18460347.jpg" alt="" width="200" height="100"></a>
 								</div>
-								
+							<div class="product_brief_topprod_right col-lg-8 col-md-7 hidden-xs">
+								<div class="brief_topprod_image">
+  								<a class="pb_product_name" href="">
+  								Спиннинг Favorite Professional</a>
+  								</div>
+  							<div class="pb_price"> 
+   								 <span class="price_num">1440</span>
+   									 <small>UAH</small>
+  							</div> 
+  							<div class="buy">
+									<button type="button" title="Add to Cart" class="button btn-cart">
+									<span>Купити</span>
+									</button> 
+									 </div>
 							</div>
-						</div>
-						<div class=" col-md-4 col-lg-4 hidden-xs hidden-sm">
-						<div class="main_row_cell ">
-						<div class="top_prod_title">
-							<span>Рекомендуємо
-								<span class="tp_five">3</span>
-							</span>
-						</div>
-							<div class="box">
+							</div>
 								<div class="product_brief_topprod ">
 									<div class="brief_topprod_image">
-										<a href="" class="col-lg-4 col-md-5 "><img src="img/goods/18460347.jpg" alt="" width="200" height="100"></a>
+										<a href="" class="col-lg-4 col-md-5"><img src="img/goods/18460347.jpg" alt="" width="200" height="100"></a>
 									</div>
-								<div class="product_brief_topprod_right col-lg-8 col-md-7 hidden-xs">
+							<div class="product_brief_topprod_right col-lg-8 col-md-7">
+  								<a class="pb_product_name" href="">
+  								Спиннинг Favorite Professional</a>
+  							<div class="pb_price"> 
+   								 <span class="price_num">1440</span>
+   									 <small>UAH</small>
+  							</div> 
+  							<div class="buy">
+									<button type="button" title="Add to Cart" class="button btn-cart">
+									<span>Купити</span>
+									</button> 
+									 </div>
+							</div>
+							</div>
+								<div class="product_brief_topprod ">
 									<div class="brief_topprod_image">
-      								<a class="pb_product_name" href="">
-      								Спиннинг Favorite Professional</a>
-      								</div>
-      							<div class="pb_price"> 
-       								 <span class="price_num">1440</span>
-       									 <small>UAH</small>
-      							</div> 
-      							<div class="buy">
-   									<button type="button" title="Add to Cart" class="button btn-cart">
-   									<span>Купити</span>
-   									</button> 
- 									 </div>
-    							</div>
-								</div>
-									<div class="product_brief_topprod ">
-										<div class="brief_topprod_image">
-											<a href="" class="col-lg-4 col-md-5"><img src="img/goods/18460347.jpg" alt="" width="200" height="100"></a>
-										</div>
-								<div class="product_brief_topprod_right col-lg-8 col-md-7">
-      								<a class="pb_product_name" href="">
-      								Спиннинг Favorite Professional</a>
-      							<div class="pb_price"> 
-       								 <span class="price_num">1440</span>
-       									 <small>UAH</small>
-      							</div> 
-      							<div class="buy">
-   									<button type="button" title="Add to Cart" class="button btn-cart">
-   									<span>Купити</span>
-   									</button> 
- 									 </div>
-    							</div>
-								</div>
-									<div class="product_brief_topprod ">
-										<div class="brief_topprod_image">
-											<a href="" class="col-lg-4 col-md-5"><img src="img/goods/18460347.jpg" alt="" width="200" height="100"></a>
-										</div>
-								<div class="product_brief_topprod_right col-lg-8 col-md-7">
-      								<a class="pb_product_name" href="">
-      								Спиннинг Favorite Professional</a>
-      							<div class="pb_price"> 
-       								 <span class="price_num">1440</span>
-       									 <small>UAH</small>
-      							</div> 
-      							<div class="buy">
-   									<button type="button" title="Add to Cart" class="button btn-cart">
-   									<span>Купити</span>
-   									</button> 
- 									 </div>
-    							</div>
-								</div>
+										<a href="" class="col-lg-4 col-md-5"><img src="img/goods/18460347.jpg" alt="" width="200" height="100"></a>
+									</div>
+							<div class="product_brief_topprod_right col-lg-8 col-md-7">
+  								<a class="pb_product_name" href="">
+  								Спиннинг Favorite Professional</a>
+  							<div class="pb_price"> 
+   								 <span class="price_num">1440</span>
+   									 <small>UAH</small>
+  							</div> 
+  							<div class="buy">
+									<button type="button" title="Add to Cart" class="button btn-cart">
+									<span>Купити</span>
+									</button> 
+									 </div>
+							</div>
 							</div>
 						</div>
-						</div>
-					</div>	
-				</div>
+					</div>
+				</div>	
 			</div>
-
-
 		</div>
 
 		<div class="container-fluid-description col-lg-12 col-md-12">
@@ -266,9 +293,9 @@
 					</div>
 					<div id="product-info" class="row push-bottom">
 				<div class="col-xs-12 col-md-6 pull-right">
-		<h4><p class="brand-font h3">Удилище карповое Sportex Carp Catapult Carp </p></h4>
-Оновлена ​​серія знаменитих сподових вудилищ Catapult Carp від німецької компанії Sportex отримала новий бланк, який дає можливість кидати ще далі, за горизонт і більш витончений дизайн.
-Високомодульний карбон преміум-класу робить бланк більш потужним і яскравим. Вудилище оснащене кільцями Fuji SIC преміум класу. Перше кільце збільшене - 50мм, для більш далекого закидання.
+		<h4>Удилище карповое Sportex Carp Catapult Carp</h4>
+		<p>Оновлена ​​серія знаменитих сподових вудилищ Catapult Carp від німецької компанії Sportex отримала новий бланк, який дає можливість кидати ще далі, за горизонт і більш витончений дизайн.
+		Високомодульний карбон преміум-класу робить бланк більш потужним і яскравим. Вудилище оснащене кільцями Fuji SIC преміум класу. Перше кільце збільшене - 50мм, для більш далекого закидання.</p>
 </div>
 <div class="col-xs-12 col-md-5">
 	<div class="table-container">
@@ -323,72 +350,54 @@
 				</div>
 			<div class="recommendations col-lg-12 col-md-12">
 				<div class="row">
-				<ul class="nav-tabs">
-				<a href=""> Клієнти також обрали:</a>
-				</ul>
+					<div class="nav-tabs"><span>Клієнти також обрали:</span></div>
 				</div>
+
 				<div class="tab-pane">
-				<div class="container">
-					<div class="col-xxs-6 col-xs-6 col-md-3 col-lg-3 panel-recommendations-item">
-						
-							<div class="image-recommendations">
-							<a href="">
-								<img src="img/goods/18460347.jpg" alt="" width="200px" height="200px">
-							</a>	
+					<div class="row">
+						<div class="popular-item col-md-3 col-sm-4 col-lg-3">
+							<div class="popular-item-wrap">
+								<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+								<a href="/" class="popular-name">Леска Prologic XLNT HP CamoЛеска Prologic XLNT HP CamoЛеска Prologic XLNT HP CamoЛеска Prologic XLNT HP CamoЛеска Prologic XLNT HP Camo</a>
+								<div class="info-row">
+									<div class="price">254.00 грн.</div>
+									<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
+								</div>
 							</div>
-						<span class="vertical-middle">
-						<span class="hover-name">Катушка Daiwa 15 Revros 2500</span>
-						<span class="hover-brand">Daiwa </span><br>
-						<span class="hover-price"><strong>358&nbsp;грн</strong></span>
-						</span>
-						
-					</div>
-						<div class="col-xxs-6 col-xs-6 col-md-3 col-lg-3 panel-recommendations-item">
-						
-							<div class="image-recommendations">
-							<a href="">
-								<img src="img/goods/18460347.jpg" alt="" width="200px" height="200px">
-							</a>	
+						</div>
+						<div class="popular-item col-md-3 col-sm-4 col-lg-3">
+							<div class="popular-item-wrap">
+								<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+								<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
+								<div class="info-row">
+									<div class="price">254.00 грн.</div>
+									<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
+								</div>
 							</div>
-						<span class="vertical-middle">
-						<span class="hover-name">Катушка Daiwa 15 Revros 2500</span>
-						<span class="hover-brand">Daiwa </span><br>
-						<span class="hover-price"><strong>358&nbsp;грн</strong></span>
-						</span>
-						
-					</div>
-						<div class="col-xxs-6 col-xs-6 col-md-3 col-lg-3 panel-recommendations-item">
-						
-							<div class="image-recommendations">
-							<a href="">
-								<img src="img/goods/18460347.jpg" alt="" width="200px" height="200px">
-							</a>	
+						</div>
+						<div class="popular-item col-md-3 col-sm-4 col-lg-3">
+							<div class="popular-item-wrap">
+								<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+								<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
+								<div class="info-row">
+									<div class="price">254.00 грн.</div>
+									<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
+								</div>
 							</div>
-						<span class="vertical-middle">
-						<span class="hover-name">Катушка Daiwa 15 Revros 2500</span>
-						<span class="hover-brand">Daiwa </span><br>
-						<span class="hover-price"><strong>358&nbsp;грн</strong></span>
-						</span>
-					
-					</div>
-						<div class="col-xxs-6 col-xs-6 col-md-3 col-lg-3 panel-recommendations-item">
-						
-							<div class="image-recommendations">
-							<a href="">
-								<img src="img/goods/18460347.jpg" alt="" width="200px" height="200px">
-							</a>	
+						</div>
+						<div class="popular-item col-md-3 hidden-sm col-lg-3">
+							<div class="popular-item-wrap">
+								<a href="/" class="popular-a"><img src="img/goods/18460347.jpg" alt="item"></a>
+								<a href="/" class="popular-name">Леска Prologic XLNT HP Camo</a>
+								<div class="info-row">
+									<div class="price">254.00 грн.</div>
+									<div class="brand"><img src="img/vrnt113961_525.jpg" alt="brand"></div>
+								</div>
 							</div>
-						<span class="vertical-middle">
-						<span class="hover-name">Катушка Daiwa 15 Revros 2500</span>
-						<span class="hover-brand">Daiwa </span> <br>
-						<span class="hover-price"><strong>358&nbsp;грн</strong></span>
-						</span>
-						
+						</div>
 					</div>
 				</div>
-					
-				</div>
-			</div>	
+			</div>
 	<footer style="background-image: url(img/boat_dark.jpg);">
 		<div class="container">
 			<div class="row">
@@ -401,19 +410,17 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="unit col-md-3 col-sm-3">
+				<div class="unit col-md-3 col-sm-4">
 					<ul>
 						<li><a href="">Гарантійні зобов’язання</a></li>
+						<li><a href="">Каталог товарів</a></li>
 						<li><a href="">Про компанію</a></li>
 						<li><a href="">Контакти</a></li>
-						<li><a href="">Співпраця</a></li>
-						<li><a href="">Каталог товарів</a></li>
-						<li><a href="">Каталог брендів</a></li>
 					</ul>		
 
 				</div>
 
-				<div class="footer-contacts col-md-5 col-sm-5">
+				<div class="footer-contacts col-md-4 col-sm-6">
 						<p class="">м.Чернівці, вул. Калинівська 141 б</p>
 						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 502 181</div>
 						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 112 121</div>
@@ -467,36 +474,7 @@
 	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 </script>
 
-
 <script type="text/javascript" src="js/jquery-latest.min.js"></script>
-<script>
-	/* этот код помечает картинки, для удобства разработки */
-	var lis = document.getElementsByTagName('li');
 
-
-	/* конфигурация */
-    var width = 215; // ширина изображения
-    var count = 4; // количество изображений
-
-    var carousel = document.getElementById('carousel');
-    var list = carousel.querySelector('ul');
-    var listElems = carousel.querySelectorAll('li');
-
-    var position = 0; // текущий сдвиг влево
-
-    carousel.querySelector('.prev').onclick = function() {
-      // сдвиг влево
-      // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-      position = Math.min(position + width * count, 0)
-      list.style.marginLeft = position + 'px';
-  };
-
-  carousel.querySelector('.next').onclick = function() {
-      // сдвиг вправо
-      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-      position = Math.max(position - width * count, -width * (listElems.length - count));
-      list.style.marginLeft = position + 'px';
-  };
-</script>
 </body>
 </html>

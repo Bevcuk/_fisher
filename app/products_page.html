@@ -11,6 +11,7 @@
 	<title>Товари категорії</title>
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 
 
 		<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
@@ -34,7 +35,62 @@
 	</head>
 
 	<body>
-	
+		<div class="forward-call">
+			<div class="container">
+					<div class="forward-modal" >
+						<div class="close">&times;</div>
+						<form class="forward-form" method="post">
+							<h2>Зворотній зв’язок</h2>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="input_phone">
+										Ваш телефон * 
+									</label>
+									<input id="input_phone" type="text" class="form-control" placeholder="0668570522" value>
+								</div>
+								<div class="form-group">
+									<label for="input_email">
+										 E-mail *
+									</label>
+									<input id="input_email" type="email" class="form-control" placeholder="yulya.lukanyuk@gmail.com" value>
+								</div>
+								<div class="form-group">
+									Коментар
+									<textarea id="input_comment" class="form-control-high" rows="4" name="comment"></textarea>
+								</div>
+								<div class="form-group-b">
+									<button type="submit" class="btn">Надіслати заявку</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar"> 
+			<ul>
+				<li><a href="#">Головна</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Сервіс</a></li>
+				<li><a href="#">Контакти</a></li>
+				<li><a class="exit" href="#">Х-Вихід</a></li>
+			</ul>
+		</div>
+		
+		<div class="searchmob">
+			<div class="search-wpr">
+				<form class="form-wrapper">
+					<div class="search">
+						<input type="text" placeholder="Пошук товарів">
+						<button type="submit"><a href="/" class="icon-find">
+							<img src="img/serch.png" alt=""></a>
+						</button>
+						<div class="closes">&times;</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
 	<header>
 		
 		<div class="pre-topline">
@@ -43,7 +99,7 @@
 					<div class="contacts">
 						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
 						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
-						<div class="callback" style="background-image: url(img/callback.png);"><a href="/">Замовити дзвінок</a></div>
+						<div class="callback" style="background-image: url(img/callback.png);">Замовити дзвінок</div>
 					</div>
 				</div>
 			</div>
@@ -55,13 +111,13 @@
 
 				<div class="row">
 
-					<div class=" col-sm-1 hidden-lg hidden-md col-xs-1 ">
+					<div class=" col-sm-1 hidden-lg hidden-md col-xs-1">
 						<div class="mobile-mnu">
 							<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
 						</div>	
 					</div>	
 					<div class=" mobile-search col-sm-3 hidden-lg hidden-md col-xs-2">
-						<a class="m-search" href="/" ><span></span><img  src="img/mobile-search.png" alt="basket" width="35"  height="35"/></a>
+						<img src="img/mobile-search.png" alt="search" class="m-search" width="35" height="35"/>
 					</div>
 					<div class="col-md-4 col-lg-3 col-sm-4 col-xs-3 ">
 						<a href="/" class="logo"><img src="img/logo.png" alt="Рибалка"></a>
@@ -96,12 +152,11 @@
 		<div class="container">
 			<div class="col-md-12">
 				<ul>
-					<li><a href="/">Головна</a></li>
-					<li><a href="/">Каталог</a></li>
-					<li><a href="/">Бренди</a></li>
-					<li><a href="/">Оплата</a></li>
-					<li><a href="/">Акції</a></li>
-					<li><a href="/">Контакти</a></li>
+					<li class="active"><a href="">Головна</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Акції</a></li>
+					<li><a href="#">Сервіс</a></li>
+					<li><a href="#">Контакти</a></li>
 				</ul>
 			</div>
 		</div>
@@ -110,13 +165,15 @@
 	<div class="wpr">
 
 		<div class="container">
-			<ul class="breadcrumb">
-				<li><a href="#">Головна</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li class="active">Вудилища</li>
-			</ul>
-
-			<div class="col-md-3">
+			<div class="row">
+				<ul class="breadcrumb">
+					<li><a href="#">Головна</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li class="active">Вудилища</li>
+				</ul>
+				<div class="filter-btn hidden-lg hidden-md">Фільтр</div>
+			</div>
+			<div class="col-md-3 col-sm-12">
 				<div class="filter">
 					<div class="part">
 						<div class="title">Вудилища</div>
@@ -131,17 +188,17 @@
 					</div>
 					<form class="advance_search">
 						<div class="title">Фільтр товарів</div>
-						<div class="price">
+						<div class="price col-md-12 col-sm-3">
 							<div class="sect-title">Ціна</div>
 							<div class="value">
 								від
-								<input type="number" value="0"> до <input type="number" value="1290">
+								<input type="number" value="0" min="0"><br/> до &nbsp;<input type="number" value="1290" min="0" max="99999">
 							</div>
 						</div>
-						<div class="companies">
-							<div class="sect-title">Виробник</div>
+						<div class="companies col-md-12 col-sm-4">
+							<div class="sect-title">Бренд</div>
 							<div class="comp-wrapper">
-								<input type="checkbox">Ali<br />
+								<input type="checkbox">AliAliAliAli<br />
 								<input type="checkbox">Ali<br />
 								<input type="checkbox">Ali<br />
 								<input type="checkbox">Ali<br />
@@ -159,7 +216,7 @@
 								<input type="checkbox">Ali<br />
 							</div>
 						</div>
-						<div class="metric">
+						<div class="metric col-md-12 col-sm-2">
 							<div class="sect-title">Довжина</div>
 							<div class="length-wrapper">
 								<input type="checkbox">1<br />
@@ -168,12 +225,15 @@
 								<input type="checkbox">4<br />
 							</div>
 						</div>
-						<input type="submit" value="Застосувати">
+						<div class="col-md-12">
+							<input type="submit" value="Застосувати">
+						</div>
 					</form>
+					<div class="clear"></div>
 				</div>
 			</div>
 
-			<div class="col-md-9">
+			<div class="col-md-9 col-sm-12">
 				<div class="overview-wrp">
 					<div class="col-sm-4 col-md-4 col-lg-3">
 						<div class="item">
@@ -194,7 +254,7 @@
 							<a href="/" class="stock-a">
 								<img src="img/goods/18460347.jpg" alt="item">
 							</a>
-							<a href="/" class="stock-name">Леска Prologic XLNT HP Camo</a>
+							<a href="/" class="stock-name">Леска Prologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP CamoPrologic XLNT HP Camo</a>
 							<div class="info-row">
 								<div class="price">254.00 грн.</div>
 								<div class="brand">
@@ -339,19 +399,17 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="unit col-md-3 col-sm-3">
+				<div class="unit col-md-3 col-sm-4">
 					<ul>
 						<li><a href="">Гарантійні зобов’язання</a></li>
+						<li><a href="">Каталог товарів</a></li>
 						<li><a href="">Про компанію</a></li>
 						<li><a href="">Контакти</a></li>
-						<li><a href="">Співпраця</a></li>
-						<li><a href="">Каталог товарів</a></li>
-						<li><a href="">Каталог брендів</a></li>
 					</ul>		
 
 				</div>
 
-				<div class="footer-contacts col-md-4 col-sm-4">
+				<div class="footer-contacts col-md-4 col-sm-6">
 						<p class="">м.Чернівці, вул. Калинівська 141 б</p>
 						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 502 181</div>
 						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 112 121</div>
@@ -396,29 +454,21 @@
 <!-- Load Scripts -->
 <script>var scr = {"scripts":[
 	{"src" : "libs/modernizr/modernizr.js", "async" : false},
-	{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
 	{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
 	{"src" : "libs/animate/animate-css.js", "async" : false},
 	{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
 	{"src" : "js/common.js", "async" : false},
-	{"src" : "libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js", "async" : false},
 	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 </script>
 
-<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="libs/jquery/jquery-latest.min.js"></script>
 <script>
-	jQuery(document).ready(function($) {
-		$('.toggle-mnu,.exit').click(function() {
-			$('#sidebar').toggleClass('visible');
-		});
-	});
+	(function($){
+        $(window).on("load",function(){
+            $(".comp-wrapper").mCustomScrollbar();
+        });
+    })(jQuery);
 </script>
-<script>
-	jQuery(document).ready(function($) {
-		$('.mobile-search,.closes').click(function() {
-			$('.searchmob').toggleClass('visible');
-		});
-	});
-</script>    
+
 </body>
 </html>
