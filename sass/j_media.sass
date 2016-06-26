@@ -1,0 +1,284 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	
+	/* CATALOGUE PAGE */
+	.wpr
+		.container
+			padding: 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	/*Disable Animation on Mobile Devices*/
+	header 
+		.top-line 
+			.col-sm-1
+				margin-left: 8%
+			.col-xs-5
+				//padding-left: 6%	
+			.logo 
+				padding-left: 30px
+				img
+					width: 150px !important
+			.enter
+				background-size: 30px auto
+			.basket
+				margin-top: 35px
+				margin-left: 10px !important
+				float: right !important
+				img
+					width: 30px
+					height: 34px
+			.toggle-mnu
+				span::before
+					top: 9px
+				span::after
+					top: 18px
+	.baner-section
+		display: none
+
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+			
+/* Extra Small Devices, Phones */
+			
+		
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+header 
+	.top-line 
+		.enter
+			align: right
+		.basket
+			align: right
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	header 
+		.top-line 
+			.logo 
+				width: 200px
+				margin: 0 auto
+				img
+					width: 200px
+			.enter
+				margin-top: 35px 
+				float: right
+			.basket
+				margin-top: 35px
+				margin-left: 50px
+				float: right
+
+	.baner-section
+		height: 320px
+		.wpr-baner
+			margin: 30px 0
+			height: 260px
+			.baner
+				.resp-w-item
+					.item
+						.info-details
+							h1
+								font-size: em(24px)
+							h2
+								font-size: em(14px)
+							h3
+								font-size: em(16px)
+								margin: 20px 0
+							a
+								padding: 3px 15px
+								font-size: em(14px)
+
+	.kinds
+		padding-bottom: 20px 
+		.kind-section 
+			.kind 
+				width: 600px
+				.subkind-item 	
+					margin: 5px 27px 10px
+
+	.social-networks
+		margin-bottom: 2%
+
+	//MEDIA FOR CATALOGUE PAGE
+	.wpr
+		.container
+			padding: 0
+			.main-nav
+				margin-top: 35px 
+				margin-right: 40px
+				nav
+					.subc-s-item
+						font-size: em(13px)
+			.overview-wrp
+				.one-cat
+					.title
+						font-size: em(18px)
+					.item
+						width: 170px
+						margin: 0 auto 15px
+						.circle
+							width: 170px
+							height: 170px
+							border-radius: 85px
+	
+	//MEDIA FOR PRODUCTS PAGE
+	.wpr
+		.container
+			padding: 0
+			.row
+				margin: 4px 0 2px
+			.filter
+				margin-right: 0px
+				margin-bottom: 30px
+				padding-bottom: 25px
+				.part	
+					.title
+						font-size: em(17px)
+						color: #FFF
+						padding: 25px 35px 5px 25px
+					ul
+						height: 22px
+						position: relative
+						padding-left: 0
+						li
+							line-height: 1.5
+							float: left
+							margin-left: 25px
+							a
+								display: inline-block
+							
+			.advance_search
+				.comp-wrapper
+					margin: 0 auto 
+					height: 180px
+					width: 230px
+				input[type="submit"]
+					margin: 25px auto
+					width: 150px
+				
+	
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px)
+	/**/
+	.sidebar
+		display: none !important
+	.searchmob
+		display: none !important
+
+	header 
+		.top-line 
+			.logo 
+				img
+					width: 240px
+					margin-top: 35px
+			.enter
+				margin-top: 58px 
+				margin-left: 10px
+			.basket
+				margin-top: 58px
+				margin-left: 40px
+				float: right
+			.form-wrapper
+				.search
+					margin-left: 0%
+	.baner-section 
+		margin-top: 0
+
+	.categories
+		.subcategory-section
+			margin-left: 0
+			margin-bottom: 0			
+	.kinds 
+		.kind-section 
+			.kind 
+				width: 920px
+				.subkind-item 							
+					margin: 10px				
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+	header 
+		.top-line 
+			.logo 
+				img
+					width: 275px
+			.enter
+				float: right		
+			.basket
+				margin-left: 85px
+				float: right
+			.form-wrapper
+				margin: 0 auto
+				.search	
+	.categories
+		.subcategory-section
+			margin-left: 0
+			margin-bottom: 0
+		
+	.kinds 
+		.kind-section 
+			.kind 
+				width: 1112px		
+				.subkind-item 
+					margin: 22px
+					a 
+						margin: 0 auto
+					figcaption	
+						text-align: center		
+
+	//MEDIA FOR PRODUCTS PAGE
+	.wpr
+		.container
+			padding: 0
+			.row
+				margin: 4px 0 2px
+			.filter
+				display: block !important
+
+@media only screen and (min-width : 1300px)
+	/* CATALOGUE PAGE */
+	.wpr
+		.container
+			padding: 0 15px

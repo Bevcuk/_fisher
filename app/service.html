@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ua"> <!--<![endif]-->
+
+<head>
+<style>
+.off {
+	display: none;
+}
+
+</style>
+	<meta charset="utf-8">
+
+	<title>Рибалка</title>
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	
+		<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+		<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+
+		<!-- Load CSS Compilled without JS -->
+		<noscript>
+			<link rel="stylesheet" href="css/_header.min.css">
+			<link rel="stylesheet" href="css/_service.min.css">
+			<link rel="stylesheet" href="css/_footer.min.css">
+		</noscript>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	</head>
+
+	<body>
+		<div class="forward-call">
+			<div class="container">
+					<div class="forward-modal" >
+						<div class="close">&times;</div>
+						<form class="forward-form" method="post">
+							<h2>Зворотній зв’язок</h2>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="input_phone">
+										Ваш телефон * 
+									</label>
+									<input id="input_phone" type="text" class="form-control" placeholder="0668570522" value>
+								</div>
+								<div class="form-group">
+									<label for="input_email">
+										 E-mail *
+									</label>
+									<input id="input_email" type="email" class="form-control" placeholder="yulya.lukanyuk@gmail.com" value>
+								</div>
+								<div class="form-group">
+									Коментар
+									<textarea id="input_comment" class="form-control-high" rows="4" name="comment"></textarea>
+								</div>
+								<div class="form-group-b">
+									<button type="submit" class="btn">Надіслати заявку</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar"> 
+			<ul>
+				<li><a href="#">Головна</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Сервіс</a></li>
+				<li><a href="#">Контакти</a></li>
+				<li><a class="exit" href="#">Х-Вихід</a></li>
+			</ul>
+		</div>
+		<div class="searchmob">
+			<div class="search-wpr">
+				<form class="form-wrapper">
+					<div class="search">
+						<input type="text" placeholder="Пошук товарів">
+						<button type="submit"><a href="/" class="icon-find">
+							<img src="img/serch.png" alt=""></a>
+						</button>
+						<div class="closes">&times;</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<header>
+			
+			<div class="pre-topline">
+			<div class="container">
+				<div class="col-md-push-6 col-md-6">
+					<div class="contacts">
+						<!-- <a href="/" class="callback">Замовити зворотній дзвінок</a> -->
+						<div class="phone" style="background-image: url(img/phone.png);">(0 800) 502 181</div>
+						<div class="phone" style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
+						<div class="callback" style="background-image: url(img/callback.png);"><a href="/">Замовити дзвінок</a></div>
+					</div>
+				</div>
+			</div>
+				
+			</div>
+
+			<div class="top-line">
+				<div class="container">
+					<div class="row">
+						<div class=" col-sm-1 hidden-lg hidden-md col-xs-1 ">
+							<div class="mobile-mnu">
+								<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+							</div>	
+						</div>	
+						<div class=" mobile-search col-sm-2 hidden-lg hidden-md col-xs-2">
+							<a class="m-search" href="/" ><span></span><img  src="img/mobile-search.png" alt="basket" width="35"  height="35"/></a>
+						</div>
+						<div class="col-md-4 col-lg-3 col-sm-5 col-xs-3 ">
+								<div class="logo">
+							<a href="/"><img src="img/logo.png" alt="Рибалка"></a>		
+								</div>
+							</div>
+						<div class="col-md-5 col-lg-6 col-sm-4 hidden-sm hidden-xs ">
+							<form class="form-wrapper">
+								<div class="search">
+									<input type="text" placeholder="Пошук товарів">
+									<button type="submit"><a href="/" class="icon-find">
+										<img src="img/serch.png" alt=""></a>
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-3 col-lg-3 col-sm-4 col-xs-5">	
+							<a href="/" class="basket">
+								<div class="counter">4</div>
+								<img src="img/basket2.png" alt="basket" /></a>
+								<div class="enter" style="background-image: url(img/icons/enter.png);">
+								<a href="/">Увійти</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+				<div class="main-mnu hidden-sm hidden-xs">
+				<div class="container">
+					<div class="col-md-12">
+						<ul>
+							<li class="active"><a href="">Головна</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Акції</a></li>
+							<li><a href="#">Сервіс</a></li>
+							<li><a href="#">Контакти</a></li>
+						</ul>
+				</div>
+				</div>
+			</div>
+		<div class=" col-md-12">
+			<div class="container">
+				<ul class="breadcrumb">
+					<li><a href="#">Корзина</a></li>
+					<li class="active">Оформлення замовлення</li>
+				</ul>
+			</div>
+			</div>
+			<div class="panel-service col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="container">
+					<div class="title col-lg-11 col-md-11 col-sm-11 col-xs-11">
+						<h2>Сервис</h2>
+					</div>	
+					<div class="icon col-lg-1 col-md-1 col-sm-1 col-xs-1">
+						<img src="img/information.png" alt="" width="40" height="40">
+					</div>
+					</div>
+			</div>
+
+		<div class="service-container ">
+			<div class="container">
+						<div class="panel-picture col-lg-12 col-md-12">
+								<div class="picture  col-lg-4 col-md-4 col-xs-4 col-xxs-12">
+								<div class="row">
+                       					<p>
+			                          		<a href="#" id="btn" onclick='On1(1); '>
+			                               <img src="img/delever.jpg" class="img-responsive" >
+			                          	 </a>
+                       					</p>
+									<div class="image-title">
+										<h3>
+											<a href="#" onclick='On1(1); '>Доставка</a>
+										</h3>
+								</div>
+								</div>
+								</div>
+							<div class="picture  col-lg-4 col-md-4 col-xs-4 col-xxs-12">
+								<div class="row">
+                       					<p>
+			                          		<a href="#" id="btn" onclick='On2(1); '>
+			                               <img src="img/guarantee.jpg" class="img-responsive" >
+			                          	 </a>
+                       					</p>
+									<div class="image-title">
+										<h3>
+											<a href="#" onclick='On2(1); '>Забовязання</a>
+										</h3>
+								</div>
+								</div>
+								</div>
+									<div class="picture  col-lg-4 col-md-4 col-xs-4 col-xxs-12">
+											<div class="row">
+			                       					<p>
+						                          		<a href="#" id="btn" onclick='On3(1); '>
+						                               <img src="img/Hryvnia.jpg" class="img-responsive" >
+						                          	 </a>
+			                       					</p>
+												<div class="image-title">
+													<h3>
+														<a href="#" onclick='On3(1); '>Оплата</a>
+													</h3>
+											</div>
+											</div>
+											</div>
+						</div>
+						<div class="panel-body col-lg-12 col-md-12 col-xs-12 col-xxs-12">
+									<form name='txt' class='off' id="1">
+										<h1>Доставка</h1>
+										<h3>Умови доставки:</h3>
+										<ol>
+											<li>
+												<h4> По Чернівцях</h4>
+												Доставка здійснюється кур'єром за вказаною покупцем адресою з 12.00 до 18.00 з понеділка до п'ятниці. Якщо замовлення зроблено до 12.00, доставка здійснюється в той же день, якщо після 12.00 - на наступний день. Збереження і працездатність перевіряється покупцем в присутності кур'єра.
+												<p>Вартість доставки по Чернівцях - 35 грн.</p>
+												<p>Термінова доставка (в день замовлення, зробленого після 12.00) - 50 грн.</p>
+												<p>Безкоштовна доставка в межах Чернівців здійснюється при замовленні на суму від 800 грн.</p>
+											</li>
+											<li>
+												<h4>По регіонам</h4>
+												Доставка здійснюється службою «Нова пошта»* (або будь-якою іншою службою за узгодженням з менеджером).
+												Вартість доставки - згідно з розцінками служби доставки.
+
+											</li>
+											<li>
+												<h4> Самовивіз</h4>
+												Клієнт має можливість самостійно забрати товар з будь-якого магазину мережі «Рибалка» (за умови наявності цього товару і попереднього резервування товару)
+												<br><br>
+												<iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com.ua/maps?f=q&source=s_q&hl=ru&geocode=&q=02121,+%D0%B3.%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5+%D1%88%D0%BE%D1%81%D1%81%D0%B5+201%2F203&aq=&sll=50.402036,30.532691&sspn=0.503308,1.234589&ie=UTF8&hq=&hnear=%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5+%D1%88.,+201%2F203,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4+%D0%9A%D0%B8%D0%B5%D0%B2&t=m&ll=50.403594,30.68181&spn=0.019202,0.049782&z=14&iwloc=A&output=embed" width="100%" height="300px">
+												</iframe>
+											</li>
+
+										</ol>
+									</form>
+									<form name='txt' class='off' id="2">
+										<h1>Гарантійні зобов’язання</h1>
+Відповідно до Закону України «Про захист прав споживачів» магазин "Рибалка" надає гарантію на весь асортимент товарів в порядку, передбаченому Законом. Терміни гарантії на товари вказані безпосередньо в їх характеристиках на сайті.
+<p>Гарантійні зобов'язання не поширюються в наступних випадках:</p>
+<ul  type="circle">
+<li>є механічні, або інші пошкодження, які виникли внаслідок умисних або необережних дій покупця або третіх осіб;</li> 
+<li>порушені правила використання, викладені в експлуатаційних документах;</li>
+<li>було здійснено несанкціоноване розкриття, ремонт або зміна внутрішньої конструкції;</li> 
+<li>ушкодження, отримані в результаті використання товару не за призначенням, або з порушенням правил експлуатації.</li>
+</ul>
+<p><b>1. ПОВЕРНЕННЯ ТОВАРУ</b></p>
+Повернення отриманого товару може бути здійснене протягом 14 календарних днів з дня його придбання в роздрібному магазині / отримання в службі доставки.
+<p>Для здійснення повернення в 14-денний період, слід дотримуватись таких умов:</p>
+<ul type="circle" >
+<li>збережений товарний вигляд, його споживчі властивості;</li>
+<li>немає слідів використання;</li>
+<li>збережені всі аксесуари, комплектуючі та документація, що поставляються з товаром;</li>
+<li>не порушена упаковка, пломби і ярлики;</li>
+<li>обов'язкова наявність документа, що підтверджує придбання.</li>
+</ul>
+<p>1.1. Повернення товару, замовленого поштою:</p>
+<ul type="circle" >
+<li>обмін або повернення товару здійснюється за допомогою оформлення посилки в транспортній службі за даними відправника первісної посилки;</li>
+<li>покупець самостійно оплачує відправку товару, що повертається, вартість якої встановлює транспортна служба.</li>
+</ul>
+<p>1.2. Повернення товару, придбаного через роздрібний магазин:</p>
+обмін або повернення товару здійснюється безпосередньо в роздрібному магазині в робочий час за попереднім погодженням з керівництвом магазину або операторами інтернет-магазину “Рибалка”
+<p>1.3. Повернення товару, доставленого кур'єром по Чернівцях:</p>
+обмін або повернення товару здійснюється в офісі інтернет-магазину "Рибалка" за адресою (тут буде адреса і розклад роботи). Попередньо обговорюється причина його повернення і час.
+<p><b>2. ТЕРМІНИ ПОВЕРНЕННЯ КОШТІВ</b></p>
+Термін повернення грошових коштів встановлено відповідно до Правил продажу товарів на замовлення та поза офісними або торговельними приміщеннями (Наказ Міністерства економіки України від 19 квітня 2007 року №103) та становить до 30 календарних днів.
+<p><b>3. СПОСОБИ ПОВЕРНЕННЯ КОШТІВ</b></p>
+<p>ВАРІАНТ 1:</p> 
+Якщо товар був придбаний за передоплатою (перерахування грошових коштів на рахунок підприємства), повернення здійснюється таким же способом на реквізити відправника грошових коштів
+<p>ВАРІАНТ 2:</p> Якщо оплата товару здійснювалася післяплатою (оплата товару при отриманні), повернення грошових коштів обговорюється безпосередньо з покупцем<br>
+Для переказу грошей Вам необхідно вказати наступні реквізити: <br>	
+Назва банку
+ПІБ одержувача
+Номер карткового рахунку одержувача
+Призначення платежу (повинно містити номер замовлення та ПІБ)
+<br>
+<br>
+
+									</form>
+									<form name='txt' class='off' id="3">
+									<font>
+										<h1>Оплата</h1>
+										<h4>Оплата здійснюється лише в національній валюті України.</h4>
+										<p>Готівковий розрахунок</p>
+										Оплата готівкою можлива при доставці кур'єром по місту Чернівці, в пунктах самовивозу і в відділеннях "Нової Пошти" при доставці в регіони.
+										На підтвердження оплати буде видана розрахункова накладна зі штампом.
+										<p>Безготівковий розрахунок</p>
+										Оплата безготівковим розрахунком здійснюється за рахунком-фактурою, який надається менеджером після перевірки наявності потрібного товару і оформлення замовлення. Юридичним особам буде надано пакет всіх необхідних документів.
+										Для фізичних осіб передбачена можливість оплати за допомогою переказу коштів на картку ПриватБанку. Дані по оплаті повідомляються менеджером після оформлення замовлення.
+										<p>Зверніть увагу!</p>
+										У призначенні платежу необхідно вказати № замовлення і П.І.Б. клієнта, інакше надіслані кошти не будуть закріплені за замовленням і повернуті одержувачу.
+										Якщо оплата здійснена до 12:00 години, замовлення буде відправлено в той же день. Якщо пізніше —  на наступний день.
+										Перевізнику Ви сплачуєте лише вартість доставки товару.
+										<br>
+										<br>
+									</font>		
+									</form>	
+						</div>	
+			</div>
+			</div>
+		</div>
+		
+	<footer style="background-image: url(img/boat_dark.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="social-networks ">
+					<h2>Долучайтесь до нас в соц.мережах</h2>
+					<a href=""><img src="img/icons/fb.png" alt="facebook"></a>
+					<a href=""><img src="img/icons/g+.png" alt="google+"></a>
+					<a href=""><img src="img/icons/vk.png" alt="vkontakte"></a>
+					<a href=""><img src="img/icons/twitter.png" alt="twitter"></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="unit col-md-3 col-sm-3">
+					<ul>
+						<li><a href="">Гарантійні зобов’язання</a></li>
+						<li><a href="">Про компанію</a></li>
+						<li><a href="">Контакти</a></li>
+						<li><a href="">Співпраця</a></li>
+						<li><a href="">Каталог товарів</a></li>
+						<li><a href="">Каталог брендів</a></li>
+					</ul>		
+
+				</div>
+
+				<div class="footer-contacts col-md-5 col-sm-5">
+						<p class="">м.Чернівці, вул. Калинівська 141 б</p>
+						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 502 181</div>
+						<div class="phone " style="background-image: url(img/phone.png);">(0 800) 112 121</div>
+						<div class="phone "style="background-image: url(img/mobile.png);">(066) 857 05 22</div>
+						<div class="phone "style="background-image: url(img/mobile.png);">(066) 857 05 54</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load CSS -->
+	<script>
+
+	//Load Libs CSS
+	var ms=document.createElement("link");ms.rel="stylesheet";
+	ms.href="libs/animate/animate.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+	//Header Styles (compress & paste to header after release)
+	var ms=document.createElement("link");ms.rel="stylesheet";
+	ms.href="css/_header.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+	//User Styles
+	var ms=document.createElement("link");ms.rel="stylesheet";
+	ms.href="css/_service.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+	//Footer + Media
+		var ms=document.createElement("link");ms.rel="stylesheet";
+		ms.href="css/_footer.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+</script>
+
+<!-- Load Scripts -->
+<script>var scr = {"scripts":[
+	{"src" : "libs/modernizr/modernizr.js", "async" : false},
+	{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+	{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
+	{"src" : "libs/animate/animate-css.js", "async" : false},
+	{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+	{"src" : "js/common.js", "async" : false},
+	{"src" : "libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js", "async" : false},
+	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+</script>
+
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+
+<script>
+(function() {
+	var container = $('div.baner').css('overflow', 'hidden').children('ul');
+	var slider = new Slider( container, $('.slider-nav') );
+
+	slider.nav.find('button').on('click', function() {
+		slider.setCurrent( $(this).data('dir') );
+		slider.transition();
+	});
+})();
+</script>
+<script>
+	jQuery(document).ready(function($) {
+		$('.toggle-mnu,.exit').click(function() {
+			$('#sidebar').toggleClass('visible');
+		});
+	});
+</script>
+<script>
+	jQuery(document).ready(function($) {
+		$('.mobile-search,.closes').click(function() {
+			$('.searchmob').toggleClass('visible');
+		});
+	});
+</script>  
+<script>
+
+function On1(N) {	
+document.getElementById('1').style.display='block';
+document.getElementById('2').style.display='none';
+document.getElementById('3').style.display='none';
+}
+
+function On3(N) {	
+document.getElementById('3').style.display='block';
+document.getElementById('2').style.display='none';
+document.getElementById('1').style.display='none';
+}
+</script> 
+
+<script>
+	function On2(N) {	
+document.getElementById('2').style.display='block';
+document.getElementById('1').style.display='none';
+document.getElementById('3').style.display='none';
+}
+</script>	
+</body>
+</html>
