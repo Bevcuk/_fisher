@@ -163,26 +163,6 @@
 				<div class="registration">
 					<div class="cont">
 						<h2>Реєстрація</h2>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label for="input_email">
-									 Ваша e-mail адреса * 
-								</label>
-								<input id="input_email" type="email" class="form-control" placeholder="E-mail" value>
-							</div>
-							<div class="form-group">
-								<label for="input_password">
-									 Пароль * 
-								</label>
-								<input id="input_password" type="password" class="form-control" placeholder="●●●●●●●●●●" value>
-							</div>
-							<div class="form-group">
-								<label for="input_password2">
-									 Повторіть пароль * 
-								</label>
-								<input id="input_password2" type="password" class="form-control" data-validate="matches[password] required" placeholder="●●●●●●●●●●" value>
-							</div>
-						</div>
 
 						<div class="col-md-6">
 							<div class="form-group">
@@ -204,11 +184,55 @@
 								<input id="input_fathername" type="text" class="form-control" value>
 							</div>
 							<div class="form-group">
+								<label for="input_city">
+									 Місто *
+								</label>
+								<select name="city" id="city">
+									<option>Оберіть місто</option>
+									<option value="Чернівці">Чернівці</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="input_street">
+									 Вулиця *
+								</label>
+								<input id="input_street" type="text" class="form-control" value="">
+							</div>
+							<div class="form-group">
+								<label for="input_house">
+									 Будинок / квартира *
+								</label>
+								<input id="input_house" type="text" class="form-control" value="">
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="input_email">
+									 Ваша e-mail адреса * 
+								</label>
+								<input id="input_email" type="email" class="form-control" placeholder="E-mail" value>
+							</div>
+							<div class="form-group">
 								<label for="input_phone">
 									 Номер телефону * 
 								</label>
-								<input id="input_phone" type="text" class="form-control" value maxlength="11">
+								<input id="input_phone" type="text" class="form-control" placeholder="0668570522" value maxlength="11">
 							</div>
+							<div class="form-group">
+								<label for="input_password">
+									 Пароль * 
+								</label>
+								<input id="input_password" type="password" class="form-control" placeholder="●●●●●●●●●●" value>
+							</div>
+							<div class="form-group">
+								<label for="input_password2">
+									 Повторіть пароль * 
+								</label>
+								<input id="input_password2" type="password" class="form-control" data-validate="matches[password] required" placeholder="●●●●●●●●●●" value>
+							</div>
+						</div>
+						<div class="col-md-12">
 							<div class="form-group">
 								<button type="submit" class="btn">Підтвердити</button>
 							</div>

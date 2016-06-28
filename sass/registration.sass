@@ -58,6 +58,7 @@ body textarea:required:valid
 				font-weight: normal
 			.form-group
 				margin: 0 35px 20px 35px
+				color: #000
 				label
 					color: #FFF
 					font-size: 14px
@@ -86,3 +87,7 @@ body textarea:required:valid
 						outline: none
 					&:hover
 						background-color: $red-acs
+				select
+					@extend .form-control
+					background-color: #FFF
+					height: 28px

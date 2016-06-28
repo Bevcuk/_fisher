@@ -21,6 +21,11 @@ $(document).ready(function() {
 		$(".forward-call").fadeOut(300);
 	});
 
+	//toggle order details in My cabinet
+	$(".more-cl").click(function() {
+		$(this).html( $(this).text() == "▸" ? "▾" : "▸" );
+		$(this).siblings(".more-info").slideToggle();
+	});
 
 	//menu clicking
 	$('.toggle-mnu,.exit').click(function() {
@@ -31,7 +36,6 @@ $(document).ready(function() {
 	$('.m-search, .closes').click(function() {
 		$('.searchmob').toggleClass('visible-smob');
 	});
-
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
