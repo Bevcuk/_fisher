@@ -95,15 +95,23 @@ body textarea:required:valid
 				width: 190px
 				margin: 0 auto 20px
 				text-align: center
-				.circle
+				.sub-pict
+					display: block
 					width: 190px
 					height: 190px
 					border-radius: 95px
-					background-color: rgba(0, 0, 0, .5)
-					box-shadow: 0 0 7px rgba(0, 0, 0, .3)
+					background-color: rgba(127, 76, 53, 0.08)
+					box-shadow: 0 0 6px rgba(127, 94, 53, 0.45)
 					margin-bottom: 10px
+					overflow: hidden
+					img
+						width: 160px
+						transform: translate(0%, 30%)			
 				.sub-name
 					color: #653620
-					&:hover
+				&:hover
+					.sub-name
 						text-decoration: none
-						color: $active-light
+						color: #B47B5F
+					.sub-pict
+						box-shadow: 0 0 6px rgba(127, 94, 53, 1)

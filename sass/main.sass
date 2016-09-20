@@ -34,6 +34,8 @@ body textarea:required:valid
 	left: 0
 	top: 0
 
+.clear
+	clear: both
 .baner-section
 	position: relative
 	height: 460px
@@ -188,9 +190,11 @@ body textarea:required:valid
 					background-image: url(../img/woood.jpg)
 					width: 170px
 			.subc-name
-				font-size: em(20px)
+				margin: 0
 				padding: 7px 0 3px
 				color: $header-color
+				cursor: default
+				font-size: 20px
 
 			.subc-s-item
 				font-size: em(14)
@@ -201,7 +205,8 @@ body textarea:required:valid
 .kinds
 	@extend .d-block
 	.kind-title
-		@extend .title-l		
+		@extend .title-l
+		padding-bottom: 15px		
 	.kind-section
 		.kind 
 			width: 1050px
@@ -226,9 +231,11 @@ body textarea:required:valid
 						width: 85px
 						margin: 5px
 				.subk-name
+					display: inline-block
+					width: 80px
+					white-space: normal
 					color: white
-					font-size: em(14px)
-					//padding: 5px
+					font-size: 14px
 					
 
 .info-row
@@ -239,6 +246,35 @@ body textarea:required:valid
 		float: right
 		img
 			height: 25px
+		&:after
+			clear: both
+
+/* general style for all goods*/
+.item-wrap
+	width: 200px
+	margin: 0 auto
+	padding: 0
+	.stock-a
+		img
+			width: 200px
+	.stock-name
+		position: relative
+		display: block
+		margin: 5px auto 3px
+		height: 48px
+		overflow: hidden
+		color: $braun-a
+		&:after
+			position: absolute
+			text-align: right
+			content: ""
+			bottom: 0
+			right: 0
+			width: 70%
+			height: 18px
+	&:hover
+		a
+			text-decoration: none
 
 .capital-stock
 	@extend .l-block
@@ -247,101 +283,41 @@ body textarea:required:valid
 		@extend .title-d
 	.stock-item
 		.stock-item-wrap
-			//padding: 0 30px
-			width: 200px
-			margin: 0 auto
-			padding: 0
-			.stock-a
-				display: block
-				img
-					width: 200px
+			@extend .item-wrap
 			.stock-name
-				position: relative
-				display: block
-				margin: 5px auto 3px
-				color: $braun-a
-				height: 48px
-				overflow: hidden
 				&:after
-					position: absolute
-					text-align: right
-					content: ""
-					bottom: 0
-					right: 0
-					width: 70%
-					height: 18px
 					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
 			&:hover
 				a
-					text-decoration: none
 					color: $active-dark
 .new
 	position: relative
 	padding: 20px 0 0
 	background-color: $bg-line-color
-	.new-title
+	.stock-title
 		@extend .title-l
-	.new-item
+	.stock-item
 		padding-bottom: 30px
-		.new-item-wrap
-			//padding: 0 30px
-			width: 200px
-			margin: 0 auto
-			.new-a
-				img
-					width: 200px
-			.new-name
-				position: relative
-				display: block
-				margin: 5px auto 3px
-				height: 48px
-				color: $braun-a
-				overflow: hidden
+		.stock-item-wrap
+			@extend .item-wrap
+			.stock-name
 				&:after
-					position: absolute
-					text-align: right
-					content: ""
-					bottom: 0
-					right: 0
-					width: 70%
-					height: 18px
 					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(139,162,141) 95%)
 			&:hover
 				a
-					text-decoration: none
 					color: $active-light
 
 .popular
 	@extend .l-block
 	margin-bottom: 30px
-	.popular-title
+	.stock-title
 		@extend .title-d
-	.popular-item
-		.popular-item-wrap
-			//padding: 0 30px
-			margin: 0 auto
-			width: 200px
-			.popular-a
-				img
-					width: 200px
-			.popular-name
-				display: block
-				position: relative
-				margin: 5px auto 3px
-				height: 48px
-
-				color: $braun-a
-				overflow: hidden
+	.stock-item
+		.stock-item-wrap
+			@extend .item-wrap
+			.stock-name
 				&:after
-					position: absolute
-					text-align: right
-					content: ""
-					bottom: 0
-					right: 0
-					width: 70%
-					height: 18px
 					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
 			&:hover
 				a
-					text-decoration: none
 					color: $active-dark

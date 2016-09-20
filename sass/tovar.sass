@@ -177,21 +177,21 @@
 			background: #fff
 	.tab-pane
 		margin: 40px 0 30px
-		.popular-item
-			.popular-item-wrap
-				margin: 0 auto
+		.stock-item
+			.stock-item-wrap
 				width: 200px
-				.popular-a
+				margin: 0 auto
+				padding: 0
+				.stock-a
 					img
 						width: 200px
-				.popular-name
-					display: block
+				.stock-name
 					position: relative
+					display: block
 					margin: 5px auto 3px
 					height: 48px
-
-					color: $braun-a
 					overflow: hidden
+					color: $braun-a
 					&:after
 						position: absolute
 						text-align: right
@@ -201,10 +201,6 @@
 						width: 70%
 						height: 18px
 						background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
-				&:hover
-					a
-						text-decoration: none
-						color: $active-dark
 				.info-row
 					position: relative
 					.price
@@ -213,6 +209,16 @@
 						float: right
 						img
 							height: 25px
+						&:after
+							clear: both
+				&:hover
+					a
+						text-decoration: none
+						color: $active-dark
 .table-condensed
+	width: 100%
 	tr 
 		height: 28px
+		td
+			&:first-of-type
+				width: 60%
