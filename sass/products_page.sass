@@ -47,7 +47,7 @@ body textarea:required:valid
 
 .wpr
 	position: relative
-	//background-color: $green-bg-color
+	margin: 35px 0 20px
 	.col-md-3
 		padding: 0
 	.col-md-9
@@ -69,10 +69,9 @@ body textarea:required:valid
 		display: block
 		margin-left: 0 
 		margin-right: 40px
-		// margin-bottom: 20px
 		padding-bottom: 30px
 		border-radius: 3px
-		background-image: url(../img/woood.jpg)
+		background-image: url('../img/woood.jpg')
 		min-width: 250px
 		min-height: 250px
 		box-shadow: 0 0 9px 0 rgba(0, 0, 0, .8)
@@ -107,18 +106,45 @@ body textarea:required:valid
 				font-size: em(14px)
 				padding: 15px 25px 5px 20px
 			.value
-				margin-left: 20px
-				font-size: em(13px)
-				input
-					border-color: transparent
-					background-color: rgba(66, 66, 66, 0.5)
-					border-radius: 3px
-					width: 70px
-					padding-left: 10px
-					margin: 3px 10px
-					font-size: 13px
-					&:focus
-						outline: none
+				height: 45px
+				width: 80%
+				margin: 10px auto 0
+
+				//ion-range styles
+				.irs
+					height:	45px
+					.irs-min,
+					.irs-max
+						display: none
+					.irs-from,
+					.irs-to,
+					.irs-single
+						display: inline-block
+						border-radius: 2px
+						margin-top: -10px
+						padding: 1px 2px
+						font-size: 13px
+						text-align: center
+						background-color: rgba(66,66,66,.9)
+						&:after
+							position: absolute
+							content: ''
+							display: block
+							width: 0
+							height: 0
+							left: 50%
+							transform: translate(-50%)
+							background-color: transparent
+							border-left: 7px solid transparent
+							border-right: 7px solid transparent
+							border-top: 7px solid rgba(66,66,66,.8)
+						&:hover
+							cursor: pointer
+
+				.irs-grid-pol
+					background-color: #FFF
+				.irs-grid-text
+					color: #FFF
 			.comp-wrapper
 				margin-left: 20px 
 				margin-top: 10px
@@ -126,16 +152,30 @@ body textarea:required:valid
 				background-color: rgba(66, 66, 66, 0.5)
 				overflow: auto
 				max-height: 230px
-				width: 198px
+				width: 80%
 				white-space: nowrap
+				.active
+					.check-item
+						background: url('../img/checked.png') no-repeat 0
+						background-size: contain
 				.filter-item
 					display: block
-					margin-left: 18px
+					position: relative
+					margin: 3px 0 3px 10px
 					font-size: em(14px)
 					color: #FFF
 					text-decoration: none
+					.check-item
+						display: inline-block
+						margin-right: 5px
+						width: 16px
+						height: 16px
+						border-radius: 2px
+						background-color: #fff
+						border: 1px solid #737373
+						vertical-align: text-top
 					&:hover
-						text-decoration: underline
+						opacity: .9
 			.extra-params-wrapper
 				@extend .comp-wrapper
 				max-height: 160px
@@ -190,7 +230,7 @@ body textarea:required:valid
 					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
 			.info-row
 				display: block
-				position:relative
+				position: relative
 				.price
 					float: left
 				.brand
@@ -201,32 +241,53 @@ body textarea:required:valid
 				a
 					text-decoration: none
 					color: $active-light
-	.paging-wpr
-		.pagination
-			width: 220px
+.paging-wpr
+	.pagination
+		display: flex
+		flex-grow: 0
+		flex-shrink: 0
+		justify-content: center
+		width: 220px
+		margin: 20px auto
+		padding: 0
+		height: 30px
+		li
 			display: block
-			margin: 20px auto
-			padding: 0
-			height: 30px
-			li
+			list-style: none
+			float: left
+			margin: 3px
+			text-align: center
+			background-color: rgba(23,68,26, .7)
+			border-radius: 3px
+			color: #FFF
+			a
 				display: block
-				list-style: none
-				float: left
-				margin: 3px
-				text-align: center
-				a
-					display: block
-					width: 25px
-					height: 23px
-					background-color: rgba(23,68,26, .8)
-					border-radius: 3px
-					color: #FFF
-					font-size: em(14px)
-					&:hover
-						text-decoration: none
-						background-color: rgba(23,68,26, 1)
-			.active
-				background-color: rgba(23,68,26, .8)
+				width: 25px
+				height: 23px
+				background-color: rgba(23,68,26, .7)
 				border-radius: 3px
-				a
-					font-weight: bold
+				color: #FFF
+				font-size: em(14px)
+				&:hover
+					text-decoration: none
+					background-color: rgba(23,68,26, 1)
+		.disabled
+			display: block
+			width: 25px
+			height: 23px
+			font-size: em(14px)
+			background-color: rgba(23,68,26, .7)
+			opacity: .8
+			&:hover
+				cursor: default
+		.active
+			span
+				display: block
+				font-size: 14px
+				font-weight: bold
+				width: 25px
+				height: 23px
+				border-radius: 3px
+				background-color: rgba(23,68,26, .7)
+				&:hover
+					cursor: default

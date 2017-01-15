@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$("#example_id").ionRangeSlider();
+
 	//little trick for slider
 	cur_item_width = $(".baner").width();
 	$(".resp-w-item").css('width', cur_item_width);
