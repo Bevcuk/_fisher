@@ -1,5 +1,9 @@
 $(document).ready(function() {
-	$("#example_id").ionRangeSlider();
+	//toggle order details in My cabinet
+	$(".more-cl").click(function() {
+		$(this).html( $(this).text() == "▸" ? "▾" : "▸" );
+		$(this).siblings(".more-info").slideToggle();
+	});
 
 	//little trick for slider
 	cur_item_width = $(".baner").width();
@@ -23,11 +27,6 @@ $(document).ready(function() {
 		$(".forward-call").fadeOut(300);
 	});
 
-	//toggle order details in My cabinet
-	$(".more-cl").click(function() {
-		$(this).html( $(this).text() == "▸" ? "▾" : "▸" );
-		$(this).siblings(".more-info").slideToggle();
-	});
 
 	//menu clicking
 	$('.toggle-mnu,.exit').click(function() {
@@ -39,12 +38,7 @@ $(document).ready(function() {
 		$('.searchmob').toggleClass('visible-smob');
 	});
 
-	//Цели для Яндекс.Метрики и Google Analytics
-	$(".count_element").on("click", (function() {
-		ga("send", "event", "goal", "goal");
-		yaCounterXXXXXXXX.reachGoal("goal");
-		return true;
-	}));
+	$("#example_id").ionRangeSlider();
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

@@ -3,117 +3,66 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	header
-		
 		/* CATALOGUE PAGE */
 		.wpr
 			.container
 				padding: 0
 	// PRODUCTS PAGE
-
 	.overview-wrp.unique
 		.item
-			width: 180px !important
-			margin-left: 13% !important
+			width: 180px
 			.stock-a
 				img
-					width: 180px !important
-					height: 180px !important
- 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 767px)
-	/*Disable Animation on Mobile Devices*/
-	header 
-		.top-line 
-			.col-sm-1
-				margin-left: 8%
-			.col-xs-5
-				//padding-left: 6%	
-			.logo 
-				padding-left: 30px
-				img
-					width: 150px !important
-			.enter
-				background-size: 30px auto
-			.basket
-				margin-top: 35px
-				margin-left: 10px !important
-				float: right !important
-				img
-					width: 30px
-					height: 34px
-			.toggle-mnu
-				span::before
-					top: 9px
-				span::after
-					top: 18px
-	.baner-section
-		display: none
+					width: 180px
+					height: 180px
 
-	.animated
-		/*CSS transitions*/
-		-o-transition-property: none !important
-		-moz-transition-property: none !important
-		-ms-transition-property: none !important
-		-webkit-transition-property: none !important
-		transition-property: none !important
-		/*CSS transforms*/
-		-o-transform: none !important
-		-moz-transform: none !important
-		-ms-transform: none !important
-		-webkit-transform: none !important
-		transform: none !important
-		/*CSS animations*/
-		-webkit-animation: none !important
-		-moz-animation: none !important
-		-o-animation: none !important
-		-ms-animation: none !important
-		animation: none !important
-			
-/* Extra Small Devices, Phones */
-			
-		
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (min-width : 992px) and (max-width : 1100px)
+	.overview-wrp.unique
+		padding-left: 30px
 
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-header 
-	.top-line 
-		.enter
-			align: right
-		.basket
-			align: right
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
-	/**/
-	header 
-		.top-line 
-			.logo 
+	.forward-call
+		.forward-modal
+			width: 400px
+			h2
+				font-size: 18px
+			.forward-form
+				.form-group
+					margin: 0 20px 15px
+				.form-group-b
+					margin: 20px 20px 30px
+	.searchmob
+		.search-wpr
+			.form-wrapper
+				.search
+					width: 318px
+					input
+
+						width: 280px
+
+			.closes
+				top: 6px
+				right: -48px
+				width: 26px
+				height: 26px
+				color: #FFF
+				font-size: 22px
+				line-height: 28px
+				text-align: center
+				border-radius: 13px
+				background-color: rgba(120,120,120, .8)
+				&:hover
+					background-color: rgba(120,120,120, .7)
+	header
+		.top-line
+			.logo
 				width: 200px
 				margin: 0 auto
 				img
 					width: 200px
 			.enter
-				margin-top: 35px 
+				margin-top: 35px
 				float: right
 			.basket
 				margin-top: 35px
@@ -165,108 +114,780 @@ header
 	.wpr
 		.container
 			padding: 0
-			.main-nav
-				margin-top: 35px 
-				margin-right: 10px
-				nav
-					.subc-s-item
-						font-size: em(13px)
-			.overview-wrp
-				.item
-					width: 160px !important
-					height: 205px !important
-					.sub-pict
-						display: block
-						width: 160px
-						height: 160px
-						border-radius: 80px
+	.main-nav
+		margin-top: 35px
+		margin-right: 10px
+		nav
+			.subc-s-item
+				font-size: em(13px)
+	.catalogue-item
+		width: 160px
+		height: 205px
+	.overview-wrp
+		.sub-pict
+			display: block
+			width: 160px
+			height: 160px
+			border-radius: 80px
+
 	//MEDIA FOR PRODUCTS PAGE
 	.wpr
 		.container
-			padding: 0
 			.row
 				margin: 4px 0 2px
-			.filter
-				margin-right: 0px
-				margin-bottom: 30px //
-				padding-bottom: 25px
-				.part	
-					.title
-						font-size: em(17px)
-						color: #FFF
-						padding: 25px 35px 5px 25px
-					ul
-						height: 22px
-						position: relative
-						padding-left: 0
-						li
-							line-height: 1.5
-							float: left
-							margin-left: 25px
-							a
-								display: inline-block
-			.advance_search
-				.comp-wrapper
-					margin: 0 auto 
-					height: 180px
-					width: 230px
-				input[type="submit"]
-					margin: 25px auto
-					width: 150px
-			.overview-wrp
-				.item
-					width: 170px
-					height: 248px
-					.stock-a
-						display: block
-						img
-							width: 170px
-							height: 170px
+	.filter
+		margin-right: 0
+		min-height: inherit
+		.filter-part__list
+			padding: 5px 0
+			li
+				float: left
+				margin-right: 18px
+				margin-bottom: 8px
+		.sect-title
+			margin-left: 0
+		.comp-wrapper
+			margin: 5px 0
+			background: none
+			max-height: 200px
+	.advance_search
+		.value
+			width: 50%
+			margin: 20px 0 0 5px
+	.overview-wrp.unique
+		margin-top: 20px
+
 	//MEDIA FOR CABINET PAGE
-	nav
-		.part
-			ul
-				padding-left: 20px
-				li
-					line-height: 30px
-					a
-						font-size: 14px
+	.cabinet-nav
+		margin-right: 10px
+		nav
+			ul li
+				font-size: em(13px)
 	.overview-wrp
-		margin-right: 2%
 		.title
 			font-size: 16px !important
 		.order-list
-			padding-right: 0
-			padding-left: 30px
+			margin-left: 10px
 			transform: translate(0, 0) !important
 			.flex-table
-				margin-right: 
-				.table-row
-				.table-title
-					div
-						font-size: 11px !important
 				.table-data
 					font-size: 12px
 					.more-cl
 						left: -23px !important
-						
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
+
+	//PRODUCT CART
+	.info-sect
+		padding-left: 15px
+
+	//BASKET
+	.panel-description
+		h3
+			font-size: 16px
+		p
+			font-size: 14px
+			line-height: 1.4
+			margin: 6px 0
+	.bg-muted-title
+		font-size: 14px
+
+@media only screen and (max-width : 767px)
+	header
+		.top-line
+			height: 100px
+
+			.logo
+				width: 150px
+				img
+					width: 150px
+			.enter
+				background-size: 28px auto
+				padding-left: 38px
+				font-size: 13px
+			.basket
+				margin-left: 40px
+				margin-right: 9px
+				img
+					width: 30px
+					height: 30px
+			.counter
+				top: 6px
+			.toggle-mnu
+				width: 26px
+				span::before
+					top: 9px
+				span::after
+					top: 18px
+			.m-search
+				width: 30px
+				height: 30px
+	.baner-section
+		display: none
+
+	.subcategory-section
+		display: flex
+		flex-wrap: wrap
+	.subcategory-item
+		flex-basis: 50%
+		margin-bottom: 25px
+		text-align: center
+		.subc-name
+			margin: 15px 5px
+		.subc-s-item
+			margin: 0 25px
+			line-height: 1.1
+			margin-bottom: 8px
+	.subc-a
+		margin: 0 auto
+
+	//MEDIA FOR CATALOGUE PAGE
+	.main-nav
+		margin: 35px 20px 10px
+		text-align: center
+		nav
+			.subc-s-item
+				font-size: em(13px)
+				display: inline-block
+				padding: 3px 25px
+				margin: 5px 3px
+				text-align: center
+				min-width: inherit
+				line-height: 1.5
+	.overview-wrp
+		margin-right: 0
+	.filter-btn
+		margin-right: 15px
+
+	//PRODUCT CART
+	.main-sect>div
+		text-align: center
+	.product-name-element
+		font-size: 21px
+		text-align: center
+	.product-main-photo
+		margin-bottom: 30px
+	.add2cart_handler
+		margin: 20px auto
+
+
+	//BASKET
+	.tovar-description
+		font-size: 13px
+	.count + .price
+		font-size: 14px
+	.sum-price,
+	.delivery,
+	.lead
+		font-size: 13px
+		line-height: 1.3
+		&>div:last-child
+			strong
+				padding-right: 0
+	.tovar-operation
+		a
+			font-size: 13px
+	.content .order-type .tovar .panel-body .table-row
+		.tovar-button button
+			font-size: 12px
+		.count input
+			width: 50px
+			line-height: 18px
+			font-size: 13px
+	.tovar-button
+		display: flex
+		justify-content: flex-end
+
+	//ORDER MAKING
+	.safe-shopping
+		display: none
+
+	//MEDIA FOR CABINET PAGE
+	.cabinet-nav
+		margin: 15px 20px 10px
+		text-align: center
+		nav
+			ul
+				margin-right: 0
+				li
+					font-size: em(13px)
+					display: inline-block
+					padding: 3px 25px
+					margin: 5px 3px
+					text-align: center
+					min-width: inherit
+					line-height: 1.5
+
+	.overview-wrp
+		.order-list
+			margin-left: 0
+			padding-left: 40px
+
+	//ORDERING PROCESS
+	.breadcrumb-order
+		font-size: 14px
+	.result-descriptions
+		font-size: 14px
+		margin-top: 30px
+		border-top: 1px solid rgba(23,68,26,.2) !important
+	.panel .result .result-descriptions
+		.contacts,
+		.deliveri-payment,
+		.result-order
+			height: 130px
+		.contacts,
+		.deliveri-payment
+			border: none
+	.order-type
+		h1
+			font-size: 16px
+			margin-top: 30px
+		h4>a
+			font-size: 14px
+
+
+@media only screen and (max-width : 670px)
+	// PRODUCTS PAGE
+	.overview-wrp.unique
+		.item
+			width: 160px
+			.stock-a
+				img
+					width: 160px
+					height: 160px
+
+	.recommendations
+		.stock-item
+			width: 100%
+
+	//ORDERING PROCESS
+	.result-descriptions
+		font-size: 12px
+
+	.panel .result .result-descriptions
+		.contacts,
+		.deliveri-payment,
+		.result-order
+			height: 110px
+
+
+@media only screen and (max-width : 570px)
+	.searchmob
+		.search-wpr
+			.form-wrapper
+				width: 285px
+				.search
+					margin: 0
+					position: relative
+					font-size: 14px
+					width: 262px
+					input
+						height: 32px
+						padding: 10px
+						width: 230px
+					button
+						height: 32px
+						width: 32px
+						&:before
+							top: 8px
+			.closes
+				width: 21px
+				height: 21px
+				line-height: 21px
+				right: -28px
+
+	header
+		.pre-topline
+			height: 35px
+			&>div>div
+				width: inherit
+		.contacts
+			width: 125px
+			float: right
+			margin-right: 15px
+			.phone
+				font-size: em(11px)
+				background-size: 16px
+				padding-left: 20px
+				padding-right: 10px
+				margin: 9px 5px 0 8px
+				&:first-child
+					display: none
+			.callback
+				display: none
+		.top-line
+			height: 70px
+			&>div>div>div
+				width: inherit
+				margin: inherit
+			.toggle-mnu
+				position: absolute
+				margin-top: 0
+				left: 40px
+				top: -24px
+				width: 20px
+				height: 17px
+				span::before
+					top: 7px
+				span::after
+					top: 14px
+			.mobile-search
+				position: absolute
+				left: 70px
+				top: -40px
+				img
+					margin-top: 11px
+					width: 24px
+					height: 24px
+			.logo
+				margin-left: 25px
+				margin-top: 22px
+				width: 110px
+				img
+					margin-top: 0
+					width: 110px
+			.basket-wrapper
+				float: right
+				margin-right: 0
+			.enter
+				background-size: 21px auto
+				padding-left: 25px
+				margin-top: 20px
+			.basket
+				margin-top: 22px
+				margin-right: 15px
+				margin-left: 32px
+				.counter
+					width: 16px
+					height: 16px
+					font-size: 11px
+					left: -21px
+				img
+					width: 24px
+					height: 24px
+	.footer__bottom
+		flex-direction: column
+		align-items: center
+	.unit
+		text-align: center
+		margin-bottom: 25px
+	.footer-contacts
+		align-items: center
+		p
+			order: 1
+			margin: 15px 0 25px
+
+	//	MEDIA FOR PRODUCTS PAGE
+	.overview-wrp
+		.col-xs-4
+			width: 50%
+
+	.overview-wrp.unique
+		.col-xs-4
+			width: 50%
+		.item
+			width: 170px
+			.stock-a
+				img
+					width: 170px
+					height: 170px
+
+	.filter__part-params
+		.filter-part__list
+			li
+				float: none
+				margin-bottom: 0
+	//MEDIA FOR CATALOGUE PAGE
+	.one-cat>.col-xs-4
+		width: 50%
+
+	// PRODUCT CART
+	.product-main-photo
+		img
+			width: 75%
+	.product-name-element
+		line-height: 1.4
+		font-size: 18px
+	.pi_price_wrp
+		font-size: 18px
+		line-height: 2
+		height: 36px
+		padding: 0 15px
+		&:before,
+		&:after
+			width: 10px
+			height: 10px
+		&:after
+			top: 5px
+		&:before
+			top: 22px
+	.product_image_options
+		img
+			width: 80px
+	.add2cart_handler
+		font-size: 16px
+		padding: 2px 30px
+	.pb_stock
+		font-size: 18px
+	.pi_shippay_buttons_wrp
+		font-size: 14px
+	.ship_row
+		a
+			padding-left: 26px
+		img
+			width: 18px
+			height: 18px
+			margin-top: 2px
+	.container-fluid-description .section-title
+		font-size: 16px
+		text-align: center
+		h3
+			margin-bottom: 10px
+	.container-fluid-description .pull-right p
+		font-size: 14px
+		letter-spacing: .2px
+		line-height: 1.3
+	.table-condensed tr td:first-of-type
+		width: 45%
+	.table-condensed
+		line-height: 1.4
+		font-size: 14px
+
+	//CABINET
+	.cabinet-nav
+		margin: 25px 40px 10px
+		text-align: center
+		nav
+			ul li
+				display: block
+				padding: 3px 25px
+				margin: 5px 3px
+				text-align: center
+				min-width: inherit
+
+
+	//AUTHORIZATION
+	.auth
+		margin: 25px auto
+		.cont
+			h2
+				font-size: 16px
+				margin: 10px 0
+			.form-group
+				margin-bottom: 10px
+				.form-control
+					font-size: 13px
+				label
+					font-size: 12px
+			.form-group-b
+				margin: 15px 35px 10px
+				.btn
+					font-size: 12px
+					padding: 0 10px
+					height: 23px
+				a
+					font-size: 11px
+			.form-group-s
+				font-size: 11px
+	//REGISTRATION
+	.registration
+		margin: 25px auto
+		.cont
+			h2
+				font-size: 16px
+				margin: 10px 0
+			.form-group
+				margin-bottom: 10px
+				.form-control
+					font-size: 13px
+				label
+					font-size: 12px
+				.btn
+					font-size: 12px
+					padding: 0 20px
+
+	//BASKET
+	.panel-cart
+		h3
+			text-align: center
+			font-size: 16px
+		.table-head
+			display: none
+		.table-row
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			&>div
+				width: inherit
+
+			.availability
+				display: none
+			.tovar-description
+				width: 100%
+				font-size: 14px
+				text-align: center
+			.count
+				width: 100%
+				input
+					margin-top: 0 !important
+			.price
+				width: 100%
+				margin: 20px 0 10px !important
+			.line
+				margin-top: 10px
+	.tovar-button
+		display: flex
+		justify-content: center
+		margin-top: 10px
+	.sum-price,
+	.delivery,
+	.lead
+		display: flex
+		justify-content: center
+		font-size: 14px
+		&>div
+			margin: 0
+			&:nth-child(2n+1)
+				width: 40%
+				text-align: left
+			&:nth-child(2n)
+				width: 25%
+	.tovar-operation>.row>div
+		width: inherit
+		margin: 0
+		&:nth-child(2)
+			float: right
+
+	//ORDER MAKING
+	.panel-heading
+		font-size: 14px
+	.basket-summary
+		font-size: 14px
+	.panel .login-panel-half
+		padding: 0
+
+	.breadcrumb-order
+		font-size: 12px
+
+	.panel-breadcrumb .breadcrumb-order li
+		height: 30px
+		a,
+		span
+			padding: 0
+			line-height: 30px
+
+	.result
+		h2
+			text-align: center
+		.table-head
+			display: none
+		.table-row
+			display: flex
+			flex-direction: column
+			.col-xs-3
+				width: 40%
+				padding: 0
+				margin: 0 auto
+			.col-xs-9
+				padding: 0
+				width: 100%
+			.tovar-description
+				width: 55%
+				padding-right: 0
+			.count
+				width: 20%
+				padding: 0
+			.price
+				padding: 0
+				width: 25%
+	.panel .result .table-row
+		.count,
+		.price
+			font-size: 14px
+	.result .tovar-description
+		font-size: 14px
+
+@media only screen and (max-width : 500px)
+	.stock-item
+		width: 100%
+	.advance_search
+		.value
+			width: 95%
+			margin: 20px auto
+
+	//CABINET
+	.overview-wrp .order-list
+		padding-left: 30px
+		.flex-table
+			.table-title
+				display: none
+			.table-data
+				.main-info
+					display: flex
+					flex-direction: column
+					height: inherit
+					&>div
+						width: inherit
+						font-size: 14px
+						padding-left: 0
+						&:nth-child(1)
+							order: 1
+							font-weight: bold
+							&:before
+								content: '№ '
+						&:nth-child(2)
+							order: 2
+							&:before
+								content: 'Дата: '
+								font-weight: bold
+						&:nth-child(3)
+							order: 4
+							&:before
+								content: 'Статус: '
+								font-weight: bold
+						&:nth-child(4)
+							order: 3
+							&:before
+								content: 'Сума: '
+								font-weight: bold
+						&:nth-child(5)
+							display: none
+						&:nth-child(6)
+							order: 5
+							&:before
+								content: 'Доставка: '
+								font-weight: bold
+				.more-info
+					.table-title
+						display: block
+						font-size: 14px
+					ol
+						font-size: 13px
+						width: 100%
+	.settings
+		width: 94%
+		margin: 0 3%
+
+	//ORDER MAKING
+
+	.panel .login-panel-half
+		margin-top: 20px
+	.login-panel-half
+		.auth .cont
+			.form-group
+				margin: 0 15px 15px
+				label
+					font-size: 12px
+				.form-control
+					font-size: 13px
+			.form-group-b
+				margin: 15px 15px 10px
+				.btn
+					padding: 0 15px
+					font-size: 12px
+				a
+					font-size: 11px
+			.form-group-s
+				margin: 10px 15px
+				font-size: 11px
+	.panel .panel-btn a
+		font-size: 13px
+		width: 70px
+	.enter-informations
+		font-size: 11px
+		padding-top: 5px
+		line-height: 1.4
+	.panel .result .table-row
+		.count,
+		.price
+			font-size: 13px
+
+	.result .tovar-description
+			font-size: 13px
+
+
+@media only screen and (max-width : 425px)
+	//MEDIA FOR CATALOGUE PAGE
+	.main-nav
+		margin: 25px 40px 10px
+		text-align: center
+		nav
+			.subc-s-item
+				display: block
+				padding: 3px 25px
+				margin: 5px 3px
+				text-align: center
+				min-width: inherit
+	.one-cat>.col-xs-4
+		width: 100%
+
+
+	//AUTHORIZATION
+	.auth-wrapper
+		width: 90%
+		margin: 0 5%
+	.auth .cont .form-group
+		margin: 0 15px 20px
+	.auth .cont .form-group-b
+		margin: 15px 15px 10px
+	.auth .cont .form-group-s
+		margin: 10px 15px
+
+	.registration .cont .form-group
+		margin: 0 15px 8px
+		select
+			font-size: 12px
+
+
+	.sum-price,
+	.delivery,
+	.lead
+		font-size: 13px
+		&>div
+			margin: 0
+			&:nth-child(2n+1)
+				width: 50%
+				text-align: left
+			&:nth-child(2n)
+				width: 30%
+	//ORDERING
+	.breadcrumb-order
+		font-size: 10px
+
+@media only screen and (max-width : 400px)
+	.overview-wrp
+		.col-xs-4
+			width: 50%
+	.overview-wrp.unique
+		.col-xs-4
+			width: 100%
+
+@media only screen and (max-width : 375px)
+	.subcategory-item
+		flex-basis: 100%
+		.subc-name
+			line-height: 1.2
+		.subc-s-item
+			margin: 0 25px 10px
+			line-height: 1.1
+
+
+//MIN QUERIES
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 991px)
 	/**/
 	.sidebar
 		display: none !important
 	.searchmob
 		display: none !important
 
-	header 
-		.top-line 
-			.logo 
+	header
+		.top-line
+			.logo
 				img
 					width: 240px
 					margin-top: 35px
 			.enter
-				margin-top: 58px 
+				margin-top: 58px
 				margin-left: 10px
 			.basket
 				margin-top: 58px
@@ -274,25 +895,25 @@ header
 				float: right
 			.form-wrapper
 				.search
-					margin-left: 0%
-	.baner-section 
+					margin-left: 0
+	.baner-section
 		margin-top: 0
 
 	.categories
 		.subcategory-section
 			margin-left: 0
 			margin-bottom: 0
-	.kinds 
-		.kind-section 
-			.kind 
+	.kinds
+		.kind-section
+			.kind
 				width: 920px
 				.subkind-item
-					margin: 10px	
-	.content 
+					margin: 10px
+	.content
 		.container-fluid
-			.booton 
-				.pi_price_wrp 
-					font-size: 25px	
+			.booton
+				.pi_price_wrp
+					font-size: 25px
 					height: 45px
 					padding: 2px 20px
 					&:before, &:after
@@ -301,15 +922,15 @@ header
 						width: 10px
 					&:before
 						top: 181px
-				.add2cart_wrp 
+				.add2cart_wrp
 					height: 51px
 					.add2cart_handler
 						font-size: 25px
-						height: 50px	
-				.pb_stock 
+						height: 50px
+				.pb_stock
 					font-size: 22px
 				.pi_shippay_buttons_wrp
-					font-size: 15px	
+					font-size: 15px
 	//MEDIA FOR CATALOGUE PAGE
 	.wpr
 		.container
@@ -317,44 +938,44 @@ header
 				margin-right: 40px
 
 
-/* Large Devices, Wide Screens */
+
 @media only screen and (min-width : 1200px)
 	/**/
-	header 
-		.top-line 
-			.logo 
+	header
+		.top-line
+			.logo
 				img
 					width: 275px
 			.enter
-				float: right		
+				float: right
 			.basket
 				margin-left: 85px
 				float: right
 			.form-wrapper
 				margin: 0 auto
-				.search	
+
 	.categories
 		.subcategory-section
 			margin-left: 0
 			margin-bottom: 0
-	.kinds 
-		.kind-section 
-			.kind 
-				width: 1112px		
-				.subkind-item 
+	.kinds
+		.kind-section
+			.kind
+				width: 1112px
+				.subkind-item
 					margin: 22px
-					a 
+					a
 						margin: 0 auto
-					figcaption	
+					figcaption
 						text-align: center
-	.content 
+	.content
 		.container-fluid
 			.product-main-photo
-				img 
-					width: 400px	
-			.booton 
-				.pi_price_wrp 
-					font-size: 37px	
+				img
+					width: 400px
+			.booton
+				.pi_price_wrp
+					font-size: 37px
 					height: 54px
 					padding: 0 20px
 					&:before, &:after
@@ -363,15 +984,15 @@ header
 						width: 14px
 					&:before
 						top: 198px
-				.add2cart_wrp 
+				.add2cart_wrp
 					height: 60px
 					.add2cart_handler
 						font-size: 27px
-						height: 60px	
-				.pb_stock 
+						height: 60px
+				.pb_stock
 					font-size: 25px
 				.pi_shippay_buttons_wrp
-					font-size: 16px	
+					font-size: 16px
 
 	//MEDIA FOR PRODUCTS PAGE
 	.wpr

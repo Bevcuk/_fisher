@@ -106,7 +106,7 @@ body textarea:required:valid
 					transform: translate(0, -50%)
 					img
 						width: 100%
-						max-width: 260px
+						max-width: 220px
 				.info-details
 					text-align: center 
 					color: #2A2A2A
@@ -197,11 +197,12 @@ body textarea:required:valid
 		background-size: 100px 100px, 170px 170px
 		background-repeat: no-repeat, no-repeat
 	.subc-name
-		margin: 0
-		padding: 7px 0 3px
+		display: block
+		margin: 10px 0
 		color: $header-color
 		cursor: default
 		font-size: 20px
+		line-height: 1.2
 
 	.subc-s-item
 		font-size: em(14)
@@ -289,6 +290,8 @@ body textarea:required:valid
 	.stock-title
 		@extend .title-d
 	.stock-item
+		height: 275px
+		margin-bottom: 20px
 		.stock-item-wrap
 			@extend .item-wrap
 			.stock-name

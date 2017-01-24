@@ -21,53 +21,66 @@ footer
 		@extend .before
 		background-color: #302428
 		opacity: .55
-	.unit
-		font-size: 14px
-		ul
-			list-style: none
-			opacity: .75
-			padding: 0
-			margin: 0
-			margin-left: 12px
-			li
-				line-height: 2
-				a
-					color: white
-	.social-networks
-		opacity: .65
-		margin: 0 auto
-		width: 350px
-		margin-top: 35px
-		text-align: center 
-		h2
-			margin: 0
-			font-size: 18px
-			font-weight: normal
-			color: white
-		a
-			display: block
-			float: left
-			margin: 18px 26px
-			img
-				width: 34px
-	
+.footer__bottom
+	display: flex
+	justify-content: space-between
+
+	margin: 25px 15px 0
+	min-height: 120px
+.unit
+	font-size: 14px
+	width: 200px
+	ul
+		list-style: none
+		opacity: .8
+		padding: 0
+		margin: 0
+
+		li
+			line-height: 1.8
+			a
+				color: white
+.social-networks
+	display: flex
+	flex-direction: column
+	height: 70px
+	align-items: center
+	justify-content: space-around
+	margin-top: 15px
+	h2
+		margin: 0
+		font-size: 16px
+		font-weight: normal
+		color: white
+		position: relative
+	a
+		width: 26px
+		&:hover
+			transition: .1s
+			opacity: .7
+			cursor: pointer
+		img
+			width: 100%
+.social-links
+	position: relative
+	display: flex
+	width: 240px
+	justify-content: space-around
 .footer-contacts
-	opacity: 0.65
+	opacity: .8
 	color: white
-	float: right
+	font-size: 14px
+	display: flex
+	flex-direction: column
+	align-items: flex-end
 	p
 		display: block
-		margin: 0px 12px 5px 8px
-		float: right
-		font-size: 16px
+		margin: 0
 	.phone
-		float: right
-		padding-left: 32px
-		margin: 2px 12px 2px 0
-		background-position: left center
-		background-repeat: no-repeat
-		background-size: 24px
-		clear: both
-					
+		background: no-repeat left center
+		background-size: 21px
+		padding-left: 26px
+		line-height: 2
+
 //ALWAYS END
 @import "_media.sass"

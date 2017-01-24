@@ -52,195 +52,193 @@ body textarea:required:valid
 		padding: 0
 	.col-md-9
 		padding: 0
-	.filter-btn
-		width: 100px
-		height: 22px
-		background-color: rgba(33,68,46,.8)
-		float: right
-		margin: 11px 0 20px
-		cursor: pointer
-		border-radius: 2px
-		font-size: em(14px)
-		text-align: center
+.filter-btn
+	width: 100px
+	height: 22px
+	background-color: rgba(33,68,46,.8)
+	float: right
+	margin: 10px 0
+	cursor: pointer
+	border-radius: 2px
+	font-size: em(14px)
+	text-align: center
+	color: #FFF
+	transition: .2s
+	&:hover
+		background-color: rgba(33,68,46,1)
+.filter
+	display: block
+	margin-left: 0
+	margin-right: 40px
+	margin-bottom: 30px
+	padding: 20px 25px 30px
+	background-image: url('../img/woood.jpg')
+	border-radius: 3px
+	box-sizing: border-box
+	min-width: 250px
+	min-height: 250px
+	box-shadow: 0 0 9px 0 rgba(0, 0, 0, .8)
+	.title
+		font-size: em(17px)
 		color: #FFF
-		&:hover
-			background-color: rgba(33,68,46,1)
-	.filter
-		display: block
-		margin-left: 0 
-		margin-right: 40px
-		padding-bottom: 30px
-		border-radius: 3px
-		background-image: url('../img/woood.jpg')
-		min-width: 250px
-		min-height: 250px
-		box-shadow: 0 0 9px 0 rgba(0, 0, 0, .8)
-		.part	
-			.title
-				font-size: em(17px)
-				color: #FFF
-				padding: 25px 35px 5px 25px
-			ul
-				margin: 0
-				list-style: none
-				font-size: em(15px)
-				padding-left: 45px
-				li
-					line-height: 1.5
-					a
-						display: block
-						color: $broun-hyper
-						&:hover
-							text-decoration: underline
-					.active
-						text-decoration: none
-						color: $broun-hyper-lite
-		.advance_search
-			width: 100%
-			color: #FFF	
-			.title
-				font-size: em(17px)
-				padding: 25px 35px 5px 25px
-			.sect-title
+		margin-top: 10px
+.filter__part-params
+	ul
+		list-style: none
+		font-size: em(15px)
+		li
+			line-height: 1.5
+			a
+				display: block
 				color: $broun-hyper
-				font-size: em(14px)
-				padding: 15px 25px 5px 20px
-			.value
-				height: 45px
-				width: 80%
-				margin: 10px auto 0
-
-				//ion-range styles
-				.irs
-					height:	45px
-					.irs-min,
-					.irs-max
-						display: none
-					.irs-from,
-					.irs-to,
-					.irs-single
-						display: inline-block
-						border-radius: 2px
-						margin-top: -10px
-						padding: 1px 2px
-						font-size: 13px
-						text-align: center
-						background-color: rgba(66,66,66,.9)
-						&:after
-							position: absolute
-							content: ''
-							display: block
-							width: 0
-							height: 0
-							left: 50%
-							transform: translate(-50%)
-							background-color: transparent
-							border-left: 7px solid transparent
-							border-right: 7px solid transparent
-							border-top: 7px solid rgba(66,66,66,.8)
-						&:hover
-							cursor: pointer
-
-				.irs-grid-pol
-					background-color: #FFF
-				.irs-grid-text
-					color: #FFF
-			.comp-wrapper
-				margin-left: 20px 
-				margin-top: 10px
-				padding: 5px 0 5px 15px 
-				background-color: rgba(66, 66, 66, 0.5)
-				overflow: auto
-				max-height: 230px
-				width: 80%
-				white-space: nowrap
-				.active
-					.check-item
-						background: url('../img/checked.png') no-repeat 0
-						background-size: contain
-				.filter-item
-					display: block
-					position: relative
-					margin: 3px 0 3px 10px
-					font-size: em(14px)
-					color: #FFF
-					text-decoration: none
-					.check-item
-						display: inline-block
-						margin-right: 5px
-						width: 16px
-						height: 16px
-						border-radius: 2px
-						background-color: #fff
-						border: 1px solid #737373
-						vertical-align: text-top
-					&:hover
-						opacity: .9
-			.extra-params-wrapper
-				@extend .comp-wrapper
-				max-height: 160px
-
-			.length-wrapper
-				margin-left: 20px
-				input
-					margin-left: 15px
-					margin-right: 7px
-			input[type="submit"]
-				position: relative
-				display: block
-				margin: 25px auto
-				padding: 0
-				height: 35px
-				width: 180px
-				border-color: transparent
-				background-color: rgba(23, 68, 26, 0.8)
-				border-radius: 3px
 				&:hover
-					background-color: rgba(23, 68, 26, 1)
-				&:focus
-						outline: none
-	.overview-wrp
-		position: relative
-		.item
-			position: relative
-			width: 190px
-			height: 248px
-			margin: 0px auto 50px
-			.stock-a
-				display: block
-				img
-					width: 190px
-					height: 190px
-			.stock-name
-				position: relative
-				display: block
-				margin: 5px auto 3px
-				height: 48px
-				width: 100%
-				color: #222
-				overflow: hidden
+					text-decoration: underline
+			.active
+				text-decoration: none
+				color: $broun-hyper-lite
+.filter-part__list
+	padding: 10px
+.sect-title
+	color: $broun-hyper
+	font-size: em(14px)
+	margin-left: 10px
+	margin-top: 15px
+.advance_search
+	width: 100%
+	color: #FFF
+	.value
+		height: 45px
+		width: 85%
+		margin: 20px auto 0
+
+		//ion-range styles
+		.irs
+			height:	45px
+			.irs-min,
+			.irs-max
+				display: none
+			.irs-from,
+			.irs-to,
+			.irs-single
+				display: inline-block
+				border-radius: 2px
+				margin-top: -10px
+				padding: 1px 2px
+				font-size: 13px
+				text-align: center
+				background-color: rgba(66,66,66,.9)
 				&:after
 					position: absolute
-					text-align: right
-					content: ""
-					bottom: 0
-					right: 0
-					width: 70%
-					height: 18px
-					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
-			.info-row
-				display: block
-				position: relative
-				.price
-					float: left
-				.brand
-					float: right
-					img
-						height: 25px
+					content: ''
+					display: block
+					width: 0
+					height: 0
+					left: 50%
+					transform: translate(-50%)
+					background-color: transparent
+					border-left: 7px solid transparent
+					border-right: 7px solid transparent
+					border-top: 7px solid rgba(66,66,66,.8)
+				&:hover
+					cursor: pointer
+
+		.irs-grid-pol
+			background-color: #FFF
+		.irs-grid-text
+			color: #FFF
+	.comp-wrapper
+		background-color: rgba(66, 66, 66, 0.5)
+		overflow: auto
+		max-height: 230px
+		white-space: nowrap
+		margin: 5px 10px
+		.active
+			.check-item
+				background: url('../img/checked.png') no-repeat 0
+				background-size: contain
+		.filter-item
+			display: block
+			position: relative
+			font-size: em(14px)
+			color: #FFF
+			text-decoration: none
+			.check-item
+				display: inline-block
+				margin-right: 5px
+				width: 16px
+				height: 16px
+				border-radius: 2px
+				background-color: #fff
+				border: 1px solid #737373
+				vertical-align: text-top
 			&:hover
-				a
-					text-decoration: none
-					color: $active-light
+				opacity: .9
+	.extra-params-wrapper
+		@extend .comp-wrapper
+		max-height: 160px
+
+	.length-wrapper
+		margin-left: 20px
+		input
+			margin-left: 15px
+			margin-right: 7px
+	input[type="submit"]
+		position: relative
+		display: block
+		margin: 25px auto
+		padding: 0
+		height: 35px
+		width: 180px
+		border-color: transparent
+		background-color: rgba(23, 68, 26, 0.8)
+		border-radius: 3px
+		&:hover
+			background-color: rgba(23, 68, 26, 1)
+		&:focus
+				outline: none
+.overview-wrp.unique
+	position: relative
+
+	.item
+		position: relative
+		width: 190px
+		height: 248px
+		margin: 0px auto 50px
+		.stock-a
+			display: block
+			img
+				width: 190px
+				height: 190px
+		.stock-name
+			position: relative
+			display: block
+			margin: 5px auto 3px
+			height: 48px
+			width: 100%
+			color: #222
+			overflow: hidden
+			&:after
+				position: absolute
+				text-align: right
+				content: ""
+				bottom: 0
+				right: 0
+				width: 70%
+				height: 18px
+				background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 90%)
+		.info-row
+			display: block
+			position: relative
+			.price
+				float: left
+			.brand
+				float: right
+				img
+					height: 25px
+		&:hover
+			a
+				text-decoration: none
+				color: $active-light
 .paging-wpr
 	.pagination
 		display: flex

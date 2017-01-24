@@ -6,112 +6,125 @@
 		padding-left: 30px
 	.panel-description
 		background-color: #24492E
-		padding: 10px 0px
-		.container
-			.col-md-12
-				text-align: center
-			h3
-				color: #fff
-				margin: 3px 0 7px
-			.cart-logo
-				//margin-top: -65px
-			.description-text
-				color: #fff	
-				text-align: center	
+		padding: 10px 0
+		.col-md-12
+			text-align: center
+		.description-text
+
+			color: #fff
+			text-align: center
+		h3
+			color: #fff
+			margin: 3px 0
+		p
+			margin: 10px 0
 	.order-type
-		.container
-			.tovar
-				border: solid
-				margin-top: 20px
-				border-color: #F0F0F0
-				.panel-cart
-					.panel-body
-						h3 
-							small 
-								opacity: 0.3
-						.table-head	
-							.row
-								background-color: #F0F0F0
-								.bg-muted-title
-									text-align: center
-									font-weight: bold
-									border-right: 2px solid #fff
-								.bg-muted-title1
-									text-align: center
-									font-weight: bold
-						.table-row
-							height: 100%
-							.product-image
-							img
-								width: 100%
-								height: 100%	
-							.availability
-								text-align: center
-								font-size: 35px
-								color: #68CA85	
-							.count
-								text-align: center 
-								input
-									font-size: 14px
-									line-height: 22px
-									margin-top: 50px
-									text-align: center
-									width: 70px
-									outline: none
-							.price
-								margin-top: 50px
-								text-align: center	
-							.tovar-button
-								.line
-								button
-									background-color: #fff
-									border-width: 2px !important
-									box-shadow: none !important
-									border: solid
-									border-radius: 3px
-									border-color: #F0F0F0
-									width: 95px
-									&:hover
-										border-color: #CACACA
-									&:focus
-										outline: none
-								.button2
-									margin-left: 30px		
-						.delivery
-							strong
-							.pad
-								padding-left: 20px
-						.tovar-operation	
-							.row
-								height: 80px
-								background-color: #F0F0F0
-							a
-								color: #fff
-								text-decoration: none
-								border-width: 2px	
-								border-radius: 3px
-								padding: 5px 5px 
-								border-color: #F0F0F0
-								background-color: #24492E
-								margin-top: 20px
-								text-align: center
-								display: block
-								&:hover
-									opacity: 0.9 
-							.to_checkout
-								background-color: #C70D1D
-			.tovar-left
-				.panel-heading
-					background-color: #F0F0F0
-				h4
-					padding: 5px 5px 5px 15px	
-				.panel-body
-					padding-left: 15px
-					font-size: 14px
-				i 
-					font-size: 40px
-					float: right
-					margin-top: -35px	
+		.tovar
+			border: solid
+			margin-top: 20px
+			border-color: #F0F0F0
+			.panel-body
+				.sum-price
+					clear: both
+					margin-top: 10px
+					padding-top: 10px
+				.lead
+					margin-bottom: 10px
+				h3
+					small
+						opacity: 0.3
+				.table-head
+					.row
+						background-color: #F0F0F0
+						.bg-muted-title
+							text-align: center
+							font-weight: bold
+							border-right: 2px solid #fff
+							&:last-child
+								border-right: none
+				.table-row
+					height: 100%
+					&>div>p:first-child
+						text-align: center
+					img
+						width: 100%
+						height: 100%
+						min-width: 90px
+						max-width: 200px
+					.availability
+						text-align: center
+						font-size: 35px
+						color: #68CA85
+					.count
+						text-align: center
+						input
+							font-size: 14px
+							line-height: 22px
+							margin-top: 50px
+							text-align: center
+							width: 70px
+							outline: none
+					.price
+						margin-top: 50px
+						text-align: center
+
+					.tovar-button
+						button
+							background-color: #fff
+							border-width: 2px !important
+							box-shadow: none !important
+							border: solid
+							border-radius: 3px
+							border-color: #F0F0F0
+							width: 95px
+							&:hover
+								border-color: #CACACA
+							&:focus
+								outline: none
+						.button2
+							margin-left: 30px
+				.delivery
+					.pad
+						padding-left: 20px
+				.tovar-operation
+					.row
+						height: 80px
+						background-color: #F0F0F0
+					a
+						color: #fff
+						text-decoration: none
+						border-width: 2px
+						border-radius: 3px
+						padding: 5px 5px
+						border-color: #F0F0F0
+						background-color: #24492E
+						margin-top: 20px
+						text-align: center
+						display: block
+						&:hover
+							opacity: 0.9
+							cursor: pointer
+					.to_checkout
+						background-color: #C70D1D
+		.tovar-left
+			.panel-heading
+				background-color: #F0F0F0
+			h4
+				padding: 5px 5px 5px 15px
+			.panel-body
+				padding-left: 15px
+				font-size: 14px
+			i
+				font-size: 40px
+				float: right
+				margin-top: -35px
+.sum-price,
+.delivery,
+.lead
+	&>div:last-child
+		text-align: right
+		strong
+			padding-right: 15px
 
 .recommendations
 	margin-top: 40px
@@ -122,7 +135,7 @@
 		border-bottom: 2px solid #F0F0F0
 		span
 			height: 28px 
-			padding: 5px 15px 7px
+			padding: 5px 15px 4px
 			border: 2px solid #F0F0F0
 			border-bottom: 2px solid #FFF
 			background: #fff

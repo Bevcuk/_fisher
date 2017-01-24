@@ -34,7 +34,6 @@ body
 			margin: 0
 			padding: 0
 	ul
-		float: left
 		margin: 0
 		padding: 0
 		list-style: none
@@ -61,193 +60,33 @@ body
 .hidden
 	display: none
 
-header
-	background-color: $header-color
-	box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
-	.pre-topline
-		height: 30px
-		position: relative
-		background-color: $pre-header-color
-		box-shadow: 0 -1px 4px rgba(0, 0, 0, 1)
-		overflow: hidden
-		.container 
-			padding: 0
-			.col-md-6
-				padding: 0
-				.contacts
-					position: relative
-					display: block
-					color: white
-					align-content: center
-					p
-						font-size: em(13px)
-						float: right
-					.phone
-						margin: 5px 5px 6px 15px
-						padding-left: 23px
-						background-position: left center
-						background-repeat: no-repeat
-						background-size: 20px
-						float: right
-						font-size: em(13px)
-
-					.callback
-						margin: 5px 15px 6px
-						padding-left: 27px
-						background-position: left center
-						background-repeat: no-repeat
-						background-size: 18px
-						font-size: em(13px)
-						float: right
-						color: #D0CBCB
-						cursor: pointer
-						&:hover
-							color: white
-	.top-line
-		min-height: 130px
-		position: relative
-
-		.logo
-			opacity: .85
-			img
-				width: 275px
-				margin-top: 25px
-		.enter
-			margin-top: 58px
-			line-height: 2.5
-			padding-left: 45px
-			background-position: left center
-			background-repeat: no-repeat
-			background-size: 34px
-			font-size: em(15px)
-			float: left
-			a
-				color: white
-				text-decoration: none
-			&:hover
-				text-decoration: underline
-				cursor: pointer
-		.basket
-			display: block
-			position: relative
-			margin-top: 58px
-			margin-left: 85px
-			margin-right: 20px
-			float: left
-			width: 39px
-			height: 39px
-			.counter
-				display: inline-block
-				position: absolute
-				height: 20px 
-				width: 20px
-				top: 10px
-				left: -28px
-				border-radius: 10px
-				-moz-border-radius: 10px
- 				-webkit-border-radius: 10px
-				background-color: $red-acs
-				font-size: 13px
-				font-weight: bold
-				color: white
-				text-align: center
-			img
-				height: 39px		
-		//Mobile menu
-		.toggle-mnu
-			position: absolute
-			display: block
-			width: 28px
-			height: 24px
-			margin-top: 38px
-			cursor: pointer
-			span
-				position: relative
-				display: block
-				&:after
-					position: absolute
-					content: ""
-					left: 0
-					top: 24px
-				&:before
-					position: absolute
-					content: ""
-					left: 0
-					top: 12px
-			span, span:after, span:before
-				width: 100%
-				height: 2px
-				background-color: #fff
-				transition: all 0.3s
-				backface-visibility: hidden
-				border-radius: 2px
-//ТО є пошук
-.icon-find
-	width: 17px
-	height: 17px
+//Mobile menu
+.toggle-mnu
 	display: block
-	margin: 0 auto		
-.form-wrapper 
-	width: 340px
-	padding: 0px
-	float: center
-	background: $red-acs
-	background: rgba(0,0,0,.2)
-	border-radius: 6px
-	box-shadow: 0 0 3px rgba(0,0,0,0.3)
-	.search
+	width: 28px
+	height: 28px
+	margin: 40px auto 0
+	cursor: pointer
+	span
 		position: relative
-		margin-top: 75px
-		width: 370px
-		font-size: 12px	
-		/* Стиль поля вводу тексту */
-		input 
-			width: 340px
-			height: 27px
-			padding: 6px 10px
-			float: left  
-			background: #FFFFFF
-			border-radius: 3px 0 0 3px
-			border-color: transparent  
-			&:focus 
-				outline: none
-				background: #fff
-				box-shadow: 0 0 0.5px rgba(0,0,0,.5)
-		/*То є кнопка відправки форми*/
-		button 
-			overflow: visible
-			position: relative
-			float: right
-			border: 0
-			padding: 0
-			cursor: pointer
-			height: 27px
-			width: 30px
-			font: 14px 'RobotoBold'
-			color: #fff
-			text-transform: uppercase
-			background: $red-acs
-			border-radius: 0 3px 3px 0
-			text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3)
-			&:hover
-				background: #e54040
-			&:focus  
-				background: #c42f2f
-				outline: 0  
-			&:before  /* стрілка вліво */
-				content: ''
-				position: absolute
-				border-width: 8px 8px 8px 0
-				border-style: solid solid solid none
-				border-color: transparent $red-acs transparent
-				top: 7px
-				left: -6px
-			&:hover:before
-				border-right-color: #e54040
-			&:focus:before,
-			&:active:before
-				border-right-color: #c42f2f			
-			//ТО Є кінець пошуку
+		display: block
+		&:after
+			position: absolute
+			content: ""
+			left: 0
+			top: 24px
+		&:before
+			position: absolute
+			content: ""
+			left: 0
+			top: 12px
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #fff
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
 .forward-call
 	position: absolute
 	display: none
@@ -307,7 +146,7 @@ header
 					border-radius: 3px
 					border-color: transparent
 					&:focus
-							outline: none
+						outline: none
 				.form-control-high
 					@extend .form-control
 					resize: none
@@ -330,6 +169,158 @@ header
 						outline: none
 					&:hover
 						background-color: $red-acs
+header
+	background-color: $header-color
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.8)
+	.pre-topline
+		height: 30px
+		position: relative
+		background-color: $pre-header-color
+		box-shadow: 0 -1px 4px rgba(0, 0, 0, 1)
+		overflow: hidden
+		.container 
+			padding: 0
+			.col-md-6
+				padding: 0
+	.contacts
+		position: relative
+		color: white
+		.phone
+			margin: 5px 5px 6px 15px
+			padding-left: 23px
+			background-position: left center
+			background-repeat: no-repeat
+			background-size: 20px
+			float: right
+			font-size: em(13px)
+
+		.callback
+			margin: 5px 15px 6px
+			padding-left: 27px
+			background-position: left center
+			background-repeat: no-repeat
+			background-size: 18px
+			font-size: em(13px)
+			float: right
+			color: #D0CBCB
+			cursor: pointer
+			&:hover
+				color: white
+	.top-line
+		height: 130px
+		position: relative
+
+		.logo
+			opacity: .85
+			img
+				width: 275px
+				margin-top: 25px
+		.enter
+			margin-top: 58px
+			line-height: 2.5
+			padding-left: 45px
+			background-position: left center
+			background-repeat: no-repeat
+			background-size: 34px
+			font-size: em(15px)
+			float: left
+			a
+				color: white
+				text-decoration: none
+			&:hover
+				text-decoration: underline
+				cursor: pointer
+	.basket
+		display: block
+		position: relative
+		margin-top: 58px
+		margin-left: 85px
+		margin-right: 20px
+		float: left
+		.counter
+			display: inline-block
+			position: absolute
+			height: 20px
+			width: 20px
+			top: 10px
+			left: -28px
+			border-radius: 10px
+			-moz-border-radius: 10px
+			-webkit-border-radius: 10px
+			background-color: $red-acs
+			font-size: 13px
+			font-weight: bold
+			color: white
+			text-align: center
+		img
+			height: 39px
+
+//ТО є пошук
+.icon-find
+	width: 17px
+	height: 17px
+	display: block
+	margin: 0 auto		
+.form-wrapper 
+	width: 340px
+	padding: 0
+	background: $red-acs
+	background: rgba(0,0,0,.2)
+	border-radius: 6px
+	box-shadow: 0 0 3px rgba(0,0,0,0.3)
+	.search
+		position: relative
+		margin-top: 75px
+		width: 370px
+		font-size: 12px	
+		/* Стиль поля вводу тексту */
+		input 
+			width: 340px
+			height: 27px
+			padding: 6px 10px
+			float: left  
+			background: #FFFFFF
+			border-radius: 3px 0 0 3px
+			border-color: transparent  
+			&:focus 
+				outline: none
+				background: #fff
+				box-shadow: 0 0 0.5px rgba(0,0,0,.5)
+		/*То є кнопка відправки форми*/
+		button 
+			overflow: visible
+			position: relative
+			float: right
+			border: 0
+			padding: 0
+			cursor: pointer
+			height: 27px
+			width: 30px
+			font: 14px 'RobotoBold'
+			color: #fff
+			text-transform: uppercase
+			background: $red-acs
+			border-radius: 0 3px 3px 0
+			text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3)
+			&:hover
+				background: #e54040
+			&:focus  
+				background: #c42f2f
+				outline: 0  
+			&:before  /* стрілка вліво */
+				content: ''
+				position: absolute
+				border-width: 8px 8px 8px 0
+				border-style: solid solid solid none
+				border-color: transparent $red-acs transparent
+				top: 7px
+				left: -6px
+			&:hover:before
+				border-right-color: #e54040
+			&:focus:before,
+			&:active:before
+				border-right-color: #c42f2f			
+			//ТО Є кінець пошуку
 
 .sidebar 
 	position: fixed
@@ -362,10 +353,10 @@ header
 	transition: left 0.3s linear
 
 .mobile-search
-	margin-top: 35px
 	padding-left: 20px
 	.m-search
 		cursor: pointer
+		margin-top: 35px
 
 .searchmob
 	position: fixed
